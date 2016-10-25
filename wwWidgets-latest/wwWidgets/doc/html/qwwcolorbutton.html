@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- qwwcolorbutton.cpp -->
+  <title>QwwColorButton Class | wwWidgets 1.0</title>
+  <link rel="stylesheet" type="text/css" href="style/offline.css" />
+</head>
+<body>
+<div class="header" id="qtdocheader">
+    <div class="main">
+    <div class="main-rounded">
+        <div class="navigationbar">
+        <ul>
+      <li class="first"><a href="index.html">wwWidgets</a></li>
+      <!--  Breadcrumbs go here -->
+<li>QwwColorButton</li>
+<li id="buildversion">
+</li>
+    </ul>
+    </div>
+</div>
+<div class="content">
+<div class="line">
+<div class="content mainContent">
+<div class="toc">
+<h3><a name="toc">Contents</a></h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#public-functions">Public Functions</a></li>
+<li class="level1"><a href="#public-slots">Public Slots</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<h1 class="title">QwwColorButton Class</h1>
+<!-- $$$QwwColorButton-brief -->
+<p>The QwwColorButton class provides a color chooser in form of a button with a popup list <a href="#details">More...</a></p>
+<!-- @@@QwwColorButton -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Header:</td><td class="memItemRight bottomAlign"> </b><tt><span class="preprocessor">#include &lt;QwwColorButton&gt;</span>
+</tt></td></tr></table><ul>
+<li><a href="qwwcolorbutton-members.html">List of all members, including inherited members</a></li>
+</ul>
+<a name="properties"></a>
+<h2>Properties</h2>
+<ul>
+<li class="fn"><b><a href="qwwcolorbutton.html#colors-prop">colors</a></b> : QStringList</li>
+<li class="fn"><b><a href="qwwcolorbutton.html#currentColor-prop">currentColor</a></b> : QColor</li>
+<li class="fn"><b><a href="qwwcolorbutton.html#dragEnabled-prop">dragEnabled</a></b> : bool</li>
+<li class="fn"><b><a href="qwwcolorbutton.html#showName-prop">showName</a></b> : bool</li>
+</ul>
+<a name="public-functions"></a>
+<h2>Public Functions</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> </td><td class="memItemRight bottomAlign"><b><a href="qwwcolorbutton.html#QwwColorButton">QwwColorButton</a></b>(QWidget *<i> parent</i> = 0)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwcolorbutton.html#addColor">addColor</a></b>(const QColor &amp;<i> color</i>, const QString &amp;<i> name</i> = QString::null)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwcolorbutton.html#clear">clear</a></b>()</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> QStringList </td><td class="memItemRight bottomAlign"><b><a href="qwwcolorbutton.html#colors-prop">colors</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> QColor </td><td class="memItemRight bottomAlign"><b><a href="qwwcolorbutton.html#currentColor-prop">currentColor</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> bool </td><td class="memItemRight bottomAlign"><b><a href="qwwcolorbutton.html#dragEnabled-prop">dragEnabled</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwcolorbutton.html#colors-prop">setColors</a></b>(const QStringList &amp;<i> map</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwcolorbutton.html#dragEnabled-prop">setDragEnabled</a></b>(bool<i> v</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> virtual void </td><td class="memItemRight bottomAlign"><b><a href="qwwcolorbutton.html#setStandardColors">setStandardColors</a></b>()</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> bool </td><td class="memItemRight bottomAlign"><b><a href="qwwcolorbutton.html#showName-prop">showName</a></b>() const</td></tr>
+</table>
+<a name="public-slots"></a>
+<h2>Public Slots</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwcolorbutton.html#currentColor-prop">setCurrentColor</a></b>(const QColor &amp;<i> c</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwcolorbutton.html#showName-prop">setShowName</a></b>(bool<i> v</i>)</td></tr>
+</table>
+<a name="signals"></a>
+<h2>Signals</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwcolorbutton.html#colorPicked">colorPicked</a></b>(const QColor &amp;<i> color</i>)</td></tr>
+</table>
+<a name="details"></a>
+<!-- $$$QwwColorButton-description -->
+<div class="descr">
+<h2>Detailed Description</h2>
+<p>The QwwColorButton class provides a color chooser in form of a button with a popup list</p>
+<p>This widget provides a push button that can be used to choose a color from either a predefined set or a custom one using a QColorDialog.</p>
+<p>Active color can be changed either by clicking the button and choosing a different entry or by dropping a color from another widget or another application.</p>
+<p class="centerAlign"><img src="images/qwwcolorbutton.png" alt="QwwColorButton" /></p><p>Colors can be added to the button with <a href="qwwcolorbutton.html#addColor">addColor</a>(), <a href="qwwcolorbutton.html#colors-prop">setColors</a>() or <a href="qwwcolorbutton.html#setStandardColors">setStandardColors</a>().</p>
+</div>
+<!-- @@@QwwColorButton -->
+<div class="prop">
+<h2>Property Documentation</h2>
+<!-- $$$colors-prop$$$colors$$$setColorsconstQStringList& -->
+<h3 class="fn"><a name="colors-prop"></a><span class="name">colors</span> : <span class="type">QStringList</span></h3>
+<p>This property holds list of colors known to the button.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> QStringList </td><td class="memItemRight bottomAlign"><span class="name"><b>colors</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setColors</b></span>(const QStringList &amp;<i> map</i>)</td></tr>
+</table>
+<p><b>See also </b><a href="qwwcolorbutton.html#currentColor-prop">currentColor</a>.</p>
+<!-- @@@colors -->
+<!-- $$$currentColor-prop$$$currentColor$$$setCurrentColorconstQColor& -->
+<h3 class="fn"><a name="currentColor-prop"></a><span class="name">currentColor</span> : <span class="type">QColor</span></h3>
+<p>This property holds returns the currently chosen color.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> QColor </td><td class="memItemRight bottomAlign"><span class="name"><b>currentColor</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setCurrentColor</b></span>(const QColor &amp;<i> c</i>)</td></tr>
+</table>
+<!-- @@@currentColor -->
+<!-- $$$dragEnabled-prop$$$dragEnabled$$$setDragEnabledbool -->
+<h3 class="fn"><a name="dragEnabled-prop"></a><span class="name">dragEnabled</span> : <span class="type">bool</span></h3>
+<p>This property holds this property holds whether the button starts a drag if the user presses and moves the mouse away from the button.</p>
+<p>Dragging is disabled by default.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> bool </td><td class="memItemRight bottomAlign"><span class="name"><b>dragEnabled</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setDragEnabled</b></span>(bool<i> v</i>)</td></tr>
+</table>
+<!-- @@@dragEnabled -->
+<!-- $$$showName-prop$$$showName$$$setShowNamebool -->
+<h3 class="fn"><a name="showName-prop"></a><span class="name">showName</span> : <span class="type">bool</span></h3>
+<p>This property holds this property holds whether the color name should be displayed on the button.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> bool </td><td class="memItemRight bottomAlign"><span class="name"><b>showName</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setShowName</b></span>(bool<i> v</i>)</td></tr>
+</table>
+<!-- @@@showName -->
+</div>
+<div class="func">
+<h2>Member Function Documentation</h2>
+<!-- $$$QwwColorButton[overload1]$$$QwwColorButtonQWidget* -->
+<h3 class="fn"><a name="QwwColorButton"></a>QwwColorButton::<span class="name">QwwColorButton</span>(<span class="type">QWidget</span> *<i> parent</i> = 0)</h3>
+<p>Constructs a colour button with a specified <i>parent</i>.</p>
+<!-- @@@QwwColorButton -->
+<!-- $$$addColor[overload1]$$$addColorconstQColor&constQString& -->
+<h3 class="fn"><a name="addColor"></a><span class="type">void</span> QwwColorButton::<span class="name">addColor</span>(const <span class="type">QColor</span> &amp;<i> color</i>, const <span class="type">QString</span> &amp;<i> name</i> = QString::null)</h3>
+<p>Adds a <i>color</i> with a <i>name</i> to the list of colors to choose from</p>
+<!-- @@@addColor -->
+<!-- $$$clear[overload1]$$$clear -->
+<h3 class="fn"><a name="clear"></a><span class="type">void</span> QwwColorButton::<span class="name">clear</span>()</h3>
+<p>Clears the color list</p>
+<!-- @@@clear -->
+<!-- $$$colorPicked[overload1]$$$colorPickedconstQColor& -->
+<h3 class="fn"><a name="colorPicked"></a><span class="type">void</span> QwwColorButton::<span class="name">colorPicked</span>(const <span class="type">QColor</span> &amp;<i> color</i>)<tt> [signal]</tt></h3>
+<p>This signal is emitted when <i>color</i> is picked and displayed on the button.</p>
+<!-- @@@colorPicked -->
+<!-- $$$setStandardColors[overload1]$$$setStandardColors -->
+<h3 class="fn"><a name="setStandardColors"></a><span class="type">void</span> QwwColorButton::<span class="name">setStandardColors</span>()<tt> [virtual]</tt></h3>
+<p>Sets standard Qt colors as the list of colors to choose from</p>
+<!-- @@@setStandardColors -->
+</div>
+<div class="footer"> <img src="images/ww-logo.png" style="height: 24px; margin-top: -10px;" align="right" /> Copyright (C) 2014 Witold Wysota</div></body>
+</html>

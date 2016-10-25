@@ -1,0 +1,74 @@
+"Thetyss Data Browser" description:
+Project "Thetyss Data Browser" started in July,  2007. The purpose of the project is to work out a fast and flexible data browser with low bandwith also on BIG SQL tables. 
+
+Feature list:
+- Qt4
+- Reducing number of rows by typing filter text
+- Filters can be setup for certain columns
+- Coloring background and fonts of rows according to SVG color codes
+- Column sorting: incresing / decreasing / not sorted
+- Extra low data bandwith: with demo database (with 1.3 million record) ca. 16KB  data traffic by starting and ca. 4 kB by further searching.
+- Specially worked out for Postgres: Data Browser works with two different query modes. To 1000. row uses offset-limit, above cursor.
+- The speed of data browsing and data filtering processes depend only on Postgres table structures and Postgres query optimalizations. 
+- Saving current view.
+- Use and saving of multiple views with filters. By saving users can be differentiated
+- Use of optional aggregators in the last row: Sum(), Count(), Avg(), Min(), Max()
+- Printing current view
+- Print preview
+- The printing process fetches only the necessary data
+- PDF export
+- CSV export
+- It can be used as designer plugin.
+
+Install demo:
+
+1) Change Postgres parameters in datazoom/demo/dialog.cpp
+
+2)  Change Postgres parameters in datazoom/sql/new-test.sh
+    For windows Users: import test.sql into Postgres database
+
+3) Type in project root directory
+   qmake
+   make
+
+4) run datazoom/demo/demo_datazoom
+
+
+
+Kund Gordos
+
+2008.03.01
+
+Bugs to:
+feedback _AT_ thetyss.com
+
+
+********************* Changes *********************
+
+Apr 22 2008:
+
+NEW:
+
+   * New public functions:
+     - setMask(column,QString) - You can set Filter. 
+     - hideColumn(column,bool) - You can hide column.
+     - setFilteringDisabled(column,bool), isFilteringDisabled(column) - You can disable filtering menu.
+     - setOrder(section,order) - You can set order.
+
+   * New signal: resultChanged(Role) - datazoom emit resultChanged(Role) signal if resultset changed with diffrent roles.
+
+   * New public slots:
+     - moveUp(),moveDown(),moveFirst(),moveLast() -You can move curent row and selection.
+     - setHideFilterWidgets(bool) - Yo can disable filter manager buttons on head.
+
+   * Small doc in header files
+   
+   * Static lib
+
+FIXED BUGS:
+   * Eliminated double count query.
+   * fixed bugs by row selections
+   * Small bugfixes
+
+On Windows not tested.
+   

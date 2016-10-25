@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- qwwlistnavigator.cpp -->
+  <title>QwwListNavigator Class | wwWidgets 1.0</title>
+  <link rel="stylesheet" type="text/css" href="style/offline.css" />
+</head>
+<body>
+<div class="header" id="qtdocheader">
+    <div class="main">
+    <div class="main-rounded">
+        <div class="navigationbar">
+        <ul>
+      <li class="first"><a href="index.html">wwWidgets</a></li>
+      <!--  Breadcrumbs go here -->
+<li>QwwListNavigator</li>
+<li id="buildversion">
+</li>
+    </ul>
+    </div>
+</div>
+<div class="content">
+<div class="line">
+<div class="content mainContent">
+<div class="toc">
+<h3><a name="toc">Contents</a></h3>
+<ul>
+<li class="level1"><a href="#public-types">Public Types</a></li>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#public-functions">Public Functions</a></li>
+<li class="level1"><a href="#public-slots">Public Slots</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#protected-functions">Protected Functions</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<h1 class="title">QwwListNavigator Class</h1>
+<!-- $$$QwwListNavigator-brief -->
+<p>The QwwListNavigator class provides a widget letting the user navigate through items in a list. <a href="#details">More...</a></p>
+<!-- @@@QwwListNavigator -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Header:</td><td class="memItemRight bottomAlign"> </b><tt><span class="preprocessor">#include &lt;QwwListNavigator&gt;</span>
+</tt></td></tr></table><ul>
+<li><a href="qwwlistnavigator-members.html">List of all members, including inherited members</a></li>
+</ul>
+<a name="public-types"></a>
+<h2>Public Types</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> enum </td><td class="memItemRight bottomAlign"><b><a href="qwwlistnavigator.html#Button-enum">Button</a></b> { NoButtons, FirstButton, PrevButton, Slider, NextButton, LastButton }</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> flags </td><td class="memItemRight bottomAlign"><b><a href="qwwlistnavigator.html#Button-enum">Buttons</a></b></td></tr>
+</table>
+<a name="properties"></a>
+<h2>Properties</h2>
+<ul>
+<li class="fn"><b><a href="qwwlistnavigator.html#autoRaise-prop">autoRaise</a></b> : bool</li>
+<li class="fn"><b><a href="qwwlistnavigator.html#buttons-prop">buttons</a></b> : Buttons</li>
+<li class="fn"><b><a href="qwwlistnavigator.html#orientation-prop">orientation</a></b> : Qt::Orientation</li>
+<li class="fn"><b><a href="qwwlistnavigator.html#toolButtonStyle-prop">toolButtonStyle</a></b> : Qt::ToolButtonStyle</li>
+</ul>
+<a name="public-functions"></a>
+<h2>Public Functions</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> </td><td class="memItemRight bottomAlign"><b><a href="qwwlistnavigator.html#QwwListNavigator">QwwListNavigator</a></b>(QWidget *<i> parent</i> = 0)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> bool </td><td class="memItemRight bottomAlign"><b><a href="qwwlistnavigator.html#autoRaise-prop">autoRaise</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> Buttons </td><td class="memItemRight bottomAlign"><b><a href="qwwlistnavigator.html#buttons-prop">buttons</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwlistnavigator.html#buttons-prop">setButtons</a></b>(Buttons<i> b</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwlistnavigator.html#setListWidget">setListWidget</a></b>(QwwListWidget *<i> lw</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> Qt::ToolButtonStyle </td><td class="memItemRight bottomAlign"><b><a href="qwwlistnavigator.html#toolButtonStyle-prop">toolButtonStyle</a></b>() const</td></tr>
+</table>
+<a name="public-slots"></a>
+<h2>Public Slots</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwlistnavigator.html#autoRaise-prop">setAutoRaise</a></b>(bool<i> v</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwlistnavigator.html#orientation-prop">setOrientation</a></b>(Qt::Orientation<i> o</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwlistnavigator.html#toolButtonStyle-prop">setToolButtonStyle</a></b>(Qt::ToolButtonStyle<i> v</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwlistnavigator.html#toFirst">toFirst</a></b>()</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwlistnavigator.html#toLast">toLast</a></b>()</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwlistnavigator.html#toNext">toNext</a></b>()</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwlistnavigator.html#toPrevious">toPrevious</a></b>()</td></tr>
+</table>
+<a name="signals"></a>
+<h2>Signals</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwlistnavigator.html#first">first</a></b>()</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwlistnavigator.html#last">last</a></b>()</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwlistnavigator.html#next">next</a></b>()</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwlistnavigator.html#previous">previous</a></b>()</td></tr>
+</table>
+<a name="protected-functions"></a>
+<h2>Protected Functions</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwlistnavigator.html#sliderChange">sliderChange</a></b>(SliderChange<i> change</i>)</td></tr>
+</table>
+<a name="details"></a>
+<!-- $$$QwwListNavigator-description -->
+<div class="descr">
+<h2>Detailed Description</h2>
+<p>The QwwListNavigator class provides a widget letting the user navigate through items in a list.</p>
+<p class="centerAlign"><img src="images/qwwlistnavigator.png" alt="QwwListNavigator" /></p></div>
+<!-- @@@QwwListNavigator -->
+<div class="types">
+<h2>Member Type Documentation</h2>
+<!-- $$$Button$$$NoButtons$$$FirstButton$$$PrevButton$$$Slider$$$NextButton$$$LastButton -->
+<h3 class="flags"><a name="Button-enum"></a>enum QwwListNavigator::<span class="name">Button</span><br/>flags QwwListNavigator::<span class="name">Buttons</span></h3>
+<table class="valuelist"><tr valign="top" class="odd"><th class="tblConst">Constant</th><th class="tblval">Value</th><th class="tbldscr">Description</th></tr>
+<tr><td class="topAlign"><tt>QwwListNavigator::NoButtons</tt></td><td class="topAlign"><tt>0</tt></td><td class="topAlign">No buttons are visible</td></tr>
+<tr><td class="topAlign"><tt>QwwListNavigator::FirstButton</tt></td><td class="topAlign"><tt>1</tt></td><td class="topAlign">Button for moving onto the first record in the set</td></tr>
+<tr><td class="topAlign"><tt>QwwListNavigator::PrevButton</tt></td><td class="topAlign"><tt>2</tt></td><td class="topAlign">Button for moving onto previous record in the set</td></tr>
+<tr><td class="topAlign"><tt>QwwListNavigator::Slider</tt></td><td class="topAlign"><tt>4</tt></td><td class="topAlign">Slider for moving between records</td></tr>
+<tr><td class="topAlign"><tt>QwwListNavigator::NextButton</tt></td><td class="topAlign"><tt>8</tt></td><td class="topAlign">Button for moving onto next record in the set</td></tr>
+<tr><td class="topAlign"><tt>QwwListNavigator::LastButton</tt></td><td class="topAlign"><tt>16</tt></td><td class="topAlign">Button for moving onto the last record in the set</td></tr>
+</table>
+<p>The Buttons type is a typedef for <a href="">QFlags</a>&lt;Button&gt;. It stores an OR combination of Button values.</p>
+<!-- @@@Button -->
+</div>
+<div class="prop">
+<h2>Property Documentation</h2>
+<!-- $$$autoRaise-prop$$$autoRaise$$$setAutoRaisebool -->
+<h3 class="fn"><a name="autoRaise-prop"></a><span class="name">autoRaise</span> : <span class="type">bool</span></h3>
+<p>This property holds this property holds whether buttons of the navigator are auto raised.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> bool </td><td class="memItemRight bottomAlign"><span class="name"><b>autoRaise</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setAutoRaise</b></span>(bool<i> v</i>)</td></tr>
+</table>
+<!-- @@@autoRaise -->
+<!-- $$$buttons-prop$$$buttons$$$setButtonsButtons -->
+<h3 class="fn"><a name="buttons-prop"></a><span class="name">buttons</span> : <span class="type"><a href="qwwlistnavigator.html#Button-enum">Buttons</a></span></h3>
+<p>This property holds this property holds visible buttons of the navigator.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> Buttons </td><td class="memItemRight bottomAlign"><span class="name"><b>buttons</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setButtons</b></span>(Buttons<i> b</i>)</td></tr>
+</table>
+<!-- @@@buttons -->
+<!-- $$$orientation-prop$$$setOrientationQt::Orientation -->
+<h3 class="fn"><a name="orientation-prop"></a><span class="name">orientation</span> : <span class="type">Qt::Orientation</span></h3>
+<p>This property holds this property holds the orientation of the slider.</p>
+<p>The orientation must be Qt::Vertical (the default) or Qt::Horizontal.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setOrientation</b></span>(Qt::Orientation<i> o</i>)</td></tr>
+</table>
+<!-- @@@orientation -->
+<!-- $$$toolButtonStyle-prop$$$toolButtonStyle$$$setToolButtonStyleQt::ToolButtonStyle -->
+<h3 class="fn"><a name="toolButtonStyle-prop"></a><span class="name">toolButtonStyle</span> : <span class="type">Qt::ToolButtonStyle</span></h3>
+<p>This property holds this property holds the style of buttons in the navigator.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> Qt::ToolButtonStyle </td><td class="memItemRight bottomAlign"><span class="name"><b>toolButtonStyle</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setToolButtonStyle</b></span>(Qt::ToolButtonStyle<i> v</i>)</td></tr>
+</table>
+<!-- @@@toolButtonStyle -->
+</div>
+<div class="func">
+<h2>Member Function Documentation</h2>
+<!-- $$$QwwListNavigator[overload1]$$$QwwListNavigatorQWidget* -->
+<h3 class="fn"><a name="QwwListNavigator"></a>QwwListNavigator::<span class="name">QwwListNavigator</span>(<span class="type">QWidget</span> *<i> parent</i> = 0)</h3>
+<p>Constructs a horizontal list navigator with a given <i>parent</i>.</p>
+<!-- @@@QwwListNavigator -->
+<!-- $$$first[overload1]$$$first -->
+<h3 class="fn"><a name="first"></a><span class="type">void</span> QwwListNavigator::<span class="name">first</span>()<tt> [signal]</tt></h3>
+<p>The signal is emited when the navigator is set on the first record in the set.</p>
+<p><b>See also </b><a href="qwwlistnavigator.html#toFirst">toFirst</a>().</p>
+<!-- @@@first -->
+<!-- $$$last[overload1]$$$last -->
+<h3 class="fn"><a name="last"></a><span class="type">void</span> QwwListNavigator::<span class="name">last</span>()<tt> [signal]</tt></h3>
+<p>The signal is emited when the navigator is set on the last record in the set.</p>
+<p><b>See also </b><a href="qwwlistnavigator.html#toLast">toLast</a>().</p>
+<!-- @@@last -->
+<!-- $$$next[overload1]$$$next -->
+<h3 class="fn"><a name="next"></a><span class="type">void</span> QwwListNavigator::<span class="name">next</span>()<tt> [signal]</tt></h3>
+<p>The signal is emited when the navigator is set on the next record in the set.</p>
+<p><b>See also </b><a href="qwwlistnavigator.html#toNext">toNext</a>().</p>
+<!-- @@@next -->
+<!-- $$$previous[overload1]$$$previous -->
+<h3 class="fn"><a name="previous"></a><span class="type">void</span> QwwListNavigator::<span class="name">previous</span>()<tt> [signal]</tt></h3>
+<p>The signal is emited when the navigator is set on the previous record in the set.</p>
+<p><b>See also </b><a href="qwwlistnavigator.html#toPrevious">toPrevious</a>().</p>
+<!-- @@@previous -->
+<!-- $$$setListWidget[overload1]$$$setListWidgetQwwListWidget* -->
+<h3 class="fn"><a name="setListWidget"></a><span class="type">void</span> QwwListNavigator::<span class="name">setListWidget</span>(<span class="type"><a href="qwwlistwidget.html">QwwListWidget</a></span> *<i> lw</i>)</h3>
+<p>Associates a <a href="qwwlistwidget.html">QwwListWidget</a> instance with the navigator.</p>
+<p>The method observes the list widget <i>lw</i> allowing to navigate through its items using the navigator.</p>
+<!-- @@@setListWidget -->
+<!-- $$$sliderChange[overload1]$$$sliderChangeSliderChange -->
+<h3 class="fn"><a name="sliderChange"></a><span class="type">void</span> QwwListNavigator::<span class="name">sliderChange</span>(<span class="type">SliderChange</span><i> change</i>)<tt> [protected]</tt></h3>
+<p>This method performs a change of slider value specified by <i>change</i>.</p>
+<!-- @@@sliderChange -->
+<!-- $$$toFirst[overload1]$$$toFirst -->
+<h3 class="fn"><a name="toFirst"></a><span class="type">void</span> QwwListNavigator::<span class="name">toFirst</span>()<tt> [slot]</tt></h3>
+<p>Moves navigator to the first record.</p>
+<p>Does nothing if the navigator is already at the first record.</p>
+<p><b>See also </b><a href="qwwlistnavigator.html#first">first</a>().</p>
+<!-- @@@toFirst -->
+<!-- $$$toLast[overload1]$$$toLast -->
+<h3 class="fn"><a name="toLast"></a><span class="type">void</span> QwwListNavigator::<span class="name">toLast</span>()<tt> [slot]</tt></h3>
+<p>Moves navigator to the last record.</p>
+<p>Does nothing if the navigator is already at the last record.</p>
+<p><b>See also </b><a href="qwwlistnavigator.html#last">last</a>().</p>
+<!-- @@@toLast -->
+<!-- $$$toNext[overload1]$$$toNext -->
+<h3 class="fn"><a name="toNext"></a><span class="type">void</span> QwwListNavigator::<span class="name">toNext</span>()<tt> [slot]</tt></h3>
+<p>Moves navigator to the next record.</p>
+<p>Does nothing if the navigator is already at the last record.</p>
+<p><b>See also </b><a href="qwwlistnavigator.html#next">next</a>().</p>
+<!-- @@@toNext -->
+<!-- $$$toPrevious[overload1]$$$toPrevious -->
+<h3 class="fn"><a name="toPrevious"></a><span class="type">void</span> QwwListNavigator::<span class="name">toPrevious</span>()<tt> [slot]</tt></h3>
+<p>Moves navigator to the previous record.</p>
+<p>Does nothing if the navigator is already at the first record.</p>
+<p><b>See also </b><a href="qwwlistnavigator.html#previous">previous</a>().</p>
+<!-- @@@toPrevious -->
+</div>
+<div class="footer"> <img src="images/ww-logo.png" style="height: 24px; margin-top: -10px;" align="right" /> Copyright (C) 2014 Witold Wysota</div></body>
+</html>

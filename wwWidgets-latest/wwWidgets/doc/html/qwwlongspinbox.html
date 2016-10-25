@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- qwwlongspinbox.cpp -->
+  <title>QwwLongSpinBox Class | wwWidgets 1.0</title>
+  <link rel="stylesheet" type="text/css" href="style/offline.css" />
+</head>
+<body>
+<div class="header" id="qtdocheader">
+    <div class="main">
+    <div class="main-rounded">
+        <div class="navigationbar">
+        <ul>
+      <li class="first"><a href="index.html">wwWidgets</a></li>
+      <!--  Breadcrumbs go here -->
+<li>QwwLongSpinBox</li>
+<li id="buildversion">
+</li>
+    </ul>
+    </div>
+</div>
+<div class="content">
+<div class="line">
+<div class="content mainContent">
+<div class="toc">
+<h3><a name="toc">Contents</a></h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#public-functions">Public Functions</a></li>
+<li class="level1"><a href="#public-slots">Public Slots</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#protected-functions">Protected Functions</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<h1 class="title">QwwLongSpinBox Class</h1>
+<!-- $$$QwwLongSpinBox-brief -->
+<p>The QwwLongSpinBox class provides a spinbox taking long long values. <a href="#details">More...</a></p>
+<!-- @@@QwwLongSpinBox -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Header:</td><td class="memItemRight bottomAlign"> </b><tt><span class="preprocessor">#include &lt;QwwLongSpinBox&gt;</span>
+</tt></td></tr></table><ul>
+<li><a href="qwwlongspinbox-members.html">List of all members, including inherited members</a></li>
+</ul>
+<a name="properties"></a>
+<h2>Properties</h2>
+<table class="propsummary">
+<tr><td class="topAlign"><ul>
+<li class="fn"><b><a href="qwwlongspinbox.html#maximum-prop">maximum</a></b> : qlonglong</li>
+<li class="fn"><b><a href="qwwlongspinbox.html#minimum-prop">minimum</a></b> : qlonglong</li>
+<li class="fn"><b><a href="qwwlongspinbox.html#prefix-prop">prefix</a></b> : QString</li>
+</ul></td><td class="topAlign"><ul>
+<li class="fn"><b><a href="qwwlongspinbox.html#singleStep-prop">singleStep</a></b> : qlonglong</li>
+<li class="fn"><b><a href="qwwlongspinbox.html#suffix-prop">suffix</a></b> : QString</li>
+<li class="fn"><b><a href="qwwlongspinbox.html#value-prop">value</a></b> : qlonglong</li>
+</ul>
+</td></tr>
+</table>
+<a name="public-functions"></a>
+<h2>Public Functions</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> </td><td class="memItemRight bottomAlign"><b><a href="qwwlongspinbox.html#QwwLongSpinBox">QwwLongSpinBox</a></b>(QWidget *<i> parent</i> = 0)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> virtual void </td><td class="memItemRight bottomAlign"><b><a href="qwwlongspinbox.html#fixup">fixup</a></b>(QString &amp;<i> input</i>) const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> qlonglong </td><td class="memItemRight bottomAlign"><b><a href="qwwlongspinbox.html#maximum-prop">maximum</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> qlonglong </td><td class="memItemRight bottomAlign"><b><a href="qwwlongspinbox.html#minimum-prop">minimum</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> const QString &amp; </td><td class="memItemRight bottomAlign"><b><a href="qwwlongspinbox.html#prefix-prop">prefix</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwlongspinbox.html#maximum-prop">setMaximum</a></b>(qlonglong<i> v</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwlongspinbox.html#minimum-prop">setMinimum</a></b>(qlonglong<i> v</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwlongspinbox.html#prefix-prop">setPrefix</a></b>(const QString &amp;)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwlongspinbox.html#setRange">setRange</a></b>(qlonglong<i> min</i>, qlonglong<i> max</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwlongspinbox.html#singleStep-prop">setSingleStep</a></b>(qlonglong<i> s</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwlongspinbox.html#suffix-prop">setSuffix</a></b>(const QString &amp;)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> qlonglong </td><td class="memItemRight bottomAlign"><b><a href="qwwlongspinbox.html#singleStep-prop">singleStep</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> virtual void </td><td class="memItemRight bottomAlign"><b><a href="qwwlongspinbox.html#stepBy">stepBy</a></b>(int<i> steps</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> const QString &amp; </td><td class="memItemRight bottomAlign"><b><a href="qwwlongspinbox.html#suffix-prop">suffix</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> virtual QValidator::State </td><td class="memItemRight bottomAlign"><b><a href="qwwlongspinbox.html#validate">validate</a></b>(QString &amp;<i> input</i>, int &amp;<i> pos</i>) const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> qlonglong </td><td class="memItemRight bottomAlign"><b><a href="qwwlongspinbox.html#value-prop">value</a></b>() const</td></tr>
+</table>
+<a name="public-slots"></a>
+<h2>Public Slots</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwlongspinbox.html#value-prop">setValue</a></b>(qlonglong<i> v</i>)</td></tr>
+</table>
+<a name="signals"></a>
+<h2>Signals</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwlongspinbox.html#value-prop">valueChanged</a></b>(qlonglong<i> i</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwlongspinbox.html#value-prop">valueChanged</a></b>(const QString &amp;<i> text</i>)</td></tr>
+</table>
+<a name="protected-functions"></a>
+<h2>Protected Functions</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> virtual StepEnabled </td><td class="memItemRight bottomAlign"><b><a href="qwwlongspinbox.html#stepEnabled">stepEnabled</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> virtual QString </td><td class="memItemRight bottomAlign"><b><a href="qwwlongspinbox.html#textFromValue">textFromValue</a></b>(qlonglong<i> value</i>) const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> virtual qlonglong </td><td class="memItemRight bottomAlign"><b><a href="qwwlongspinbox.html#valueFromText">valueFromText</a></b>(const QString &amp;<i> text</i>) const</td></tr>
+</table>
+<a name="details"></a>
+<!-- $$$QwwLongSpinBox-description -->
+<div class="descr">
+<h2>Detailed Description</h2>
+<p>The QwwLongSpinBox class provides a spinbox taking long long values.</p>
+<p class="centerAlign"><img src="images/qwwlongspinbox.png" alt="QwwLongSpinBox" /></p></div>
+<!-- @@@QwwLongSpinBox -->
+<div class="prop">
+<h2>Property Documentation</h2>
+<!-- $$$maximum-prop$$$maximum$$$setMaximumqlonglong -->
+<h3 class="fn"><a name="maximum-prop"></a><span class="name">maximum</span> : <span class="type">qlonglong</span></h3>
+<p>This property holds property holds the maximum value allowed for the spinbox.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> qlonglong </td><td class="memItemRight bottomAlign"><span class="name"><b>maximum</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setMaximum</b></span>(qlonglong<i> v</i>)</td></tr>
+</table>
+<!-- @@@maximum -->
+<!-- $$$minimum-prop$$$minimum$$$setMinimumqlonglong -->
+<h3 class="fn"><a name="minimum-prop"></a><span class="name">minimum</span> : <span class="type">qlonglong</span></h3>
+<p>This property holds property holds the minimum value allowed for the spinbox.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> qlonglong </td><td class="memItemRight bottomAlign"><span class="name"><b>minimum</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setMinimum</b></span>(qlonglong<i> v</i>)</td></tr>
+</table>
+<!-- @@@minimum -->
+<!-- $$$prefix-prop$$$prefix$$$setPrefixconstQString& -->
+<h3 class="fn"><a name="prefix-prop"></a><span class="name">prefix</span> : <span class="type">QString</span></h3>
+<p>This property holds property holds the spinbox's prefix.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> const QString &amp; </td><td class="memItemRight bottomAlign"><span class="name"><b>prefix</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setPrefix</b></span>(const QString &amp;)</td></tr>
+</table>
+<!-- @@@prefix -->
+<!-- $$$singleStep-prop$$$singleStep$$$setSingleStepqlonglong -->
+<h3 class="fn"><a name="singleStep-prop"></a><span class="name">singleStep</span> : <span class="type">qlonglong</span></h3>
+<p>This property holds this property holds the step for the spinbox.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> qlonglong </td><td class="memItemRight bottomAlign"><span class="name"><b>singleStep</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setSingleStep</b></span>(qlonglong<i> s</i>)</td></tr>
+</table>
+<!-- @@@singleStep -->
+<!-- $$$suffix-prop$$$suffix$$$setSuffixconstQString& -->
+<h3 class="fn"><a name="suffix-prop"></a><span class="name">suffix</span> : <span class="type">QString</span></h3>
+<p>This property holds property holds the spinbox's suffix.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> const QString &amp; </td><td class="memItemRight bottomAlign"><span class="name"><b>suffix</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setSuffix</b></span>(const QString &amp;)</td></tr>
+</table>
+<!-- @@@suffix -->
+<!-- $$$value-prop$$$value$$$setValueqlonglong$$$valueChangedqlonglong$$$valueChangedconstQString& -->
+<h3 class="fn"><a name="value-prop"></a><span class="name">value</span> : <span class="type">qlonglong</span></h3>
+<p>This property holds property holds the spinbox value.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> qlonglong </td><td class="memItemRight bottomAlign"><span class="name"><b>value</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setValue</b></span>(qlonglong<i> v</i>)</td></tr>
+</table>
+<p><b>Notifier signal:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>valueChanged</b></span>(qlonglong<i> i</i>)</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>valueChanged</b></span>(const QString &amp;<i> text</i>)</td></tr>
+</table>
+<!-- @@@value -->
+</div>
+<div class="func">
+<h2>Member Function Documentation</h2>
+<!-- $$$QwwLongSpinBox[overload1]$$$QwwLongSpinBoxQWidget* -->
+<h3 class="fn"><a name="QwwLongSpinBox"></a>QwwLongSpinBox::<span class="name">QwwLongSpinBox</span>(<span class="type">QWidget</span> *<i> parent</i> = 0)</h3>
+<p>Constructs a long spin box widget with a given <i>parent</i>.</p>
+<!-- @@@QwwLongSpinBox -->
+<!-- $$$fixup[overload1]$$$fixupQString& -->
+<h3 class="fn"><a name="fixup"></a><span class="type">void</span> QwwLongSpinBox::<span class="name">fixup</span>(<span class="type">QString</span> &amp;<i> input</i>) const<tt> [virtual]</tt></h3>
+<p>Attempts to correct the <i>input</i>.</p>
+<!-- @@@fixup -->
+<!-- $$$setRange[overload1]$$$setRangeqlonglongqlonglong -->
+<h3 class="fn"><a name="setRange"></a><span class="type">void</span> QwwLongSpinBox::<span class="name">setRange</span>(<span class="type">qlonglong</span><i> min</i>, <span class="type">qlonglong</span><i> max</i>)</h3>
+<p>Sets the range of values allowed for the spinbox to <i>min</i> and <i>max</i></p>
+<!-- @@@setRange -->
+<!-- $$$stepBy[overload1]$$$stepByint -->
+<h3 class="fn"><a name="stepBy"></a><span class="type">void</span> QwwLongSpinBox::<span class="name">stepBy</span>(<span class="type">int</span><i> steps</i>)<tt> [virtual]</tt></h3>
+<p>Changes the spinbox value by a number of <i>steps</i></p>
+<!-- @@@stepBy -->
+<!-- $$$stepEnabled[overload1]$$$stepEnabled -->
+<h3 class="fn"><a name="stepEnabled"></a><span class="type">StepEnabled</span> QwwLongSpinBox::<span class="name">stepEnabled</span>() const<tt> [virtual protected]</tt></h3>
+<p>Returns set of enabled steps.</p>
+<!-- @@@stepEnabled -->
+<!-- $$$textFromValue[overload1]$$$textFromValueqlonglong -->
+<h3 class="fn"><a name="textFromValue"></a><span class="type">QString</span> QwwLongSpinBox::<span class="name">textFromValue</span>(<span class="type">qlonglong</span><i> value</i>) const<tt> [virtual protected]</tt></h3>
+<p>Returns textual representation of the <i>value</i>.</p>
+<!-- @@@textFromValue -->
+<!-- $$$validate[overload1]$$$validateQString&int& -->
+<h3 class="fn"><a name="validate"></a><span class="type">QValidator::State</span> QwwLongSpinBox::<span class="name">validate</span>(<span class="type">QString</span> &amp;<i> input</i>, <span class="type">int</span> &amp;<i> pos</i>) const<tt> [virtual]</tt></h3>
+<p>Validates the spinbox <i>input</i> with cursor at position <i>pos</i></p>
+<!-- @@@validate -->
+<!-- $$$valueFromText[overload1]$$$valueFromTextconstQString& -->
+<h3 class="fn"><a name="valueFromText"></a><span class="type">qlonglong</span> QwwLongSpinBox::<span class="name">valueFromText</span>(const <span class="type">QString</span> &amp;<i> text</i>) const<tt> [virtual protected]</tt></h3>
+<p>Returns numerical representation of the <i>text</i>.</p>
+<!-- @@@valueFromText -->
+</div>
+<div class="footer"> <img src="images/ww-logo.png" style="height: 24px; margin-top: -10px;" align="right" /> Copyright (C) 2014 Witold Wysota</div></body>
+</html>

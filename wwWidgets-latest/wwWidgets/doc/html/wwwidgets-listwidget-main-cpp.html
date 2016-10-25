@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>main.cpp Example File (listwidget/main.cpp) | wwWidgets 1.0</title>
+  <link rel="stylesheet" type="text/css" href="style/offline.css" />
+</head>
+<body>
+<div class="header" id="qtdocheader">
+    <div class="main">
+    <div class="main-rounded">
+        <div class="navigationbar">
+        <ul>
+      <li class="first"><a href="index.html">wwWidgets</a></li>
+      <!--  Breadcrumbs go here -->
+<li>main.cpp Example File (listwidget/main.cpp)</li>
+<li id="buildversion">
+</li>
+    </ul>
+    </div>
+</div>
+<div class="content">
+<div class="line">
+<div class="content mainContent">
+<h1 class="title">main.cpp Example File</h1>
+<span class="small-subtitle">listwidget/main.cpp</span>
+<!-- $$$listwidget/main.cpp-description -->
+<div class="descr"> <a name="details"></a>
+<pre class="cpp"><span class="preprocessor">#include &lt;QwwListWidget&gt;</span>
+<span class="preprocessor">#include &lt;QApplication&gt;</span>
+<span class="preprocessor">#include &lt;QLayout&gt;</span>
+<span class="preprocessor">#include &lt;QToolButton&gt;</span>
+<span class="preprocessor">#include &lt;QInputDialog&gt;</span>
+<span class="preprocessor">#include &lt;QwwListNavigator&gt;</span>
+
+<span class="keyword">class</span> Widget : <span class="keyword">public</span> <span class="type">QWidget</span> {
+    Q_OBJECT
+<span class="keyword">public</span>:
+    Widget() : <span class="type">QWidget</span>() {
+        listWidget <span class="operator">=</span> <span class="keyword">new</span> QwwListWidget;
+        listWidget<span class="operator">-</span><span class="operator">&gt;</span>addItems(<span class="type">QStringList</span>() <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">&quot;A&quot;</span> <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">&quot;B&quot;</span> <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">&quot;C&quot;</span> <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">&quot;D&quot;</span>);
+
+        <span class="type">QToolButton</span> <span class="operator">*</span>add <span class="operator">=</span> <span class="keyword">new</span> <span class="type">QToolButton</span>;
+        add<span class="operator">-</span><span class="operator">&gt;</span>setText(tr(<span class="string">&quot;Add&quot;</span>));
+        <span class="type">QToolButton</span> <span class="operator">*</span>rem <span class="operator">=</span> <span class="keyword">new</span> <span class="type">QToolButton</span>;
+        rem<span class="operator">-</span><span class="operator">&gt;</span>setText(tr(<span class="string">&quot;Remove&quot;</span>));
+        <span class="type">QToolButton</span> <span class="operator">*</span>up <span class="operator">=</span> <span class="keyword">new</span> <span class="type">QToolButton</span>;
+        up<span class="operator">-</span><span class="operator">&gt;</span>setText(tr(<span class="string">&quot;Up&quot;</span>));
+        <span class="type">QToolButton</span> <span class="operator">*</span>down <span class="operator">=</span> <span class="keyword">new</span> <span class="type">QToolButton</span>;
+        down<span class="operator">-</span><span class="operator">&gt;</span>setText(tr(<span class="string">&quot;Down&quot;</span>));
+
+        <span class="type">QHBoxLayout</span> <span class="operator">*</span>hlayout <span class="operator">=</span> <span class="keyword">new</span> <span class="type">QHBoxLayout</span>;
+        hlayout<span class="operator">-</span><span class="operator">&gt;</span>addWidget(add);
+        hlayout<span class="operator">-</span><span class="operator">&gt;</span>addWidget(rem);
+        hlayout<span class="operator">-</span><span class="operator">&gt;</span>addStretch();
+        hlayout<span class="operator">-</span><span class="operator">&gt;</span>addWidget(up);
+        hlayout<span class="operator">-</span><span class="operator">&gt;</span>addWidget(down);
+
+        <span class="type">QHBoxLayout</span> <span class="operator">*</span>wl <span class="operator">=</span> <span class="keyword">new</span> <span class="type">QHBoxLayout</span>;
+        wl<span class="operator">-</span><span class="operator">&gt;</span>addWidget(listWidget);
+        nav <span class="operator">=</span> <span class="keyword">new</span> QwwListNavigator;
+        nav<span class="operator">-</span><span class="operator">&gt;</span>setOrientation(<span class="type">Qt</span><span class="operator">::</span>Vertical);
+        wl<span class="operator">-</span><span class="operator">&gt;</span>addWidget(nav);
+        nav<span class="operator">-</span><span class="operator">&gt;</span>setListWidget(listWidget);
+
+        <span class="type">QVBoxLayout</span> <span class="operator">*</span>l <span class="operator">=</span> <span class="keyword">new</span> <span class="type">QVBoxLayout</span>(<span class="keyword">this</span>);
+        l<span class="operator">-</span><span class="operator">&gt;</span>addLayout(wl);
+        l<span class="operator">-</span><span class="operator">&gt;</span>addLayout(hlayout);
+
+        connect(add<span class="operator">,</span> SIGNAL(clicked())<span class="operator">,</span> <span class="keyword">this</span><span class="operator">,</span> SLOT(addItem()));
+        connect(rem<span class="operator">,</span> SIGNAL(clicked())<span class="operator">,</span> listWidget<span class="operator">,</span> SLOT(removeCurrent()));
+        connect(up<span class="operator">,</span> SIGNAL(clicked())<span class="operator">,</span> listWidget<span class="operator">,</span> SLOT(moveCurrentUp()));
+        connect(down<span class="operator">,</span> SIGNAL(clicked())<span class="operator">,</span> listWidget<span class="operator">,</span> SLOT(moveCurrentDown()));
+        connect(listWidget<span class="operator">,</span> SIGNAL(currentAvailable(bool))<span class="operator">,</span> rem<span class="operator">,</span> SLOT(setEnabled( bool )));
+        connect(listWidget<span class="operator">,</span> SIGNAL(moveUpAvailable(bool))<span class="operator">,</span> up<span class="operator">,</span> SLOT(setEnabled( bool )));
+        connect(listWidget<span class="operator">,</span> SIGNAL(moveDownAvailable(bool))<span class="operator">,</span> down<span class="operator">,</span> SLOT(setEnabled( bool )));
+        listWidget<span class="operator">-</span><span class="operator">&gt;</span>setCurrentRow(<span class="number">0</span>);
+    }
+<span class="keyword">private</span> <span class="keyword">slots</span>:
+    <span class="type">void</span> addItem() {
+        <span class="type">QString</span> i <span class="operator">=</span> <span class="type">QInputDialog</span><span class="operator">::</span>getText(<span class="keyword">this</span><span class="operator">,</span> tr(<span class="string">&quot;Add item&quot;</span>)<span class="operator">,</span> tr(<span class="string">&quot;Enter item text&quot;</span>));
+        <span class="keyword">if</span> (i<span class="operator">.</span>isEmpty())
+            <span class="keyword">return</span>;
+        listWidget<span class="operator">-</span><span class="operator">&gt;</span>addItem(i);
+        listWidget<span class="operator">-</span><span class="operator">&gt;</span>setCurrentRow(listWidget<span class="operator">-</span><span class="operator">&gt;</span>count()<span class="operator">-</span><span class="number">1</span>);
+    }
+<span class="keyword">protected</span>:
+    QwwListWidget <span class="operator">*</span>listWidget;
+    QwwListNavigator <span class="operator">*</span>nav;
+};
+
+<span class="preprocessor">#include &quot;main.moc&quot;</span>
+
+<span class="type">int</span> main(<span class="type">int</span> argc<span class="operator">,</span> <span class="type">char</span> <span class="operator">*</span><span class="operator">*</span>argv) {
+    <span class="type">QApplication</span> app(argc<span class="operator">,</span> argv);
+    Widget w;
+    w<span class="operator">.</span>show();
+    <span class="keyword">return</span> app<span class="operator">.</span>exec();
+}</pre>
+</div>
+<!-- @@@listwidget/main.cpp -->
+<div class="footer"> <img src="images/ww-logo.png" style="height: 24px; margin-top: -10px;" align="right" /> Copyright (C) 2014 Witold Wysota</div></body>
+</html>

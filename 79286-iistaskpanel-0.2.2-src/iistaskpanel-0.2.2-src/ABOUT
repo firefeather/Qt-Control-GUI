@@ -1,0 +1,43 @@
+iisTaskPanel is Qt widget like to Windows XP panel for common tasks of a folder,
+available for several platforms (windows, linux, unix, macos etc) with full source code.
+
+It is opensource and free, please see LGPL license for more information:
+http://www.gnu.org/licenses/lgpl.html
+
+(Copyleft) by Industrial Infosystems, 2008-2009
+
+
+Main features
+-------------
+- sliding effect when folding/unfolding the group;
+- headerless groups;
+- free layout of the groups and other widgets within a task panel;
+- customizable color schemes;
+- "mouse over" animation effects;
+- full QAction support;
+- and other stuff.
+
+
+Building
+--------
+It is required to have Qt SDK version 4.3 or newer installed on your machine.
+
+Unpack the archive, then do qmake && make.
+The library will be created in "lib" subdirectory, and appropriate examples
+are in "tests" subfolders.
+
+You can adjust the configuration by editing config.pri file.
+Please follow the comments inside it.
+
+
+Usage
+-----
+Compile the library, then include <iisTaskPanel> in your project's files.
+See examples from "tests" to get familiar with its API.
+
+
+Known projects
+--------------
+iisTaskPanel is being used with:
+- Industrial Infosystems applications (http://ii-system.com)
+- FreeCAD (http://free-cad.sourceforge.net)

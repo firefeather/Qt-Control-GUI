@@ -1,0 +1,101 @@
+*************************************
+    QExtendedWidgets 1.0
+*************************************
+
+* QExtendedGridView : is a piece of software I use extensively in my daliy job.
+  I think could be useful for other, so I decided to publish it.
+
+  It's written in C++ and based on Qt 4.5
+
+  It's designed to improve the behaviour of QT's QTreeView, allowing you to do
+  some things Qt forgot to implement :
+
+    - Logically Group columns into several bands.
+    - Have footers in sync with headers for every colum
+    - Lock leftmost "N" columns while scrolling the remaining
+    - And all of this with a simple QAbstractItemView model
+
+* QExtendedTabWidget : an extension of QTabWidget, allowing to show / hide tabs. 
+  When re-showing a tab it remembers where it was.
+
+*************************************
+  LICENSE
+*************************************
+
+This software may be used under the terms of the GNU General Public License 
+version 3.0 as published by the Free SoftwareFoundation.
+Please review the following information to ensure the GNU General Public 
+License version 3.0 requirements will be met: http://www.gnu.org/copyleft/gpl.html.
+
+You have to receive in with this software a file named COPYING that contains a copy
+of GNU  General Public License version 3.0 as published by the Free SoftwareFoundation.
+
+If you redistribute it, you have to redistibute also a copy of this license file.
+
+*************************************
+INSTALLING QExtendedWidgets 1.0
+*************************************
+
+It's simple. First extract the source package :
+
+untar/unzip QExtendedWidgets.tar.gz
+
+Compile & link it with your code and use it instead of QTreeView / QTabWidget
+
+NOTE :
+
+- QExtendedGridView is not a complete replacement, but only a subset of
+  QTreeView. If you need some more functionality, you can expand it as you want.
+
+- You need the appropriate Qt4 package installed on your system.
+
+*************************************
+    DEMO
+*************************************
+
+cd Test
+qmake
+and then
+make (or nmake under Windows)
+
+NOTE : I simply touched a little bit Qt's Simple Tree Model demo to show how
+QExtendedGridView works. So, many thanks to the trolls. And I think 
+QExtendedTabWidget doesn't need explanation of its use...
+
+*************************************
+    HOW-TO USE
+*************************************
+
+* QExtendedGridView :
+
+To populate Header, bands & footer I use a proxy model, so you ONLY have to
+reimplement headerData method from QAbstractItemView having in mid :
+
+- Section -1 to -N are requests to footer data. To know wich section, you have to
+  calculate newSection = - section -1 and answer a correct info depending on role.
+
+- To populate header band's roles , QExtendedGridVeiw adds Qt::UserRole to to role
+  requested, so  you will receive a Qt::UserRole + Qt::BackgroundRole instead of
+  Qt::BackgroundRole in bands requests.
+
+And no more, look at the sources to know the interface, it's easy & simple to work with this.
+
+* QExtendedTabWidget :
+
+Replace any QTabWidget you have and you can hide / show tabs easily
+
+*************************************
+  SUPPORTED PLATFORMS
+*************************************
+
+QExtendedGridView supports all of platforms that Qt4.5 does.
+
+At least Windows / Linux ( where it's tested, but there is no reason not to work
+on Mac... )
+
+Have fun !!
+
+    Jordi Pujol
+
+    You can contact me at : yuri.podiolu<at>gmail.com
+

@@ -1,0 +1,132 @@
+<ui version="4.0" >
+ <class>iisTextEditorDialogClass</class>
+ <widget class="QDialog" name="iisTextEditorDialogClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Text Input</string>
+  </property>
+  <layout class="QGridLayout" >
+   <property name="margin" >
+    <number>9</number>
+   </property>
+   <property name="spacing" >
+    <number>6</number>
+   </property>
+   <item row="2" column="0" >
+    <widget class="QDialogButtonBox" name="buttonBox" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons" >
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::NoButton|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" >
+    <widget class="QWidget" native="1" name="widgetTB" >
+     <property name="minimumSize" >
+      <size>
+       <width>0</width>
+       <height>30</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" >
+    <widget class="QTextEdit" name="textEdit" />
+   </item>
+  </layout>
+  <action name="actionTextBold" >
+   <property name="icon" >
+    <iconset resource="../../images/images.qrc" >:/images/textbold.xpm</iconset>
+   </property>
+   <property name="text" >
+    <string>Bold</string>
+   </property>
+   <property name="iconText" >
+    <string>Bold</string>
+   </property>
+   <property name="toolTip" >
+    <string>Make selected text Bold</string>
+   </property>
+  </action>
+  <action name="actionTextUnderline" >
+   <property name="icon" >
+    <iconset resource="../../images/images.qrc" >:/images/textunder.xpm</iconset>
+   </property>
+   <property name="text" >
+    <string>Underline</string>
+   </property>
+   <property name="toolTip" >
+    <string>Make selected text Underlined</string>
+   </property>
+  </action>
+  <action name="actionTextItalic" >
+   <property name="icon" >
+    <iconset resource="../../images/images.qrc" >:/images/textitalic.xpm</iconset>
+   </property>
+   <property name="text" >
+    <string>Italic</string>
+   </property>
+   <property name="toolTip" >
+    <string>Make selected text Italic</string>
+   </property>
+  </action>
+  <action name="actionClear" >
+   <property name="icon" >
+    <iconset resource="../../images/images.qrc" >:/images/filenew.xpm</iconset>
+   </property>
+   <property name="text" >
+    <string>Clear</string>
+   </property>
+   <property name="toolTip" >
+    <string>Clear Text</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <resources>
+  <include location="../../images/images.qrc" />
+ </resources>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>iisTextEditorDialogClass</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>256</x>
+     <y>282</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>190</x>
+     <y>294</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>iisTextEditorDialogClass</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>348</x>
+     <y>282</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>289</x>
+     <y>293</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

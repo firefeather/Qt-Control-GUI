@@ -1,0 +1,1 @@
+#include "../../scr/QIrDock/ui/qirabstractdock_ui.h"

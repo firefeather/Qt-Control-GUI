@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=QtBitcoinTrader
+GenericName=Secure Multi Trading Client
+Exec=QtBitcoinTrader
+Icon=QtBitcoinTrader
+Terminal=false
+Type=Application
+Categories=Qt;Office;Finance;
+

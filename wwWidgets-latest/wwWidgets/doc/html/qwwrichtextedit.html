@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- qwwrichtextedit.cpp -->
+  <title>QwwRichTextEdit Class | wwWidgets 1.0</title>
+  <link rel="stylesheet" type="text/css" href="style/offline.css" />
+</head>
+<body>
+<div class="header" id="qtdocheader">
+    <div class="main">
+    <div class="main-rounded">
+        <div class="navigationbar">
+        <ul>
+      <li class="first"><a href="index.html">wwWidgets</a></li>
+      <!--  Breadcrumbs go here -->
+<li>QwwRichTextEdit</li>
+<li id="buildversion">
+</li>
+    </ul>
+    </div>
+</div>
+<div class="content">
+<div class="line">
+<div class="content mainContent">
+<div class="toc">
+<h3><a name="toc">Contents</a></h3>
+<ul>
+<li class="level1"><a href="#public-types">Public Types</a></li>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#public-functions">Public Functions</a></li>
+<li class="level1"><a href="#public-slots">Public Slots</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<h1 class="title">QwwRichTextEdit Class</h1>
+<!-- $$$QwwRichTextEdit-brief -->
+<p>The QwwRichTextEdit widget provides a drop-in replacement for QTextEdit that contains a toolbar for editing rich text data. <a href="#details">More...</a></p>
+<!-- @@@QwwRichTextEdit -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Header:</td><td class="memItemRight bottomAlign"> </b><tt><span class="preprocessor">#include &lt;QwwRichTextEdit&gt;</span>
+</tt></td></tr></table><ul>
+<li><a href="qwwrichtextedit-members.html">List of all members, including inherited members</a></li>
+</ul>
+<a name="public-types"></a>
+<h2>Public Types</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> enum </td><td class="memItemRight bottomAlign"><b><a href="qwwrichtextedit.html#Action-enum">Action</a></b> { BoldAction, ItalicAction, UnderlineAction, LeftAlignAction, ..., FontSizeAction }</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> enum </td><td class="memItemRight bottomAlign"><b><a href="qwwrichtextedit.html#Option-enum">Option</a></b> { NoOptions, Style, Alignment, FontFamily, FontSize, Color }</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> flags </td><td class="memItemRight bottomAlign"><b><a href="qwwrichtextedit.html#Option-enum">Options</a></b></td></tr>
+</table>
+<a name="properties"></a>
+<h2>Properties</h2>
+<ul>
+<li class="fn"><b><a href="qwwrichtextedit.html#options-prop">options</a></b> : Options</li>
+</ul>
+<a name="public-functions"></a>
+<h2>Public Functions</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> </td><td class="memItemRight bottomAlign"><b><a href="qwwrichtextedit.html#QwwRichTextEdit">QwwRichTextEdit</a></b>(QWidget *<i> parent</i> = 0)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> Options </td><td class="memItemRight bottomAlign"><b><a href="qwwrichtextedit.html#options-prop">options</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> QAction * </td><td class="memItemRight bottomAlign"><b><a href="qwwrichtextedit.html#toolBarAction">toolBarAction</a></b>(Action<i> act</i>) const</td></tr>
+</table>
+<a name="public-slots"></a>
+<h2>Public Slots</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwrichtextedit.html#changeAlignment">changeAlignment</a></b>(QAction *<i> a</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwrichtextedit.html#setBold">setBold</a></b>(bool<i> v</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwrichtextedit.html#setColor">setColor</a></b>(const QColor &amp;<i> c</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwrichtextedit.html#setFont">setFont</a></b>(const QFont &amp;<i> f</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwrichtextedit.html#setItalic">setItalic</a></b>(bool<i> v</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwrichtextedit.html#setList">setList</a></b>(bool<i> v</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwrichtextedit.html#options-prop">setOptions</a></b>(Options<i> opt</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwrichtextedit.html#setUnderline">setUnderline</a></b>(bool<i> v</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwrichtextedit.html#updateCurrentBlockFormat">updateCurrentBlockFormat</a></b>()</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwrichtextedit.html#updateCurrentCharFormat">updateCurrentCharFormat</a></b>(const QTextCharFormat &amp;<i> fmt</i>)</td></tr>
+</table>
+<a name="details"></a>
+<!-- $$$QwwRichTextEdit-description -->
+<div class="descr">
+<h2>Detailed Description</h2>
+<p>The QwwRichTextEdit widget provides a drop-in replacement for QTextEdit that contains a toolbar for editing rich text data.</p>
+</div>
+<!-- @@@QwwRichTextEdit -->
+<div class="types">
+<h2>Member Type Documentation</h2>
+<!-- $$$Action$$$BoldAction$$$ItalicAction$$$UnderlineAction$$$LeftAlignAction$$$RightAlignAction$$$AlignCenterAction$$$JustifyAction$$$ColorAction$$$FontFamilyAction$$$FontSizeAction -->
+<h3 class="fn"><a name="Action-enum"></a>enum QwwRichTextEdit::<span class="name">Action</span></h3>
+<table class="valuelist"><tr valign="top" class="odd"><th class="tblConst">Constant</th><th class="tblval">Value</th><th class="tbldscr">Description</th></tr>
+<tr><td class="topAlign"><tt>QwwRichTextEdit::BoldAction</tt></td><td class="topAlign"><tt>0</tt></td><td class="topAlign">Makes the text bold</td></tr>
+<tr><td class="topAlign"><tt>QwwRichTextEdit::ItalicAction</tt></td><td class="topAlign"><tt>1</tt></td><td class="topAlign">Makes the text italic</td></tr>
+<tr><td class="topAlign"><tt>QwwRichTextEdit::UnderlineAction</tt></td><td class="topAlign"><tt>2</tt></td><td class="topAlign">Makes the text underlined</td></tr>
+<tr><td class="topAlign"><tt>QwwRichTextEdit::LeftAlignAction</tt></td><td class="topAlign"><tt>3</tt></td><td class="topAlign">Makes the text left aligned</td></tr>
+<tr><td class="topAlign"><tt>QwwRichTextEdit::RightAlignAction</tt></td><td class="topAlign"><tt>4</tt></td><td class="topAlign">Makes the text right aligned</td></tr>
+<tr><td class="topAlign"><tt>QwwRichTextEdit::AlignCenterAction</tt></td><td class="topAlign"><tt>5</tt></td><td class="topAlign">Makes the text aligned to the centre</td></tr>
+<tr><td class="topAlign"><tt>QwwRichTextEdit::JustifyAction</tt></td><td class="topAlign"><tt>6</tt></td><td class="topAlign">Makes the text justified</td></tr>
+<tr><td class="topAlign"><tt>QwwRichTextEdit::ColorAction</tt></td><td class="topAlign"><tt>7</tt></td><td class="topAlign">Changes the color of the text</td></tr>
+<tr><td class="topAlign"><tt>QwwRichTextEdit::FontFamilyAction</tt></td><td class="topAlign"><tt>8</tt></td><td class="topAlign">Changes the font family of the text</td></tr>
+<tr><td class="topAlign"><tt>QwwRichTextEdit::FontSizeAction</tt></td><td class="topAlign"><tt>9</tt></td><td class="topAlign">Changes the font size of the text</td></tr>
+</table>
+<!-- @@@Action -->
+<!-- $$$Option$$$NoOptions$$$Style$$$Alignment$$$FontFamily$$$FontSize$$$Color -->
+<h3 class="flags"><a name="Option-enum"></a>enum QwwRichTextEdit::<span class="name">Option</span><br/>flags QwwRichTextEdit::<span class="name">Options</span></h3>
+<table class="valuelist"><tr valign="top" class="odd"><th class="tblConst">Constant</th><th class="tblval">Value</th><th class="tbldscr">Description</th></tr>
+<tr><td class="topAlign"><tt>QwwRichTextEdit::NoOptions</tt></td><td class="topAlign"><tt>0x0</tt></td><td class="topAlign">No options are set</td></tr>
+<tr><td class="topAlign"><tt>QwwRichTextEdit::Style</tt></td><td class="topAlign"><tt>0x01</tt></td><td class="topAlign">Text style</td></tr>
+<tr><td class="topAlign"><tt>QwwRichTextEdit::Alignment</tt></td><td class="topAlign"><tt>0x02</tt></td><td class="topAlign">Item alignment</td></tr>
+<tr><td class="topAlign"><tt>QwwRichTextEdit::FontFamily</tt></td><td class="topAlign"><tt>0x04</tt></td><td class="topAlign">Font family</td></tr>
+<tr><td class="topAlign"><tt>QwwRichTextEdit::FontSize</tt></td><td class="topAlign"><tt>0x08</tt></td><td class="topAlign">Font size</td></tr>
+<tr><td class="topAlign"><tt>QwwRichTextEdit::Color</tt></td><td class="topAlign"><tt>0x10</tt></td><td class="topAlign">Text color</td></tr>
+</table>
+<p>The Options type is a typedef for <a href="">QFlags</a>&lt;Option&gt;. It stores an OR combination of Option values.</p>
+<!-- @@@Option -->
+</div>
+<div class="prop">
+<h2>Property Documentation</h2>
+<!-- $$$options-prop$$$options$$$setOptionsOptions -->
+<h3 class="fn"><a name="options-prop"></a><span class="name">options</span> : <span class="type"><a href="qwwrichtextedit.html#Option-enum">Options</a></span></h3>
+<p>This property holds this property holds the active set of options.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> Options </td><td class="memItemRight bottomAlign"><span class="name"><b>options</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setOptions</b></span>(Options<i> opt</i>)</td></tr>
+</table>
+<!-- @@@options -->
+</div>
+<div class="func">
+<h2>Member Function Documentation</h2>
+<!-- $$$QwwRichTextEdit[overload1]$$$QwwRichTextEditQWidget* -->
+<h3 class="fn"><a name="QwwRichTextEdit"></a>QwwRichTextEdit::<span class="name">QwwRichTextEdit</span>(<span class="type">QWidget</span> *<i> parent</i> = 0)</h3>
+<p>Constructs a rich text edit with a given <i>parent</i></p>
+<!-- @@@QwwRichTextEdit -->
+<!-- $$$changeAlignment[overload1]$$$changeAlignmentQAction* -->
+<h3 class="fn"><a name="changeAlignment"></a><span class="type">void</span> QwwRichTextEdit::<span class="name">changeAlignment</span>(<span class="type">QAction</span> *<i> a</i>)<tt> [slot]</tt></h3>
+<p>Changes alignment of the text to the one specified by action <i>a</i></p>
+<!-- @@@changeAlignment -->
+<!-- $$$setBold[overload1]$$$setBoldbool -->
+<h3 class="fn"><a name="setBold"></a><span class="type">void</span> QwwRichTextEdit::<span class="name">setBold</span>(<span class="type">bool</span><i> v</i>)<tt> [slot]</tt></h3>
+<p>Changes the bold attribute of the selected text to <i>v</i></p>
+<!-- @@@setBold -->
+<!-- $$$setColor[overload1]$$$setColorconstQColor& -->
+<h3 class="fn"><a name="setColor"></a><span class="type">void</span> QwwRichTextEdit::<span class="name">setColor</span>(const <span class="type">QColor</span> &amp;<i> c</i>)<tt> [slot]</tt></h3>
+<p>Changes the color of the selected text to <i>c</i></p>
+<!-- @@@setColor -->
+<!-- $$$setFont[overload1]$$$setFontconstQFont& -->
+<h3 class="fn"><a name="setFont"></a><span class="type">void</span> QwwRichTextEdit::<span class="name">setFont</span>(const <span class="type">QFont</span> &amp;<i> f</i>)<tt> [slot]</tt></h3>
+<p>Changes the font of the selected text to <i>f</i></p>
+<!-- @@@setFont -->
+<!-- $$$setItalic[overload1]$$$setItalicbool -->
+<h3 class="fn"><a name="setItalic"></a><span class="type">void</span> QwwRichTextEdit::<span class="name">setItalic</span>(<span class="type">bool</span><i> v</i>)<tt> [slot]</tt></h3>
+<p>Changes the italic attribute of the selected text to <i>v</i></p>
+<!-- @@@setItalic -->
+<!-- $$$setList[overload1]$$$setListbool -->
+<h3 class="fn"><a name="setList"></a><span class="type">void</span> QwwRichTextEdit::<span class="name">setList</span>(<span class="type">bool</span><i> v</i>)<tt> [slot]</tt></h3>
+<p>Changes the list attribute of the selected text to <i>v</i></p>
+<!-- @@@setList -->
+<!-- $$$setUnderline[overload1]$$$setUnderlinebool -->
+<h3 class="fn"><a name="setUnderline"></a><span class="type">void</span> QwwRichTextEdit::<span class="name">setUnderline</span>(<span class="type">bool</span><i> v</i>)<tt> [slot]</tt></h3>
+<p>Changes the underline attribute of the selected text to <i>v</i></p>
+<!-- @@@setUnderline -->
+<!-- $$$toolBarAction[overload1]$$$toolBarActionAction -->
+<h3 class="fn"><a name="toolBarAction"></a><span class="type">QAction</span> * QwwRichTextEdit::<span class="name">toolBarAction</span>(<span class="type"><a href="qwwrichtextedit.html#Action-enum">Action</a></span><i> act</i>) const</h3>
+<p>Returns the QAction object associated with action <i>act</i></p>
+<!-- @@@toolBarAction -->
+<!-- $$$updateCurrentBlockFormat[overload1]$$$updateCurrentBlockFormat -->
+<h3 class="fn"><a name="updateCurrentBlockFormat"></a><span class="type">void</span> QwwRichTextEdit::<span class="name">updateCurrentBlockFormat</span>()<tt> [slot]</tt></h3>
+<p>Updates the format of the selected text</p>
+<!-- @@@updateCurrentBlockFormat -->
+<!-- $$$updateCurrentCharFormat[overload1]$$$updateCurrentCharFormatconstQTextCharFormat& -->
+<h3 class="fn"><a name="updateCurrentCharFormat"></a><span class="type">void</span> QwwRichTextEdit::<span class="name">updateCurrentCharFormat</span>(const <span class="type">QTextCharFormat</span> &amp;<i> fmt</i>)<tt> [slot]</tt></h3>
+<p>Updates actions to reflect the format specified by <i>fmt</i></p>
+<!-- @@@updateCurrentCharFormat -->
+</div>
+<div class="footer"> <img src="images/ww-logo.png" style="height: 24px; margin-top: -10px;" align="right" /> Copyright (C) 2014 Witold Wysota</div></body>
+</html>

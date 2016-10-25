@@ -1,0 +1,29 @@
+#ifndef MAIN_H
+#define MAIN_H
+#include "EnumComboBox.h"
+
+//! Only enums declared within a QObject will work
+class ExampleClass : public QObject
+{
+    Q_OBJECT
+public:
+    enum Type
+    {
+        Apple,
+        Pear,
+        Banana,
+        Pineapple
+    };
+
+    // You need to make the enum available to qt
+    Q_ENUMS(Type)
+};
+
+// ... and declare it as a MetaType
+Q_DECLARE_METATYPE(ExampleClass::Type)
+                   
+// This macro will generate a class called NemoExampleClassTypeQComboBox - it is a ComboBox that has the enum values (translated into strings)
+// as items
+NEMO_DECLARE_ENUM_QCOMBOBOX(ExampleClass, Type)
+
+#endif // MAIN_H

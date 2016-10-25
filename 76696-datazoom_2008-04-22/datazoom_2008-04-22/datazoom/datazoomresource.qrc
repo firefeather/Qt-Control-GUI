@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/16x16" >
+        <file>icons/16x16/actions/fileprint.png</file>
+        <file>icons/16x16/actions/preview.png</file>
+        <file>icons/16x16/apps/kcalc.png</file>
+        <file>icons/16x16/mime/pdf.png</file>
+    </qresource>
+    <qresource prefix="/22x22" >
+        <file>icons/22x22/add.png</file>
+        <file>icons/22x22/configure.png</file>
+        <file>icons/22x22/home.png</file>
+        <file>icons/22x22/locationbar_erase.png</file>
+        <file>icons/22x22/remove.png</file>
+        <file>icons/22x22/save.png</file>
+        <file>icons/22x22/stop.png</file>
+    </qresource>
+</RCC>

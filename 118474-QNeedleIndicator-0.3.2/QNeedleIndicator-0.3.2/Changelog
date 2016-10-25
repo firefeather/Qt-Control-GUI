@@ -1,0 +1,23 @@
+0.3.2 - 16-10-2010
+Fixed negative minumum range
+
+0.3.1 - 17-02-2010
+Fixed licence preamble
+
+0.3.0 - 14-01-2010
+Minor ticks
+Licence
+Documentation update
+
+0.2.0 - 13-01-2010
+QtDesigner plugin with properties
+
+0.1.1 - 13-01-2010
+Added code comments
+Added Doxygen documentation
+Removed some commented-out debug code
+Added screenshot
+Central shield gradient
+
+0.1.0 - 12-01-2010
+Initial release

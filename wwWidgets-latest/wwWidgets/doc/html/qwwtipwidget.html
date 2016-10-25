@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- qwwtipwidget.cpp -->
+  <title>QwwTipWidget Class | wwWidgets 1.0</title>
+  <link rel="stylesheet" type="text/css" href="style/offline.css" />
+</head>
+<body>
+<div class="header" id="qtdocheader">
+    <div class="main">
+    <div class="main-rounded">
+        <div class="navigationbar">
+        <ul>
+      <li class="first"><a href="index.html">wwWidgets</a></li>
+      <!--  Breadcrumbs go here -->
+<li>QwwTipWidget</li>
+<li id="buildversion">
+</li>
+    </ul>
+    </div>
+</div>
+<div class="content">
+<div class="line">
+<div class="content mainContent">
+<div class="toc">
+<h3><a name="toc">Contents</a></h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#public-functions">Public Functions</a></li>
+<li class="level1"><a href="#public-slots">Public Slots</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<h1 class="title">QwwTipWidget Class</h1>
+<!-- $$$QwwTipWidget-brief -->
+<p>The QwwTipWidget class provides a widget that displays application tips. <a href="#details">More...</a></p>
+<!-- @@@QwwTipWidget -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Header:</td><td class="memItemRight bottomAlign"> </b><tt><span class="preprocessor">#include &lt;QwwTipWidget&gt;</span>
+</tt></td></tr></table><ul>
+<li><a href="qwwtipwidget-members.html">List of all members, including inherited members</a></li>
+</ul>
+<a name="properties"></a>
+<h2>Properties</h2>
+<table class="propsummary">
+<tr><td class="topAlign"><ul>
+<li class="fn"><b><a href="qwwtipwidget.html#checkVisible-prop">checkVisible</a></b> : bool</li>
+<li class="fn"><b><a href="qwwtipwidget.html#closeVisible-prop">closeVisible</a></b> : bool</li>
+<li class="fn"><b><a href="qwwtipwidget.html#currentTip-prop">currentTip</a></b> : int</li>
+<li class="fn"><b><a href="qwwtipwidget.html#defaultIcon-prop">defaultIcon</a></b> : QIcon</li>
+</ul></td><td class="topAlign"><ul>
+<li class="fn"><b><a href="qwwtipwidget.html#iconAlignment-prop">iconAlignment</a></b> : Qt::Alignment</li>
+<li class="fn"><b><a href="qwwtipwidget.html#iconSize-prop">iconSize</a></b> : QSize</li>
+<li class="fn"><b><a href="qwwtipwidget.html#tips-prop">tips</a></b> : QStringList</li>
+<li class="fn"><b><a href="qwwtipwidget.html#tipsEnabled-prop">tipsEnabled</a></b> : const bool</li>
+</ul>
+</td></tr>
+</table>
+<a name="public-functions"></a>
+<h2>Public Functions</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> </td><td class="memItemRight bottomAlign"><b><a href="qwwtipwidget.html#QwwTipWidget">QwwTipWidget</a></b>(const QStringList &amp;<i> list</i>, QWidget *<i> parent</i> = 0)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> QFrame::Shape </td><td class="memItemRight bottomAlign"><b><a href="qwwtipwidget.html#canvasFrameShape">canvasFrameShape</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> bool </td><td class="memItemRight bottomAlign"><b><a href="qwwtipwidget.html#checkVisible-prop">checkIsVisible</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> const QPushButton * </td><td class="memItemRight bottomAlign"><b><a href="qwwtipwidget.html#closeButton">closeButton</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> bool </td><td class="memItemRight bottomAlign"><b><a href="qwwtipwidget.html#closeVisible-prop">closeIsVisible</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> int </td><td class="memItemRight bottomAlign"><b><a href="qwwtipwidget.html#currentTip-prop">currentTip</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> QIcon </td><td class="memItemRight bottomAlign"><b><a href="qwwtipwidget.html#defaultIcon-prop">defaultIcon</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> QWidget * </td><td class="memItemRight bottomAlign"><b><a href="qwwtipwidget.html#headerWidget">headerWidget</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> Qt::Alignment </td><td class="memItemRight bottomAlign"><b><a href="qwwtipwidget.html#iconAlignment-prop">iconAlignment</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> QSize </td><td class="memItemRight bottomAlign"><b><a href="qwwtipwidget.html#iconSize-prop">iconSize</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> const QPushButton * </td><td class="memItemRight bottomAlign"><b><a href="qwwtipwidget.html#nextButton">nextButton</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> const QPushButton * </td><td class="memItemRight bottomAlign"><b><a href="qwwtipwidget.html#prevButton">prevButton</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwtipwidget.html#setCanvasFrameShape">setCanvasFrameShape</a></b>(QFrame::Shape<i> s</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwtipwidget.html#setHeaderWidget">setHeaderWidget</a></b>(QWidget *<i> hw</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwtipwidget.html#iconAlignment-prop">setIconAlignment</a></b>(Qt::Alignment)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> const QTextBrowser * </td><td class="memItemRight bottomAlign"><b><a href="qwwtipwidget.html#tipCanvas">tipCanvas</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> const QStringList </td><td class="memItemRight bottomAlign"><b><a href="qwwtipwidget.html#tips-prop">tips</a></b>() const</td></tr>
+</table>
+<a name="public-slots"></a>
+<h2>Public Slots</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwtipwidget.html#nextTip">nextTip</a></b>()</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwtipwidget.html#prevTip">prevTip</a></b>()</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwtipwidget.html#setCheckHidden">setCheckHidden</a></b>(bool<i> v</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwtipwidget.html#checkVisible-prop">setCheckVisible</a></b>(bool<i> v</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwtipwidget.html#setCloseHidden">setCloseHidden</a></b>(bool<i> v</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwtipwidget.html#closeVisible-prop">setCloseVisible</a></b>(bool<i> v</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwtipwidget.html#currentTip-prop">setCurrentTip</a></b>(int<i> v</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwtipwidget.html#defaultIcon-prop">setDefaultIcon</a></b>(const QIcon &amp;)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwtipwidget.html#iconSize-prop">setIconSize</a></b>(const QSize &amp;)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwtipwidget.html#tips-prop">setTips</a></b>(const QStringList &amp;<i> slist</i>)</td></tr>
+</table>
+<a name="signals"></a>
+<h2>Signals</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwtipwidget.html#tipChanged">tipChanged</a></b>(int<i> index</i>)</td></tr>
+</table>
+<a name="details"></a>
+<!-- $$$QwwTipWidget-description -->
+<div class="descr">
+<h2>Detailed Description</h2>
+<p>The QwwTipWidget class provides a widget that displays application tips.</p>
+<p>The widget can be embedded into a dialog and connected to its signals to provide a quick way to show startup tips for the user.</p>
+<p class="centerAlign"><img src="images/qwwtipwidget.png" alt="QwwTipWidget" /></p><p>Tips displayed are adjustable using the <i>tips</i> property. The widget can contain a checkbox that asks whether the user wants to see the tips again next time the application is started. This checkbox doesn't implement any logic, if you want to have that behavior in your application, you have to implement it yourself using some persistent data storage like QSettings.</p>
+<p>Tips are displayed in rich text, so they can contain formatting, images and other elements that can be rendered using Scribe.</p>
+</div>
+<!-- @@@QwwTipWidget -->
+<div class="prop">
+<h2>Property Documentation</h2>
+<!-- $$$checkVisible-prop$$$checkIsVisible$$$setCheckVisiblebool -->
+<h3 class="fn"><a name="checkVisible-prop"></a><span class="name">checkVisible</span> : <span class="type">bool</span></h3>
+<p>This property holds whether the &quot;show tips on startup&quot; checkbox is visible.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> bool </td><td class="memItemRight bottomAlign"><span class="name"><b>checkIsVisible</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setCheckVisible</b></span>(bool<i> v</i>)</td></tr>
+</table>
+<!-- @@@checkVisible -->
+<!-- $$$closeVisible-prop$$$closeIsVisible$$$setCloseVisiblebool -->
+<h3 class="fn"><a name="closeVisible-prop"></a><span class="name">closeVisible</span> : <span class="type">bool</span></h3>
+<p>This property holds whether the close button is visible.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> bool </td><td class="memItemRight bottomAlign"><span class="name"><b>closeIsVisible</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setCloseVisible</b></span>(bool<i> v</i>)</td></tr>
+</table>
+<!-- @@@closeVisible -->
+<!-- $$$currentTip-prop$$$currentTip$$$setCurrentTipint -->
+<h3 class="fn"><a name="currentTip-prop"></a><span class="name">currentTip</span> : <span class="type">int</span></h3>
+<p>This property holds index of the currently shown tip.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> int </td><td class="memItemRight bottomAlign"><span class="name"><b>currentTip</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setCurrentTip</b></span>(int<i> v</i>)</td></tr>
+</table>
+<!-- @@@currentTip -->
+<!-- $$$defaultIcon-prop$$$defaultIcon$$$setDefaultIconconstQIcon& -->
+<h3 class="fn"><a name="defaultIcon-prop"></a><span class="name">defaultIcon</span> : <span class="type">QIcon</span></h3>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> QIcon </td><td class="memItemRight bottomAlign"><span class="name"><b>defaultIcon</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setDefaultIcon</b></span>(const QIcon &amp;)</td></tr>
+</table>
+<!-- @@@defaultIcon -->
+<!-- $$$iconAlignment-prop$$$iconAlignment$$$setIconAlignmentQt::Alignment -->
+<h3 class="fn"><a name="iconAlignment-prop"></a><span class="name">iconAlignment</span> : <span class="type">Qt::Alignment</span></h3>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> Qt::Alignment </td><td class="memItemRight bottomAlign"><span class="name"><b>iconAlignment</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setIconAlignment</b></span>(Qt::Alignment)</td></tr>
+</table>
+<!-- @@@iconAlignment -->
+<!-- $$$iconSize-prop$$$iconSize$$$setIconSizeconstQSize& -->
+<h3 class="fn"><a name="iconSize-prop"></a><span class="name">iconSize</span> : <span class="type">QSize</span></h3>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> QSize </td><td class="memItemRight bottomAlign"><span class="name"><b>iconSize</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setIconSize</b></span>(const QSize &amp;)</td></tr>
+</table>
+<!-- @@@iconSize -->
+<!-- $$$tips-prop$$$tips$$$setTipsconstQStringList& -->
+<h3 class="fn"><a name="tips-prop"></a><span class="name">tips</span> : <span class="type">QStringList</span></h3>
+<p>This property holds a list of tips associated with the widget.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> const QStringList </td><td class="memItemRight bottomAlign"><span class="name"><b>tips</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setTips</b></span>(const QStringList &amp;<i> slist</i>)</td></tr>
+</table>
+<!-- @@@tips -->
+<!-- $$$tipsEnabled-prop -->
+<h3 class="fn"><a name="tipsEnabled-prop"></a><span class="name">tipsEnabled</span> : const <span class="type">bool</span></h3>
+<p>This property holds this property holds whether showing tips is enabled.</p>
+<!-- @@@tipsEnabled -->
+</div>
+<div class="func">
+<h2>Member Function Documentation</h2>
+<!-- $$$QwwTipWidget[overload1]$$$QwwTipWidgetconstQStringList&QWidget* -->
+<h3 class="fn"><a name="QwwTipWidget"></a>QwwTipWidget::<span class="name">QwwTipWidget</span>(const <span class="type">QStringList</span> &amp;<i> list</i>, <span class="type">QWidget</span> *<i> parent</i> = 0)</h3>
+<p>Constructs a tip widget with <i>list</i> of tips and a given <i>parent</i></p>
+<!-- @@@QwwTipWidget -->
+<!-- $$$canvasFrameShape[overload1]$$$canvasFrameShape -->
+<h3 class="fn"><a name="canvasFrameShape"></a><span class="type">QFrame::Shape</span> QwwTipWidget::<span class="name">canvasFrameShape</span>() const</h3>
+<p><b>See also </b><a href="qwwtipwidget.html#setCanvasFrameShape">setCanvasFrameShape</a>().</p>
+<!-- @@@canvasFrameShape -->
+<!-- $$$closeButton[overload1]$$$closeButton -->
+<h3 class="fn"><a name="closeButton"></a>const <span class="type">QPushButton</span> * QwwTipWidget::<span class="name">closeButton</span>() const</h3>
+<p>returns a pointer to the &quot;close&quot; button</p>
+<!-- @@@closeButton -->
+<!-- $$$headerWidget[overload1]$$$headerWidget -->
+<h3 class="fn"><a name="headerWidget"></a><span class="type">QWidget</span> * QwwTipWidget::<span class="name">headerWidget</span>() const</h3>
+<p>returns a pointer to the header widget</p>
+<p><b>See also </b><a href="qwwtipwidget.html#setHeaderWidget">setHeaderWidget</a>().</p>
+<!-- @@@headerWidget -->
+<!-- $$$nextButton[overload1]$$$nextButton -->
+<h3 class="fn"><a name="nextButton"></a>const <span class="type">QPushButton</span> * QwwTipWidget::<span class="name">nextButton</span>() const</h3>
+<p>returns a pointer to the &quot;next&quot; button</p>
+<!-- @@@nextButton -->
+<!-- $$$nextTip[overload1]$$$nextTip -->
+<h3 class="fn"><a name="nextTip"></a><span class="type">void</span> QwwTipWidget::<span class="name">nextTip</span>()<tt> [slot]</tt></h3>
+<p>This slot changes the current tip to the next one. In case the currently displayed tip is the last one, function will make the first tip current.</p>
+<!-- @@@nextTip -->
+<!-- $$$prevButton[overload1]$$$prevButton -->
+<h3 class="fn"><a name="prevButton"></a>const <span class="type">QPushButton</span> * QwwTipWidget::<span class="name">prevButton</span>() const</h3>
+<p>returns a pointer to the &quot;prev&quot; button</p>
+<!-- @@@prevButton -->
+<!-- $$$prevTip[overload1]$$$prevTip -->
+<h3 class="fn"><a name="prevTip"></a><span class="type">void</span> QwwTipWidget::<span class="name">prevTip</span>()<tt> [slot]</tt></h3>
+<p>This slot changes the current tip to the previous one. In case the currently displayed tip is the first one, function will make the last tip current.</p>
+<!-- @@@prevTip -->
+<!-- $$$setCanvasFrameShape[overload1]$$$setCanvasFrameShapeQFrame::Shape -->
+<h3 class="fn"><a name="setCanvasFrameShape"></a><span class="type">void</span> QwwTipWidget::<span class="name">setCanvasFrameShape</span>(<span class="type">QFrame::Shape</span><i> s</i>)</h3>
+<p><b>See also </b><a href="qwwtipwidget.html#canvasFrameShape">canvasFrameShape</a>().</p>
+<!-- @@@setCanvasFrameShape -->
+<!-- $$$setCheckHidden[overload1]$$$setCheckHiddenbool -->
+<h3 class="fn"><a name="setCheckHidden"></a><span class="type">void</span> QwwTipWidget::<span class="name">setCheckHidden</span>(<span class="type">bool</span><i> v</i>)<tt> [slot]</tt></h3>
+<p>Convenience function. Equivalent to setCheckVisible(!<i>v</i>).</p>
+<!-- @@@setCheckHidden -->
+<!-- $$$setCloseHidden[overload1]$$$setCloseHiddenbool -->
+<h3 class="fn"><a name="setCloseHidden"></a><span class="type">void</span> QwwTipWidget::<span class="name">setCloseHidden</span>(<span class="type">bool</span><i> v</i>)<tt> [slot]</tt></h3>
+<p>Convenience function. Equivalent to setCloseVisible(!<i>v</i>).</p>
+<!-- @@@setCloseHidden -->
+<!-- $$$setHeaderWidget[overload1]$$$setHeaderWidgetQWidget* -->
+<h3 class="fn"><a name="setHeaderWidget"></a><span class="type">void</span> QwwTipWidget::<span class="name">setHeaderWidget</span>(<span class="type">QWidget</span> *<i> hw</i>)</h3>
+<p>sets <i>hw</i> as a header of the widget</p>
+<p><b>See also </b><a href="qwwtipwidget.html#headerWidget">headerWidget</a>().</p>
+<!-- @@@setHeaderWidget -->
+<!-- $$$tipCanvas[overload1]$$$tipCanvas -->
+<h3 class="fn"><a name="tipCanvas"></a>const <span class="type">QTextBrowser</span> * QwwTipWidget::<span class="name">tipCanvas</span>() const</h3>
+<p>returns a pointer to the tip canvas</p>
+<!-- @@@tipCanvas -->
+<!-- $$$tipChanged[overload1]$$$tipChangedint -->
+<h3 class="fn"><a name="tipChanged"></a><span class="type">void</span> QwwTipWidget::<span class="name">tipChanged</span>(<span class="type">int</span><i> index</i>)<tt> [signal]</tt></h3>
+<p>This signal is emitted whenever the currently shown tip changes to <i>index</i></p>
+<!-- @@@tipChanged -->
+</div>
+<div class="footer"> <img src="images/ww-logo.png" style="height: 24px; margin-top: -10px;" align="right" /> Copyright (C) 2014 Witold Wysota</div></body>
+</html>

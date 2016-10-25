@@ -1,0 +1,1 @@
+#include "../src/QIrDock/qirparaboliceffectmanager.h"

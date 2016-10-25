@@ -1,0 +1,43 @@
+
+DESCRIPTION:
+^^^^^^^^^^^^
+
+VU Meter
+Many properties can be set in "Property Editor" of Qt Designer
+Custom widget plugin for Qt Designer
+
+
+INSTALLATION:
+^^^^^^^^^^^^^
+
+qmake
+make
+make install (as root, install the libqvumeterplug.so in /usr/lib/qtxx/plugins/designer)
+verify the $LD_LIBRAY_PATH
+
+
+TEST:
+^^^^^
+
+cd /test
+qmake
+make
+in /bin directory the test program
+
+
+
+HARDWARE/SOFTWARE:
+^^^^^^^^^^^^^^^^^^
+
+Build on Linux (ArchLinux) with Qt4 library and QDevelop
+
+
+CHANGELOG
+^^^^^^^^^
+
+
+
+INFO:
+^^^^^
+
+g_cigala@virgilio.it

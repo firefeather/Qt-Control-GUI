@@ -1,0 +1,8 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{SpecialValueList\n||+ SpecialValueList()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty",fontname="FreeSans.ttf"];
+  Node2 [label="{TItemList\n|# m_destroyPixmaps\l|+ TItemList()\l+ TItemList()\l+ TItemList()\l+ ~TItemList()\l+ setItem()\l+ findItem()\l+ findItemByText()\l+ operator\<\<()\l+ operator\<\<()\l+ operator\<\<()\l+ operator\<\<()\l+ operator\<\<()\l+ operator\<\<()\l+ paintComboItem()\l+ compareComboItem()\l+ highlightComboItem()\l+ sizeHintComboItem()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTItemList.html",tooltip="A common list of TItem items."];
+}

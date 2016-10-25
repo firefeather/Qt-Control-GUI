@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file alias="mask">resources/mask.png</file>
+        <file alias="pencil">resources/pencil.png</file>
+    </qresource>
+</RCC>

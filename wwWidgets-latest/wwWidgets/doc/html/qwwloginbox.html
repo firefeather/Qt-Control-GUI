@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- qwwloginbox.cpp -->
+  <title>QwwLoginBox Class | wwWidgets 1.0</title>
+  <link rel="stylesheet" type="text/css" href="style/offline.css" />
+</head>
+<body>
+<div class="header" id="qtdocheader">
+    <div class="main">
+    <div class="main-rounded">
+        <div class="navigationbar">
+        <ul>
+      <li class="first"><a href="index.html">wwWidgets</a></li>
+      <!--  Breadcrumbs go here -->
+<li>QwwLoginBox</li>
+<li id="buildversion">
+</li>
+    </ul>
+    </div>
+</div>
+<div class="content">
+<div class="line">
+<div class="content mainContent">
+<div class="toc">
+<h3><a name="toc">Contents</a></h3>
+<ul>
+<li class="level1"><a href="#public-types">Public Types</a></li>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#public-functions">Public Functions</a></li>
+<li class="level1"><a href="#public-slots">Public Slots</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<h1 class="title">QwwLoginBox Class</h1>
+<!-- $$$QwwLoginBox-brief -->
+<p>The QwwLoginBox class provides a login form with configurable set of fields for logging into different types of services. <a href="#details">More...</a></p>
+<!-- @@@QwwLoginBox -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Header:</td><td class="memItemRight bottomAlign"> </b><tt><span class="preprocessor">#include &lt;QwwLoginBox&gt;</span>
+</tt></td></tr></table><ul>
+<li><a href="qwwloginbox-members.html">List of all members, including inherited members</a></li>
+</ul>
+<a name="public-types"></a>
+<h2>Public Types</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> enum </td><td class="memItemRight bottomAlign"><b><a href="qwwloginbox.html#Field-enum">Field</a></b> { NoFields, HostField, PortField, UserField, ..., ProxyField }</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> flags </td><td class="memItemRight bottomAlign"><b><a href="qwwloginbox.html#Field-enum">Fields</a></b></td></tr>
+</table>
+<a name="properties"></a>
+<h2>Properties</h2>
+<table class="propsummary">
+<tr><td class="topAlign"><ul>
+<li class="fn"><b><a href="qwwloginbox.html#fields-prop">fields</a></b> : Fields</li>
+<li class="fn"><b><a href="qwwloginbox.html#host-prop">host</a></b> : QString</li>
+<li class="fn"><b><a href="qwwloginbox.html#port-prop">port</a></b> : int</li>
+</ul></td><td class="topAlign"><ul>
+<li class="fn"><b><a href="qwwloginbox.html#proxyEnabled-prop">proxyEnabled</a></b> : bool</li>
+<li class="fn"><b><a href="qwwloginbox.html#rememberPassword-prop">rememberPassword</a></b> : bool</li>
+<li class="fn"><b><a href="qwwloginbox.html#user-prop">user</a></b> : const QString</li>
+</ul>
+</td></tr>
+</table>
+<a name="public-functions"></a>
+<h2>Public Functions</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> </td><td class="memItemRight bottomAlign"><b><a href="qwwloginbox.html#QwwLoginBox">QwwLoginBox</a></b>(QWidget *<i> parent</i> = 0)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> Fields </td><td class="memItemRight bottomAlign"><b><a href="qwwloginbox.html#fields-prop">fields</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> QString </td><td class="memItemRight bottomAlign"><b><a href="qwwloginbox.html#host-prop">host</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> bool </td><td class="memItemRight bottomAlign"><b><a href="qwwloginbox.html#isProxyRepeatCorrect">isProxyRepeatCorrect</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> bool </td><td class="memItemRight bottomAlign"><b><a href="qwwloginbox.html#isRepeatCorrect">isRepeatCorrect</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> QString </td><td class="memItemRight bottomAlign"><b><a href="qwwloginbox.html#password">password</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> int </td><td class="memItemRight bottomAlign"><b><a href="qwwloginbox.html#port-prop">port</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> bool </td><td class="memItemRight bottomAlign"><b><a href="qwwloginbox.html#proxyEnabled-prop">proxyIsEnabled</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> bool </td><td class="memItemRight bottomAlign"><b><a href="qwwloginbox.html#rememberPassword-prop">rememberPassword</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwloginbox.html#fields-prop">setFields</a></b>(Fields<i> f</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwloginbox.html#port-prop">setPort</a></b>(int<i> p</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwloginbox.html#proxyEnabled-prop">setProxyEnabled</a></b>(bool<i> v</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwloginbox.html#rememberPassword-prop">setRememberPassword</a></b>(bool<i> r</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> QString </td><td class="memItemRight bottomAlign"><b><a href="qwwloginbox.html#user-prop">user</a></b>() const</td></tr>
+</table>
+<a name="public-slots"></a>
+<h2>Public Slots</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwloginbox.html#host-prop">setHost</a></b>(const QString &amp;<i> t</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwloginbox.html#setUser">setUser</a></b>(const QString &amp;<i> user</i>, const QString &amp;<i> password</i> = QString::null)</td></tr>
+</table>
+<a name="details"></a>
+<!-- $$$QwwLoginBox-description -->
+<div class="descr">
+<h2>Detailed Description</h2>
+<p>The QwwLoginBox class provides a login form with configurable set of fields for logging into different types of services.</p>
+</div>
+<!-- @@@QwwLoginBox -->
+<div class="types">
+<h2>Member Type Documentation</h2>
+<!-- $$$Field$$$NoFields$$$HostField$$$PortField$$$UserField$$$PasswordField$$$RepeatPasswordField$$$RememberPasswordField$$$ProxyField -->
+<h3 class="flags"><a name="Field-enum"></a>enum QwwLoginBox::<span class="name">Field</span><br/>flags QwwLoginBox::<span class="name">Fields</span></h3>
+<table class="valuelist"><tr valign="top" class="odd"><th class="tblConst">Constant</th><th class="tblval">Value</th><th class="tbldscr">Description</th></tr>
+<tr><td class="topAlign"><tt>QwwLoginBox::NoFields</tt></td><td class="topAlign"><tt>0x0</tt></td><td class="topAlign">No fields are visible</td></tr>
+<tr><td class="topAlign"><tt>QwwLoginBox::HostField</tt></td><td class="topAlign"><tt>0x1</tt></td><td class="topAlign">Host name</td></tr>
+<tr><td class="topAlign"><tt>QwwLoginBox::PortField</tt></td><td class="topAlign"><tt>0x2</tt></td><td class="topAlign">Port number</td></tr>
+<tr><td class="topAlign"><tt>QwwLoginBox::UserField</tt></td><td class="topAlign"><tt>0x4</tt></td><td class="topAlign">User (login)</td></tr>
+<tr><td class="topAlign"><tt>QwwLoginBox::PasswordField</tt></td><td class="topAlign"><tt>0x8</tt></td><td class="topAlign">Password</td></tr>
+<tr><td class="topAlign"><tt>QwwLoginBox::RepeatPasswordField</tt></td><td class="topAlign"><tt>0x10</tt></td><td class="topAlign">Password confirmation</td></tr>
+<tr><td class="topAlign"><tt>QwwLoginBox::RememberPasswordField</tt></td><td class="topAlign"><tt>0x20</tt></td><td class="topAlign">&quot;Remember password&quot; checkbox</td></tr>
+<tr><td class="topAlign"><tt>QwwLoginBox::ProxyField</tt></td><td class="topAlign"><tt>0x40</tt></td><td class="topAlign">Network proxy group</td></tr>
+</table>
+<p>The Fields type is a typedef for <a href="">QFlags</a>&lt;Field&gt;. It stores an OR combination of Field values.</p>
+<!-- @@@Field -->
+</div>
+<div class="prop">
+<h2>Property Documentation</h2>
+<!-- $$$fields-prop$$$fields$$$setFieldsFields -->
+<h3 class="fn"><a name="fields-prop"></a><span class="name">fields</span> : <span class="type"><a href="qwwloginbox.html#Field-enum">Fields</a></span></h3>
+<p>This property holds this property holds the set of fields visible in the box.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> Fields </td><td class="memItemRight bottomAlign"><span class="name"><b>fields</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setFields</b></span>(Fields<i> f</i>)</td></tr>
+</table>
+<!-- @@@fields -->
+<!-- $$$host-prop$$$host$$$setHostconstQString& -->
+<h3 class="fn"><a name="host-prop"></a><span class="name">host</span> : <span class="type">QString</span></h3>
+<p>This property holds this property holds the host set in the box.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> QString </td><td class="memItemRight bottomAlign"><span class="name"><b>host</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setHost</b></span>(const QString &amp;<i> t</i>)</td></tr>
+</table>
+<!-- @@@host -->
+<!-- $$$port-prop$$$port$$$setPortint -->
+<h3 class="fn"><a name="port-prop"></a><span class="name">port</span> : <span class="type">int</span></h3>
+<p>This property holds this property holds the port set in the box.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> int </td><td class="memItemRight bottomAlign"><span class="name"><b>port</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setPort</b></span>(int<i> p</i>)</td></tr>
+</table>
+<!-- @@@port -->
+<!-- $$$proxyEnabled-prop$$$proxyIsEnabled$$$setProxyEnabledbool -->
+<h3 class="fn"><a name="proxyEnabled-prop"></a><span class="name">proxyEnabled</span> : <span class="type">bool</span></h3>
+<p>This property holds the property holds whether the proxy field is enabled.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> bool </td><td class="memItemRight bottomAlign"><span class="name"><b>proxyIsEnabled</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setProxyEnabled</b></span>(bool<i> v</i>)</td></tr>
+</table>
+<!-- @@@proxyEnabled -->
+<!-- $$$rememberPassword-prop$$$rememberPassword$$$setRememberPasswordbool -->
+<h3 class="fn"><a name="rememberPassword-prop"></a><span class="name">rememberPassword</span> : <span class="type">bool</span></h3>
+<p>This property holds the property holds whether the "remember password" checkbox is visible and checked.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> bool </td><td class="memItemRight bottomAlign"><span class="name"><b>rememberPassword</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setRememberPassword</b></span>(bool<i> r</i>)</td></tr>
+</table>
+<!-- @@@rememberPassword -->
+<!-- $$$user-prop$$$user -->
+<h3 class="fn"><a name="user-prop"></a><span class="name">user</span> : const <span class="type">QString</span></h3>
+<p>This property holds this property holds the user set in the box.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> QString </td><td class="memItemRight bottomAlign"><span class="name"><b>user</b></span>() const</td></tr>
+</table>
+<!-- @@@user -->
+</div>
+<div class="func">
+<h2>Member Function Documentation</h2>
+<!-- $$$QwwLoginBox[overload1]$$$QwwLoginBoxQWidget* -->
+<h3 class="fn"><a name="QwwLoginBox"></a>QwwLoginBox::<span class="name">QwwLoginBox</span>(<span class="type">QWidget</span> *<i> parent</i> = 0)</h3>
+<p>Constructs a login box with a given <i>parent</i>.</p>
+<!-- @@@QwwLoginBox -->
+<!-- $$$isProxyRepeatCorrect[overload1]$$$isProxyRepeatCorrect -->
+<h3 class="fn"><a name="isProxyRepeatCorrect"></a><span class="type">bool</span> QwwLoginBox::<span class="name">isProxyRepeatCorrect</span>() const</h3>
+<p>Returns whether both password fields in the proxy section contain the same data.</p>
+<!-- @@@isProxyRepeatCorrect -->
+<!-- $$$isRepeatCorrect[overload1]$$$isRepeatCorrect -->
+<h3 class="fn"><a name="isRepeatCorrect"></a><span class="type">bool</span> QwwLoginBox::<span class="name">isRepeatCorrect</span>() const</h3>
+<p>Returns whether both password fields contain the same data.</p>
+<!-- @@@isRepeatCorrect -->
+<!-- $$$password[overload1]$$$password -->
+<h3 class="fn"><a name="password"></a><span class="type">QString</span> QwwLoginBox::<span class="name">password</span>() const</h3>
+<p>Returns the password set in the box.</p>
+<!-- @@@password -->
+<!-- $$$setUser[overload1]$$$setUserconstQString&constQString& -->
+<h3 class="fn"><a name="setUser"></a><span class="type">void</span> QwwLoginBox::<span class="name">setUser</span>(const <span class="type">QString</span> &amp;<i> user</i>, const <span class="type">QString</span> &amp;<i> password</i> = QString::null)<tt> [slot]</tt></h3>
+<p>Sets the <i>user</i> and <i>password</i> set in the box.</p>
+<p><b>See also </b><a href="qwwloginbox.html#user-prop">user</a>().</p>
+<!-- @@@setUser -->
+</div>
+<div class="footer"> <img src="images/ww-logo.png" style="height: 24px; margin-top: -10px;" align="right" /> Copyright (C) 2014 Witold Wysota</div></body>
+</html>

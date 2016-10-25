@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- qwwconfigwidget.cpp -->
+  <title>QwwConfigWidget Class | wwWidgets 1.0</title>
+  <link rel="stylesheet" type="text/css" href="style/offline.css" />
+</head>
+<body>
+<div class="header" id="qtdocheader">
+    <div class="main">
+    <div class="main-rounded">
+        <div class="navigationbar">
+        <ul>
+      <li class="first"><a href="index.html">wwWidgets</a></li>
+      <!--  Breadcrumbs go here -->
+<li>QwwConfigWidget</li>
+<li id="buildversion">
+</li>
+    </ul>
+    </div>
+</div>
+<div class="content">
+<div class="line">
+<div class="content mainContent">
+<div class="toc">
+<h3><a name="toc">Contents</a></h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#public-functions">Public Functions</a></li>
+<li class="level1"><a href="#public-slots">Public Slots</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<h1 class="title">QwwConfigWidget Class</h1>
+<!-- $$$QwwConfigWidget-brief -->
+<p>A multipage container widget organizing configuration pages <a href="#details">More...</a></p>
+<!-- @@@QwwConfigWidget -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Header:</td><td class="memItemRight bottomAlign"> </b><tt><span class="preprocessor">#include &lt;QwwConfigWidget&gt;</span>
+</tt></td></tr></table><ul>
+<li><a href="qwwconfigwidget-members.html">List of all members, including inherited members</a></li>
+</ul>
+<a name="properties"></a>
+<h2>Properties</h2>
+<ul>
+<li class="fn"><b><a href="qwwconfigwidget.html#count-prop">count</a></b> : const int</li>
+<li class="fn"><b><a href="qwwconfigwidget.html#currentIndex-prop">currentIndex</a></b> : int</li>
+<li class="fn"><b><a href="qwwconfigwidget.html#iconSize-prop">iconSize</a></b> : QSize</li>
+</ul>
+<a name="public-functions"></a>
+<h2>Public Functions</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> </td><td class="memItemRight bottomAlign"><b><a href="qwwconfigwidget.html#QwwConfigWidget">QwwConfigWidget</a></b>(QWidget *<i> parent</i> = 0)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwconfigwidget.html#addGroup">addGroup</a></b>(QWidget *<i> group</i>, const QIcon &amp;<i> icon</i> = QIcon(), const QString &amp;<i> name</i> = QString())</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> int </td><td class="memItemRight bottomAlign"><b><a href="qwwconfigwidget.html#count-prop">count</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> QWidget * </td><td class="memItemRight bottomAlign"><b><a href="qwwconfigwidget.html#currentGroup">currentGroup</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> int </td><td class="memItemRight bottomAlign"><b><a href="qwwconfigwidget.html#currentIndex-prop">currentIndex</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> QWidget * </td><td class="memItemRight bottomAlign"><b><a href="qwwconfigwidget.html#group">group</a></b>(int<i> index</i>) const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> QSize </td><td class="memItemRight bottomAlign"><b><a href="qwwconfigwidget.html#iconSize-prop">iconSize</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwconfigwidget.html#insertGroup">insertGroup</a></b>(int<i> index</i>, QWidget *<i> group</i>, const QIcon &amp;<i> icon</i> = QIcon(), const QString &amp;<i> label</i> = QString())</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwconfigwidget.html#removeGroup">removeGroup</a></b>(QWidget *<i> group</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwconfigwidget.html#removeGroup-2">removeGroup</a></b>(int<i> index</i>)</td></tr>
+</table>
+<a name="public-slots"></a>
+<h2>Public Slots</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwconfigwidget.html#setCurrentGroup">setCurrentGroup</a></b>(QWidget *<i> widget</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwconfigwidget.html#currentIndex-prop">setCurrentIndex</a></b>(int<i> index</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwconfigwidget.html#setGroupIcon">setGroupIcon</a></b>(int<i> index</i>, const QIcon &amp;<i> icon</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwconfigwidget.html#setGroupLabel">setGroupLabel</a></b>(int<i> index</i>, const QString &amp;<i> title</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwconfigwidget.html#iconSize-prop">setIconSize</a></b>(const QSize &amp;)</td></tr>
+</table>
+<a name="signals"></a>
+<h2>Signals</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwconfigwidget.html#currentIndexChanged">currentIndexChanged</a></b>(int<i> index</i>)</td></tr>
+</table>
+<a name="details"></a>
+<!-- $$$QwwConfigWidget-description -->
+<div class="descr">
+<h2>Detailed Description</h2>
+<p>A multipage container widget organizing configuration pages</p>
+</div>
+<!-- @@@QwwConfigWidget -->
+<div class="prop">
+<h2>Property Documentation</h2>
+<!-- $$$count-prop$$$count -->
+<h3 class="fn"><a name="count-prop"></a><span class="name">count</span> : const <span class="type">int</span></h3>
+<p>This property holds this property holds the number of pages in the widget.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> int </td><td class="memItemRight bottomAlign"><span class="name"><b>count</b></span>() const</td></tr>
+</table>
+<!-- @@@count -->
+<!-- $$$currentIndex-prop$$$currentIndex$$$setCurrentIndexint -->
+<h3 class="fn"><a name="currentIndex-prop"></a><span class="name">currentIndex</span> : <span class="type">int</span></h3>
+<p>This property holds index of the currently selected group.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> int </td><td class="memItemRight bottomAlign"><span class="name"><b>currentIndex</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setCurrentIndex</b></span>(int<i> index</i>)</td></tr>
+</table>
+<!-- @@@currentIndex -->
+<!-- $$$iconSize-prop$$$iconSize$$$setIconSizeconstQSize& -->
+<h3 class="fn"><a name="iconSize-prop"></a><span class="name">iconSize</span> : <span class="type">QSize</span></h3>
+<p>This property holds this property holds the icon size used for this button.</p>
+<p>The default size is defined by the GUI style. This is a maximum size for the icons. Smaller icons will not be scaled up.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> QSize </td><td class="memItemRight bottomAlign"><span class="name"><b>iconSize</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setIconSize</b></span>(const QSize &amp;)</td></tr>
+</table>
+<!-- @@@iconSize -->
+</div>
+<div class="func">
+<h2>Member Function Documentation</h2>
+<!-- $$$QwwConfigWidget[overload1]$$$QwwConfigWidgetQWidget* -->
+<h3 class="fn"><a name="QwwConfigWidget"></a>QwwConfigWidget::<span class="name">QwwConfigWidget</span>(<span class="type">QWidget</span> *<i> parent</i> = 0)</h3>
+<p>Constructs a config widget with a given <i>parent</i>.</p>
+<!-- @@@QwwConfigWidget -->
+<!-- $$$addGroup[overload1]$$$addGroupQWidget*constQIcon&constQString& -->
+<h3 class="fn"><a name="addGroup"></a><span class="type">void</span> QwwConfigWidget::<span class="name">addGroup</span>(<span class="type">QWidget</span> *<i> group</i>, const <span class="type">QIcon</span> &amp;<i> icon</i> = QIcon(), const <span class="type">QString</span> &amp;<i> name</i> = QString())</h3>
+<p>Appends a new <i>group</i> with icon <i>icon</i> and label <i>name</i> into the widget</p>
+<p><b>See also </b><a href="qwwconfigwidget.html#insertGroup">insertGroup</a>().</p>
+<!-- @@@addGroup -->
+<!-- $$$currentGroup[overload1]$$$currentGroup -->
+<h3 class="fn"><a name="currentGroup"></a><span class="type">QWidget</span> * QwwConfigWidget::<span class="name">currentGroup</span>() const</h3>
+<p>Returns a configuration group widget that is currently selected.</p>
+<p><b>See also </b><a href="qwwconfigwidget.html#setCurrentGroup">setCurrentGroup</a>() and <a href="qwwconfigwidget.html#group">group</a>().</p>
+<!-- @@@currentGroup -->
+<!-- $$$currentIndexChanged[overload1]$$$currentIndexChangedint -->
+<h3 class="fn"><a name="currentIndexChanged"></a><span class="type">void</span> QwwConfigWidget::<span class="name">currentIndexChanged</span>(<span class="type">int</span><i> index</i>)<tt> [signal]</tt></h3>
+<p>This signal is emitted when current page of the widget is changed to <i>index</i>.</p>
+<!-- @@@currentIndexChanged -->
+<!-- $$$group[overload1]$$$groupint -->
+<h3 class="fn"><a name="group"></a><span class="type">QWidget</span> * QwwConfigWidget::<span class="name">group</span>(<span class="type">int</span><i> index</i>) const</h3>
+<p>Returns a configuration group widget with a specified <i>index</i>.</p>
+<p><b>See also </b><a href="qwwconfigwidget.html#currentGroup">currentGroup</a>().</p>
+<!-- @@@group -->
+<!-- $$$insertGroup[overload1]$$$insertGroupintQWidget*constQIcon&constQString& -->
+<h3 class="fn"><a name="insertGroup"></a><span class="type">void</span> QwwConfigWidget::<span class="name">insertGroup</span>(<span class="type">int</span><i> index</i>, <span class="type">QWidget</span> *<i> group</i>, const <span class="type">QIcon</span> &amp;<i> icon</i> = QIcon(), const <span class="type">QString</span> &amp;<i> label</i> = QString())</h3>
+<p>Inserts a new <i>group</i> with an <i>icon</i> and a <i>label</i> to the widget at arbitrary <i>index</i>.</p>
+<p><b>See also </b><a href="qwwconfigwidget.html#addGroup">addGroup</a>().</p>
+<!-- @@@insertGroup -->
+<!-- $$$removeGroup[overload1]$$$removeGroupQWidget* -->
+<h3 class="fn"><a name="removeGroup"></a><span class="type">void</span> QwwConfigWidget::<span class="name">removeGroup</span>(<span class="type">QWidget</span> *<i> group</i>)</h3>
+<p>Removes <i>group</i> from the widget.</p>
+<!-- @@@removeGroup -->
+<!-- $$$removeGroup$$$removeGroupint -->
+<h3 class="fn"><a name="removeGroup-2"></a><span class="type">void</span> QwwConfigWidget::<span class="name">removeGroup</span>(<span class="type">int</span><i> index</i>)</h3>
+<p>This is an overloaded function.</p>
+<!-- @@@removeGroup -->
+<!-- $$$setCurrentGroup[overload1]$$$setCurrentGroupQWidget* -->
+<h3 class="fn"><a name="setCurrentGroup"></a><span class="type">void</span> QwwConfigWidget::<span class="name">setCurrentGroup</span>(<span class="type">QWidget</span> *<i> widget</i>)<tt> [slot]</tt></h3>
+<p>Sets the currently selected group to the specified <i>widget</i>.</p>
+<p><b>See also </b><a href="qwwconfigwidget.html#currentGroup">currentGroup</a>().</p>
+<!-- @@@setCurrentGroup -->
+<!-- $$$setGroupIcon[overload1]$$$setGroupIconintconstQIcon& -->
+<h3 class="fn"><a name="setGroupIcon"></a><span class="type">void</span> QwwConfigWidget::<span class="name">setGroupIcon</span>(<span class="type">int</span><i> index</i>, const <span class="type">QIcon</span> &amp;<i> icon</i>)<tt> [slot]</tt></h3>
+<p>Sets <i>icon</i> as the icon of group specified by <i>index</i>.</p>
+<!-- @@@setGroupIcon -->
+<!-- $$$setGroupLabel[overload1]$$$setGroupLabelintconstQString& -->
+<h3 class="fn"><a name="setGroupLabel"></a><span class="type">void</span> QwwConfigWidget::<span class="name">setGroupLabel</span>(<span class="type">int</span><i> index</i>, const <span class="type">QString</span> &amp;<i> title</i>)<tt> [slot]</tt></h3>
+<p>Sets <i>title</i> as the label of a group specified by <i>index</i>.</p>
+<!-- @@@setGroupLabel -->
+</div>
+<div class="footer"> <img src="images/ww-logo.png" style="height: 24px; margin-top: -10px;" align="right" /> Copyright (C) 2014 Witold Wysota</div></body>
+</html>

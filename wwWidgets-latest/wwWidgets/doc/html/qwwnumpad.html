@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- qwwnumpad.cpp -->
+  <title>QwwNumPad Class | wwWidgets 1.0</title>
+  <link rel="stylesheet" type="text/css" href="style/offline.css" />
+</head>
+<body>
+<div class="header" id="qtdocheader">
+    <div class="main">
+    <div class="main-rounded">
+        <div class="navigationbar">
+        <ul>
+      <li class="first"><a href="index.html">wwWidgets</a></li>
+      <!--  Breadcrumbs go here -->
+<li>QwwNumPad</li>
+<li id="buildversion">
+</li>
+    </ul>
+    </div>
+</div>
+<div class="content">
+<div class="line">
+<div class="content mainContent">
+<div class="toc">
+<h3><a name="toc">Contents</a></h3>
+<ul>
+<li class="level1"><a href="#public-functions">Public Functions</a></li>
+<li class="level1"><a href="#public-slots">Public Slots</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<h1 class="title">QwwNumPad Class</h1>
+<!-- $$$QwwNumPad-brief -->
+<p>The QwwNumPad widget provides a numeric keypad widget. <a href="#details">More...</a></p>
+<!-- @@@QwwNumPad -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Header:</td><td class="memItemRight bottomAlign"> </b><tt><span class="preprocessor">#include &lt;QwwNumPad&gt;</span>
+</tt></td></tr></table><ul>
+<li><a href="qwwnumpad-members.html">List of all members, including inherited members</a></li>
+</ul>
+<a name="public-functions"></a>
+<h2>Public Functions</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> </td><td class="memItemRight bottomAlign"><b><a href="qwwnumpad.html#QwwNumPad">QwwNumPad</a></b>(QWidget *<i> parent</i> = 0)</td></tr>
+</table>
+<a name="public-slots"></a>
+<h2>Public Slots</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwnumpad.html#animateClick">animateClick</a></b>(const QString &amp;<i> button</i>, int<i> msec</i> = 100)</td></tr>
+</table>
+<a name="signals"></a>
+<h2>Signals</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwnumpad.html#asteriskClicked">asteriskClicked</a></b>()</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwnumpad.html#hashClicked">hashClicked</a></b>()</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwnumpad.html#keyClicked">keyClicked</a></b>(QString<i> key</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwnumpad.html#numberClicked">numberClicked</a></b>(int<i> key</i>)</td></tr>
+</table>
+<a name="details"></a>
+<!-- $$$QwwNumPad-description -->
+<div class="descr">
+<h2>Detailed Description</h2>
+<p>The QwwNumPad widget provides a numeric keypad widget.</p>
+<p class="centerAlign"><img src="images/qwwnumpad.png" alt="QwwNumPad" /></p></div>
+<!-- @@@QwwNumPad -->
+<div class="func">
+<h2>Member Function Documentation</h2>
+<!-- $$$QwwNumPad[overload1]$$$QwwNumPadQWidget* -->
+<h3 class="fn"><a name="QwwNumPad"></a>QwwNumPad::<span class="name">QwwNumPad</span>(<span class="type">QWidget</span> *<i> parent</i> = 0)</h3>
+<p>Constructs a numpad widget with a given <i>parent</i>.</p>
+<!-- @@@QwwNumPad -->
+<!-- $$$animateClick[overload1]$$$animateClickconstQString&int -->
+<h3 class="fn"><a name="animateClick"></a><span class="type">void</span> QwwNumPad::<span class="name">animateClick</span>(const <span class="type">QString</span> &amp;<i> button</i>, <span class="type">int</span><i> msec</i> = 100)<tt> [slot]</tt></h3>
+<p>Performs an animated click.</p>
+<p>The <i>button</i> is pressed immediately, and released <i>msec</i> milliseconds later (the default is 100 ms).</p>
+<p>Calling this function again on the same button before it was released will reset the release timer. All signals associated with a click are emitted as appropriate. This function does nothing if the button is disabled.</p>
+<!-- @@@animateClick -->
+<!-- $$$asteriskClicked[overload1]$$$asteriskClicked -->
+<h3 class="fn"><a name="asteriskClicked"></a><span class="type">void</span> QwwNumPad::<span class="name">asteriskClicked</span>()<tt> [signal]</tt></h3>
+<p>'*' key clicked</p>
+<!-- @@@asteriskClicked -->
+<!-- $$$hashClicked[overload1]$$$hashClicked -->
+<h3 class="fn"><a name="hashClicked"></a><span class="type">void</span> QwwNumPad::<span class="name">hashClicked</span>()<tt> [signal]</tt></h3>
+<p>'#' key clicked</p>
+<!-- @@@hashClicked -->
+<!-- $$$keyClicked[overload1]$$$keyClickedQString -->
+<h3 class="fn"><a name="keyClicked"></a><span class="type">void</span> QwwNumPad::<span class="name">keyClicked</span>(<span class="type">QString</span><i> key</i>)<tt> [signal]</tt></h3>
+<p>text of the <i>key</i> clicked</p>
+<!-- @@@keyClicked -->
+<!-- $$$numberClicked[overload1]$$$numberClickedint -->
+<h3 class="fn"><a name="numberClicked"></a><span class="type">void</span> QwwNumPad::<span class="name">numberClicked</span>(<span class="type">int</span><i> key</i>)<tt> [signal]</tt></h3>
+<p>numeric <i>key</i> clicked</p>
+<!-- @@@numberClicked -->
+</div>
+<div class="footer"> <img src="images/ww-logo.png" style="height: 24px; margin-top: -10px;" align="right" /> Copyright (C) 2014 Witold Wysota</div></body>
+</html>

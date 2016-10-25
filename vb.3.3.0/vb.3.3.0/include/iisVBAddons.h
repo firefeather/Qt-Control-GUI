@@ -1,0 +1,7 @@
+#include "../src/addons/iisBoolValue.h"
+#include "../src/addons/iisColorValue.h"
+#include "../src/addons/iisNumericValue.h"
+#include "../src/addons/iisTextValue.h"
+#include "../src/addons/iisFontValue.h"
+#include "../src/addons/iisCoordinateValue.h"
+#include "../src/addons/iisPathValue.h"

@@ -1,0 +1,34 @@
+9
+
+dir
+2
+https://vbrowser.svn.sourceforge.net/svnroot/vbrowser/src
+https://vbrowser.svn.sourceforge.net/svnroot/vbrowser
+
+
+
+2008-09-21T09:42:12.035227Z
+1
+ii-system
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+15637075-f104-4fda-bf80-626175c67303
+
+addons
+dir
+
+core
+dir
+

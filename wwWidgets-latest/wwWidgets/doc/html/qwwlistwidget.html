@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- qwwlistwidget.cpp -->
+  <title>QwwListWidget Class | wwWidgets 1.0</title>
+  <link rel="stylesheet" type="text/css" href="style/offline.css" />
+</head>
+<body>
+<div class="header" id="qtdocheader">
+    <div class="main">
+    <div class="main-rounded">
+        <div class="navigationbar">
+        <ul>
+      <li class="first"><a href="index.html">wwWidgets</a></li>
+      <!--  Breadcrumbs go here -->
+<li>QwwListWidget</li>
+<li id="buildversion">
+</li>
+    </ul>
+    </div>
+</div>
+<div class="content">
+<div class="line">
+<div class="content mainContent">
+<div class="toc">
+<h3><a name="toc">Contents</a></h3>
+<ul>
+<li class="level1"><a href="#public-functions">Public Functions</a></li>
+<li class="level1"><a href="#public-slots">Public Slots</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<h1 class="title">QwwListWidget Class</h1>
+<!-- $$$QwwListWidget-brief -->
+<p>The QwwListWidget class provides an enhanced QListWidget. <a href="#details">More...</a></p>
+<!-- @@@QwwListWidget -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Header:</td><td class="memItemRight bottomAlign"> </b><tt><span class="preprocessor">#include &lt;QwwListWidget&gt;</span>
+</tt></td></tr></table><ul>
+<li><a href="qwwlistwidget-members.html">List of all members, including inherited members</a></li>
+</ul>
+<a name="public-functions"></a>
+<h2>Public Functions</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> </td><td class="memItemRight bottomAlign"><b><a href="qwwlistwidget.html#QwwListWidget">QwwListWidget</a></b>(QWidget *<i> parent</i> = 0)</td></tr>
+</table>
+<a name="public-slots"></a>
+<h2>Public Slots</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwlistwidget.html#moveCurrentDown">moveCurrentDown</a></b>()</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwlistwidget.html#moveCurrentUp">moveCurrentUp</a></b>()</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwlistwidget.html#removeCurrent">removeCurrent</a></b>()</td></tr>
+</table>
+<a name="signals"></a>
+<h2>Signals</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwlistwidget.html#currentAvailable">currentAvailable</a></b>(bool<i> avail</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwlistwidget.html#moveDownAvailable">moveDownAvailable</a></b>(bool<i> avail</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwlistwidget.html#moveUpAvailable">moveUpAvailable</a></b>(bool<i> avail</i>)</td></tr>
+</table>
+<a name="details"></a>
+<!-- $$$QwwListWidget-description -->
+<div class="descr">
+<h2>Detailed Description</h2>
+<p>The QwwListWidget class provides an enhanced QListWidget.</p>
+<p>This widget implements enhancements to QListWidget that allow manipulating the current item using signals and slots.</p>
+</div>
+<!-- @@@QwwListWidget -->
+<div class="func">
+<h2>Member Function Documentation</h2>
+<!-- $$$QwwListWidget[overload1]$$$QwwListWidgetQWidget* -->
+<h3 class="fn"><a name="QwwListWidget"></a>QwwListWidget::<span class="name">QwwListWidget</span>(<span class="type">QWidget</span> *<i> parent</i> = 0)</h3>
+<p>Constructs a line widget with a given <i>parent</i>.</p>
+<!-- @@@QwwListWidget -->
+<!-- $$$currentAvailable[overload1]$$$currentAvailablebool -->
+<h3 class="fn"><a name="currentAvailable"></a><span class="type">void</span> QwwListWidget::<span class="name">currentAvailable</span>(<span class="type">bool</span><i> avail</i>)<tt> [signal]</tt></h3>
+<p>Signal emitted when a current item becomes or stops being available.</p>
+<p><i>avail</i> carries information if the item is available or not. This signal is useful if you want to enable or disable actions or buttons that operate on a selected item in the list.</p>
+<!-- @@@currentAvailable -->
+<!-- $$$moveCurrentDown[overload1]$$$moveCurrentDown -->
+<h3 class="fn"><a name="moveCurrentDown"></a><span class="type">void</span> QwwListWidget::<span class="name">moveCurrentDown</span>()<tt> [slot]</tt></h3>
+<p>Moves current item one row down if possible</p>
+<!-- @@@moveCurrentDown -->
+<!-- $$$moveCurrentUp[overload1]$$$moveCurrentUp -->
+<h3 class="fn"><a name="moveCurrentUp"></a><span class="type">void</span> QwwListWidget::<span class="name">moveCurrentUp</span>()<tt> [slot]</tt></h3>
+<p>Moves current item one row up if possible</p>
+<!-- @@@moveCurrentUp -->
+<!-- $$$moveDownAvailable[overload1]$$$moveDownAvailablebool -->
+<h3 class="fn"><a name="moveDownAvailable"></a><span class="type">void</span> QwwListWidget::<span class="name">moveDownAvailable</span>(<span class="type">bool</span><i> avail</i>)<tt> [signal]</tt></h3>
+<p>This signal is emitted when the ability of moving the current item down changes.</p>
+<p><i>avail</i> carries information if the item can or cannot be moved down.</p>
+<!-- @@@moveDownAvailable -->
+<!-- $$$moveUpAvailable[overload1]$$$moveUpAvailablebool -->
+<h3 class="fn"><a name="moveUpAvailable"></a><span class="type">void</span> QwwListWidget::<span class="name">moveUpAvailable</span>(<span class="type">bool</span><i> avail</i>)<tt> [signal]</tt></h3>
+<p>This signal is emitted when the ability of moving the current item up changes.</p>
+<p><i>avail</i> carries information if the item can or cannot be moved up.</p>
+<!-- @@@moveUpAvailable -->
+<!-- $$$removeCurrent[overload1]$$$removeCurrent -->
+<h3 class="fn"><a name="removeCurrent"></a><span class="type">void</span> QwwListWidget::<span class="name">removeCurrent</span>()<tt> [slot]</tt></h3>
+<p>Removes current item from the list</p>
+<!-- @@@removeCurrent -->
+</div>
+<div class="footer"> <img src="images/ww-logo.png" style="height: 24px; margin-top: -10px;" align="right" /> Copyright (C) 2014 Witold Wysota</div></body>
+</html>

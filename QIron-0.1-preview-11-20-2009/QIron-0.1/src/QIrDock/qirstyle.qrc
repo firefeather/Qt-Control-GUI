@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/qiron/styles" >
+        <file>images/shadow_bottom.png</file>
+        <file>images/shadow_bottomleft.png</file>
+        <file>images/shadow_bottomright.png</file>
+        <file>images/shadow_left.png</file>
+        <file>images/shadow_right.png</file>
+        <file>images/shadow_top.png</file>
+        <file>images/shadow_topleft.png</file>
+        <file>images/shadow_topright.png</file>
+        <file>images/unknown_docklet.png</file>
+    </qresource>
+</RCC>

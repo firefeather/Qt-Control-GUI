@@ -1,0 +1,561 @@
+<ui version="4.0" >
+ <class>TPSqlZoomParameter</class>
+ <widget class="QDialog" name="TPSqlZoomParameter" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>733</width>
+    <height>680</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Dialog</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset resource="../datazoomresource.qrc" >
+    <normaloff>:/22x22/icons/22x22/configure.png</normaloff>:/22x22/icons/22x22/configure.png</iconset>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_4" >
+   <item>
+    <widget class="QFrame" name="headerFrame" >
+     <property name="frameShape" >
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow" >
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" >
+      <item rowspan="2" row="0" column="0" >
+       <widget class="QLabel" name="label_10" >
+        <property name="sizePolicy" >
+         <sizepolicy vsizetype="Preferred" hsizetype="Fixed" >
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text" >
+         <string/>
+        </property>
+        <property name="pixmap" >
+         <pixmap resource="../datazoomresource.qrc" >:/22x22/icons/22x22/configure.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" >
+       <widget class="QLabel" name="label_8" >
+        <property name="text" >
+         <string>Data Browser parameter editor</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" >
+       <widget class="QLabel" name="label_9" >
+        <property name="font" >
+         <font>
+          <pointsize>32</pointsize>
+         </font>
+        </property>
+        <property name="text" >
+         <string>COMING SOON...</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="boyFrame" >
+     <property name="enabled" >
+      <bool>false</bool>
+     </property>
+     <property name="frameShape" >
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow" >
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3" >
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout" >
+        <item>
+         <widget class="TWDataZoom" name="twDataZoom" >
+          <property name="toolTip" >
+           <string/>
+          </property>
+          <property name="whatsThis" >
+           <string/>
+          </property>
+          <property name="headerHidden" >
+           <bool>false</bool>
+          </property>
+          <property name="hideFilterWidgets" >
+           <bool>true</bool>
+          </property>
+          <property name="tableVerticalHeaderHidden" >
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2" >
+          <item>
+           <layout class="QHBoxLayout" >
+            <item>
+             <spacer>
+              <property name="orientation" >
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0" >
+               <size>
+                <width>521</width>
+                <height>25</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_11" >
+              <property name="text" >
+               <string>Columns</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="columnSpinBox" >
+              <property name="toolTip" >
+               <string/>
+              </property>
+              <property name="whatsThis" >
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame" >
+            <property name="frameShape" >
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow" >
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout" >
+             <item>
+              <layout class="QGridLayout" >
+               <item row="0" column="0" >
+                <layout class="QGridLayout" >
+                 <property name="horizontalSpacing" >
+                  <number>2</number>
+                 </property>
+                 <property name="verticalSpacing" >
+                  <number>3</number>
+                 </property>
+                 <item row="0" column="0" >
+                  <widget class="QLabel" name="label" >
+                   <property name="text" >
+                    <string>Unique name</string>
+                   </property>
+                   <property name="alignment" >
+                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                   </property>
+                   <property name="buddy" >
+                    <cstring>unameLineEdit</cstring>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0" >
+                  <widget class="QLabel" name="label_2" >
+                   <property name="text" >
+                    <string>Title</string>
+                   </property>
+                   <property name="alignment" >
+                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                   </property>
+                   <property name="buddy" >
+                    <cstring>titleLineEdit</cstring>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1" >
+                  <widget class="QLineEdit" name="titleLineEdit" >
+                   <property name="toolTip" >
+                    <string/>
+                   </property>
+                   <property name="whatsThis" >
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0" >
+                  <widget class="QLabel" name="label_3" >
+                   <property name="text" >
+                    <string>Table</string>
+                   </property>
+                   <property name="alignment" >
+                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                   </property>
+                   <property name="buddy" >
+                    <cstring>tableComboBox</cstring>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1" >
+                  <widget class="QComboBox" name="tableComboBox" >
+                   <property name="toolTip" >
+                    <string/>
+                   </property>
+                   <property name="whatsThis" >
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0" >
+                  <widget class="QLabel" name="label_4" >
+                   <property name="text" >
+                    <string>Selection mode</string>
+                   </property>
+                   <property name="alignment" >
+                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                   </property>
+                   <property name="buddy" >
+                    <cstring>selectionComboBox</cstring>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="1" >
+                  <widget class="QComboBox" name="selectionComboBox" >
+                   <property name="toolTip" >
+                    <string/>
+                   </property>
+                   <property name="whatsThis" >
+                    <string/>
+                   </property>
+                   <item>
+                    <property name="text" >
+                     <string>Single selection</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text" >
+                     <string>Multi selection</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text" >
+                     <string>Extended selection</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text" >
+                     <string>Contignous selection</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item row="4" column="0" >
+                  <widget class="QLabel" name="label_5" >
+                   <property name="text" >
+                    <string>Active column</string>
+                   </property>
+                   <property name="alignment" >
+                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                   </property>
+                   <property name="buddy" >
+                    <cstring>activeCloumnLineEdit</cstring>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="1" >
+                  <widget class="QLineEdit" name="activeCloumnLineEdit" >
+                   <property name="toolTip" >
+                    <string/>
+                   </property>
+                   <property name="whatsThis" >
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="0" >
+                  <widget class="QLabel" name="label_6" >
+                   <property name="text" >
+                    <string>Background column</string>
+                   </property>
+                   <property name="alignment" >
+                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="1" >
+                  <widget class="QComboBox" name="foregroundComboBox" >
+                   <property name="toolTip" >
+                    <string/>
+                   </property>
+                   <property name="whatsThis" >
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="0" >
+                  <widget class="QLabel" name="label_7" >
+                   <property name="text" >
+                    <string>Foreground column</string>
+                   </property>
+                   <property name="alignment" >
+                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="1" >
+                  <widget class="QComboBox" name="backgroundComboBox" >
+                   <property name="toolTip" >
+                    <string/>
+                   </property>
+                   <property name="whatsThis" >
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1" >
+                  <widget class="QLineEdit" name="unameLineEdit" >
+                   <property name="toolTip" >
+                    <string/>
+                   </property>
+                   <property name="whatsThis" >
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item row="0" column="1" >
+                <layout class="QGridLayout" >
+                 <item row="0" column="0" >
+                  <spacer>
+                   <property name="orientation" >
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeType" >
+                    <enum>QSizePolicy::Fixed</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0" >
+                    <size>
+                     <width>16</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="0" column="1" >
+                  <widget class="QCheckBox" name="activeCheckBox" >
+                   <property name="toolTip" >
+                    <string/>
+                   </property>
+                   <property name="whatsThis" >
+                    <string/>
+                   </property>
+                   <property name="text" >
+                    <string>Active</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1" >
+                  <spacer>
+                   <property name="orientation" >
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeType" >
+                    <enum>QSizePolicy::Minimum</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0" >
+                    <size>
+                     <width>54</width>
+                     <height>141</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </item>
+               <item row="1" column="0" >
+                <layout class="QHBoxLayout" >
+                 <item>
+                  <spacer>
+                   <property name="orientation" >
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0" >
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <widget class="QToolButton" name="toolButton" >
+                   <property name="text" >
+                    <string>New</string>
+                   </property>
+                   <property name="icon" >
+                    <iconset resource="../datazoomresource.qrc" >
+                     <normaloff>:/22x22/icons/22x22/add.png</normaloff>:/22x22/icons/22x22/add.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QToolButton" name="toolButton_2" >
+                   <property name="text" >
+                    <string>Delete</string>
+                   </property>
+                   <property name="icon" >
+                    <iconset resource="../datazoomresource.qrc" >
+                     <normaloff>:/22x22/icons/22x22/remove.png</normaloff>:/22x22/icons/22x22/remove.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QToolButton" name="toolButton_3" >
+                   <property name="text" >
+                    <string>Save</string>
+                   </property>
+                   <property name="icon" >
+                    <iconset resource="../datazoomresource.qrc" >
+                     <normaloff>:/22x22/icons/22x22/save.png</normaloff>:/22x22/icons/22x22/save.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+            <zorder></zorder>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="tableWidget" >
+        <property name="sizePolicy" >
+         <sizepolicy vsizetype="MinimumExpanding" hsizetype="Expanding" >
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="alternatingRowColors" >
+         <bool>true</bool>
+        </property>
+        <property name="selectionMode" >
+         <enum>QAbstractItemView::SingleSelection</enum>
+        </property>
+        <property name="cornerButtonEnabled" >
+         <bool>false</bool>
+        </property>
+        <property name="columnCount" >
+         <number>1</number>
+        </property>
+        <row>
+         <property name="text" >
+          <string>Data column</string>
+         </property>
+        </row>
+        <row>
+         <property name="text" >
+          <string>Column name</string>
+         </property>
+        </row>
+        <row>
+         <property name="text" >
+          <string>Filter zoom name</string>
+         </property>
+        </row>
+        <row>
+         <property name="text" >
+          <string>Filter zoom column</string>
+         </property>
+        </row>
+        <row>
+         <property name="text" >
+          <string>Edit zoom name</string>
+         </property>
+        </row>
+        <column/>
+        <item row="2" column="0" >
+         <property name="text" >
+          <string>NULL</string>
+         </property>
+        </item>
+        <item row="3" column="0" >
+         <property name="text" >
+          <string>NULL</string>
+         </property>
+        </item>
+        <item row="4" column="0" >
+         <property name="text" >
+          <string>NULL</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+     <zorder>tableWidget</zorder>
+     <zorder></zorder>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="footerFrame" >
+     <property name="frameShape" >
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow" >
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" >
+      <item>
+       <widget class="QDialogButtonBox" name="buttonBox" >
+        <property name="orientation" >
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="standardButtons" >
+         <set>QDialogButtonBox::Close</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>TWDataZoom</class>
+   <extends>QWidget</extends>
+   <header>twdatazoom.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../datazoomresource.qrc" />
+ </resources>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>clicked(QAbstractButton*)</signal>
+   <receiver>TPSqlZoomParameter</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>639</x>
+     <y>553</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>663</x>
+     <y>529</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

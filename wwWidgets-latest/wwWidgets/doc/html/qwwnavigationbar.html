@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- qwwnavigationbar.cpp -->
+  <title>QwwNavigationBar Class | wwWidgets 1.0</title>
+  <link rel="stylesheet" type="text/css" href="style/offline.css" />
+</head>
+<body>
+<div class="header" id="qtdocheader">
+    <div class="main">
+    <div class="main-rounded">
+        <div class="navigationbar">
+        <ul>
+      <li class="first"><a href="index.html">wwWidgets</a></li>
+      <!--  Breadcrumbs go here -->
+<li>QwwNavigationBar</li>
+<li id="buildversion">
+</li>
+    </ul>
+    </div>
+</div>
+<div class="content">
+<div class="line">
+<div class="content mainContent">
+<div class="toc">
+<h3><a name="toc">Contents</a></h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#public-functions">Public Functions</a></li>
+<li class="level1"><a href="#public-slots">Public Slots</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#protected-functions">Protected Functions</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+<li class="level4"><a href="#action-management">Action management</a></li>
+</ul>
+</div>
+<h1 class="title">QwwNavigationBar Class</h1>
+<!-- $$$QwwNavigationBar-brief -->
+<p>The QwwNavigationBar class provides a widget similar to MS Outlook navigation bar. <a href="#details">More...</a></p>
+<!-- @@@QwwNavigationBar -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Header:</td><td class="memItemRight bottomAlign"> </b><tt><span class="preprocessor">#include &lt;QwwNavigationBar&gt;</span>
+</tt></td></tr></table><ul>
+<li><a href="qwwnavigationbar-members.html">List of all members, including inherited members</a></li>
+</ul>
+<a name="properties"></a>
+<h2>Properties</h2>
+<ul>
+<li class="fn"><b><a href="qwwnavigationbar.html#currentIndex-prop">currentIndex</a></b> : int</li>
+<li class="fn"><b><a href="qwwnavigationbar.html#topWidgetVisible-prop">topWidgetVisible</a></b> : bool</li>
+</ul>
+<a name="public-functions"></a>
+<h2>Public Functions</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> </td><td class="memItemRight bottomAlign"><b><a href="qwwnavigationbar.html#QwwNavigationBar">QwwNavigationBar</a></b>(QWidget *<i> parent</i> = 0)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwnavigationbar.html#addWidget">addWidget</a></b>(QWidget *<i> child</i>, const QIcon &amp;<i> icon</i>, const QString &amp;<i> label</i> = QString::null)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwnavigationbar.html#addWidget-2">addWidget</a></b>(QWidget *<i> child</i>, const QString &amp;<i> label</i> = QString::null)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> const QPushButton * </td><td class="memItemRight bottomAlign"><b><a href="qwwnavigationbar.html#button">button</a></b>(int<i> index</i>) const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> int </td><td class="memItemRight bottomAlign"><b><a href="qwwnavigationbar.html#currentIndex-prop">currentIndex</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> int </td><td class="memItemRight bottomAlign"><b><a href="qwwnavigationbar.html#indexOf">indexOf</a></b>(QWidget *<i> widget</i>) const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwnavigationbar.html#insertWidget">insertWidget</a></b>(int<i> index</i>, QWidget *<i> child</i>, const QIcon &amp;<i> icon</i>, const QString &amp;<i> label</i> = QString::null)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwnavigationbar.html#insertWidget-2">insertWidget</a></b>(int<i> index</i>, QWidget *<i> child</i>, const QString &amp;<i> label</i> = QString::null)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwnavigationbar.html#removeWidget">removeWidget</a></b>(int<i> index</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwnavigationbar.html#setCurrentWidget">setCurrentWidget</a></b>(QWidget *<i> widget</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwnavigationbar.html#setWidgetIcon">setWidgetIcon</a></b>(int<i> index</i>, const QIcon &amp;<i> icon</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwnavigationbar.html#setWidgetLabel">setWidgetLabel</a></b>(int<i> index</i>, const QString &amp;<i> label</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> bool </td><td class="memItemRight bottomAlign"><b><a href="qwwnavigationbar.html#topWidgetVisible-prop">topWidgetIsVisible</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> QWidget * </td><td class="memItemRight bottomAlign"><b><a href="qwwnavigationbar.html#widget">widget</a></b>(int<i> index</i>) const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> int </td><td class="memItemRight bottomAlign"><b><a href="qwwnavigationbar.html#widgetCount">widgetCount</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> QIcon </td><td class="memItemRight bottomAlign"><b><a href="qwwnavigationbar.html#widgetIcon">widgetIcon</a></b>(int<i> index</i>) const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> QString </td><td class="memItemRight bottomAlign"><b><a href="qwwnavigationbar.html#widgetLabel">widgetLabel</a></b>(int<i> index</i>) const</td></tr>
+</table>
+<a name="public-slots"></a>
+<h2>Public Slots</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwnavigationbar.html#currentIndex-prop">setCurrentIndex</a></b>(int<i> index</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwnavigationbar.html#topWidgetVisible-prop">setTopWidgetVisible</a></b>(bool<i> v</i>)</td></tr>
+</table>
+<a name="signals"></a>
+<h2>Signals</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwnavigationbar.html#currentIndexChanged">currentIndexChanged</a></b>(int<i> index</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwnavigationbar.html#topWidgetVisibleChanged">topWidgetVisibleChanged</a></b>(bool<i> vis</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwnavigationbar.html#widgetIconChanged">widgetIconChanged</a></b>(const QIcon &amp;<i> icon</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwnavigationbar.html#widgetIconChanged-2">widgetIconChanged</a></b>(int<i> index</i>, const QIcon &amp;)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwnavigationbar.html#widgetLabelChanged">widgetLabelChanged</a></b>(const QString &amp;<i> label</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwnavigationbar.html#widgetLabelChanged-2">widgetLabelChanged</a></b>(int<i> index</i>, const QString &amp;)</td></tr>
+</table>
+<a name="protected-functions"></a>
+<h2>Protected Functions</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> bool </td><td class="memItemRight bottomAlign"><b><a href="qwwnavigationbar.html#eventFilter">eventFilter</a></b>(QObject *, QEvent *)</td></tr>
+</table>
+<a name="details"></a>
+<!-- $$$QwwNavigationBar-description -->
+<div class="descr">
+<h2>Detailed Description</h2>
+<p>The QwwNavigationBar class provides a widget similar to MS Outlook navigation bar.</p>
+<p class="centerAlign"><img src="images/qwwnavigationbar.png" alt="Navigation bar" /></p><a name="action-management"></a>
+<h6>Action management</h6>
+<p>Actions can be added to a navigation bar which causes buttons representing them to appear in the bottom of the widget.</p>
+</div>
+<!-- @@@QwwNavigationBar -->
+<div class="prop">
+<h2>Property Documentation</h2>
+<!-- $$$currentIndex-prop$$$currentIndex$$$setCurrentIndexint -->
+<h3 class="fn"><a name="currentIndex-prop"></a><span class="name">currentIndex</span> : <span class="type">int</span></h3>
+<p>This property holds this property holds the index position of the current bar.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> int </td><td class="memItemRight bottomAlign"><span class="name"><b>currentIndex</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setCurrentIndex</b></span>(int<i> index</i>)</td></tr>
+</table>
+<!-- @@@currentIndex -->
+<!-- $$$topWidgetVisible-prop$$$topWidgetIsVisible$$$setTopWidgetVisiblebool -->
+<h3 class="fn"><a name="topWidgetVisible-prop"></a><span class="name">topWidgetVisible</span> : <span class="type">bool</span></h3>
+<p>This property holds this property holds whether the top widget is visible.</p>
+<p>If this property is true then a widget containing the current group is shown at the top of the widget. This property is true by default.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> bool </td><td class="memItemRight bottomAlign"><span class="name"><b>topWidgetIsVisible</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setTopWidgetVisible</b></span>(bool<i> v</i>)</td></tr>
+</table>
+<!-- @@@topWidgetVisible -->
+</div>
+<div class="func">
+<h2>Member Function Documentation</h2>
+<!-- $$$QwwNavigationBar[overload1]$$$QwwNavigationBarQWidget* -->
+<h3 class="fn"><a name="QwwNavigationBar"></a>QwwNavigationBar::<span class="name">QwwNavigationBar</span>(<span class="type">QWidget</span> *<i> parent</i> = 0)</h3>
+<p>Constructs a navigation bar widget with a given <i>parent</i></p>
+<!-- @@@QwwNavigationBar -->
+<!-- $$$addWidget[overload1]$$$addWidgetQWidget*constQIcon&constQString& -->
+<h3 class="fn"><a name="addWidget"></a><span class="type">void</span> QwwNavigationBar::<span class="name">addWidget</span>(<span class="type">QWidget</span> *<i> child</i>, const <span class="type">QIcon</span> &amp;<i> icon</i>, const <span class="type">QString</span> &amp;<i> label</i> = QString::null)</h3>
+<p>Adds <i>child</i> with <i>icon</i> and <i>label</i> to the navigation bar at the last position.</p>
+<!-- @@@addWidget -->
+<!-- $$$addWidget$$$addWidgetQWidget*constQString& -->
+<h3 class="fn"><a name="addWidget-2"></a><span class="type">void</span> QwwNavigationBar::<span class="name">addWidget</span>(<span class="type">QWidget</span> *<i> child</i>, const <span class="type">QString</span> &amp;<i> label</i> = QString::null)</h3>
+<p>This is an overloaded function.</p>
+<!-- @@@addWidget -->
+<!-- $$$button[overload1]$$$buttonint -->
+<h3 class="fn"><a name="button"></a>const <span class="type">QPushButton</span> * QwwNavigationBar::<span class="name">button</span>(<span class="type">int</span><i> index</i>) const</h3>
+<p>returns pointer to a button associated with a child under <i>index</i></p>
+<!-- @@@button -->
+<!-- $$$currentIndexChanged[overload1]$$$currentIndexChangedint -->
+<h3 class="fn"><a name="currentIndexChanged"></a><span class="type">void</span> QwwNavigationBar::<span class="name">currentIndexChanged</span>(<span class="type">int</span><i> index</i>)<tt> [signal]</tt></h3>
+<p>This signal is emitted whenever the current index of the widget changes to <i>index</i></p>
+<!-- @@@currentIndexChanged -->
+<!-- $$$eventFilter[overload1]$$$eventFilterQObject*QEvent* -->
+<h3 class="fn"><a name="eventFilter"></a><span class="type">bool</span> QwwNavigationBar::<span class="name">eventFilter</span>(<span class="type">QObject</span> *, <span class="type">QEvent</span> *)<tt> [protected]</tt></h3>
+<!-- @@@eventFilter -->
+<!-- $$$indexOf[overload1]$$$indexOfQWidget* -->
+<h3 class="fn"><a name="indexOf"></a><span class="type">int</span> QwwNavigationBar::<span class="name">indexOf</span>(<span class="type">QWidget</span> *<i> widget</i>) const</h3>
+<p>Returns an index of <i>widget</i> in the navigation bar</p>
+<!-- @@@indexOf -->
+<!-- $$$insertWidget[overload1]$$$insertWidgetintQWidget*constQIcon&constQString& -->
+<h3 class="fn"><a name="insertWidget"></a><span class="type">void</span> QwwNavigationBar::<span class="name">insertWidget</span>(<span class="type">int</span><i> index</i>, <span class="type">QWidget</span> *<i> child</i>, const <span class="type">QIcon</span> &amp;<i> icon</i>, const <span class="type">QString</span> &amp;<i> label</i> = QString::null)</h3>
+<p>Inserts widget specified by <i>child</i> with <i>icon</i> and <i>label</i> to the navigation bar under position <i>index</i></p>
+<!-- @@@insertWidget -->
+<!-- $$$insertWidget$$$insertWidgetintQWidget*constQString& -->
+<h3 class="fn"><a name="insertWidget-2"></a><span class="type">void</span> QwwNavigationBar::<span class="name">insertWidget</span>(<span class="type">int</span><i> index</i>, <span class="type">QWidget</span> *<i> child</i>, const <span class="type">QString</span> &amp;<i> label</i> = QString::null)</h3>
+<p>This is an overloaded function.</p>
+<!-- @@@insertWidget -->
+<!-- $$$removeWidget[overload1]$$$removeWidgetint -->
+<h3 class="fn"><a name="removeWidget"></a><span class="type">void</span> QwwNavigationBar::<span class="name">removeWidget</span>(<span class="type">int</span><i> index</i>)</h3>
+<p>Removes widget specified by <i>index</i> from the navigation bar</p>
+<!-- @@@removeWidget -->
+<!-- $$$setCurrentWidget[overload1]$$$setCurrentWidgetQWidget* -->
+<h3 class="fn"><a name="setCurrentWidget"></a><span class="type">void</span> QwwNavigationBar::<span class="name">setCurrentWidget</span>(<span class="type">QWidget</span> *<i> widget</i>)</h3>
+<p>Sets <i>widget</i> as the currently visible widget.</p>
+<!-- @@@setCurrentWidget -->
+<!-- $$$setWidgetIcon[overload1]$$$setWidgetIconintconstQIcon& -->
+<h3 class="fn"><a name="setWidgetIcon"></a><span class="type">void</span> QwwNavigationBar::<span class="name">setWidgetIcon</span>(<span class="type">int</span><i> index</i>, const <span class="type">QIcon</span> &amp;<i> icon</i>)</h3>
+<p>Associates <i>icon</i> with a widget under <i>index</i></p>
+<p><b>See also </b><a href="qwwnavigationbar.html#widgetIcon">widgetIcon</a>().</p>
+<!-- @@@setWidgetIcon -->
+<!-- $$$setWidgetLabel[overload1]$$$setWidgetLabelintconstQString& -->
+<h3 class="fn"><a name="setWidgetLabel"></a><span class="type">void</span> QwwNavigationBar::<span class="name">setWidgetLabel</span>(<span class="type">int</span><i> index</i>, const <span class="type">QString</span> &amp;<i> label</i>)</h3>
+<p>Sets <i>label</i> as the title for the widget under <i>index</i></p>
+<p><b>See also </b><a href="qwwnavigationbar.html#widgetLabel">widgetLabel</a>().</p>
+<!-- @@@setWidgetLabel -->
+<!-- $$$topWidgetVisibleChanged[overload1]$$$topWidgetVisibleChangedbool -->
+<h3 class="fn"><a name="topWidgetVisibleChanged"></a><span class="type">void</span> QwwNavigationBar::<span class="name">topWidgetVisibleChanged</span>(<span class="type">bool</span><i> vis</i>)<tt> [signal]</tt></h3>
+<p>This signal is emitted whenever visibility of the top widget changes to <i>vis</i></p>
+<!-- @@@topWidgetVisibleChanged -->
+<!-- $$$widget[overload1]$$$widgetint -->
+<h3 class="fn"><a name="widget"></a><span class="type">QWidget</span> * QwwNavigationBar::<span class="name">widget</span>(<span class="type">int</span><i> index</i>) const</h3>
+<p>Returns a pointer to the widget at position <i>index</i></p>
+<!-- @@@widget -->
+<!-- $$$widgetCount[overload1]$$$widgetCount -->
+<h3 class="fn"><a name="widgetCount"></a><span class="type">int</span> QwwNavigationBar::<span class="name">widgetCount</span>() const</h3>
+<p>Returns the number of widgets in the navigation bar.</p>
+<!-- @@@widgetCount -->
+<!-- $$$widgetIcon[overload1]$$$widgetIconint -->
+<h3 class="fn"><a name="widgetIcon"></a><span class="type">QIcon</span> QwwNavigationBar::<span class="name">widgetIcon</span>(<span class="type">int</span><i> index</i>) const</h3>
+<p>returns icon of the widget under <i>index</i></p>
+<p><b>See also </b><a href="qwwnavigationbar.html#setWidgetIcon">setWidgetIcon</a>().</p>
+<!-- @@@widgetIcon -->
+<!-- $$$widgetIconChanged[overload1]$$$widgetIconChangedconstQIcon& -->
+<h3 class="fn"><a name="widgetIconChanged"></a><span class="type">void</span> QwwNavigationBar::<span class="name">widgetIconChanged</span>(const <span class="type">QIcon</span> &amp;<i> icon</i>)<tt> [signal]</tt></h3>
+<p>This signal is emitted when the icon of the current widget changes to <i>icon</i>.</p>
+<!-- @@@widgetIconChanged -->
+<!-- $$$widgetIconChanged$$$widgetIconChangedintconstQIcon& -->
+<h3 class="fn"><a name="widgetIconChanged-2"></a><span class="type">void</span> QwwNavigationBar::<span class="name">widgetIconChanged</span>(<span class="type">int</span><i> index</i>, const <span class="type">QIcon</span> &amp;)<tt> [signal]</tt></h3>
+<!-- @@@widgetIconChanged -->
+<!-- $$$widgetLabel[overload1]$$$widgetLabelint -->
+<h3 class="fn"><a name="widgetLabel"></a><span class="type">QString</span> QwwNavigationBar::<span class="name">widgetLabel</span>(<span class="type">int</span><i> index</i>) const</h3>
+<p>Returns label of the widget under <i>index</i></p>
+<p><b>See also </b><a href="qwwnavigationbar.html#setWidgetLabel">setWidgetLabel</a>().</p>
+<!-- @@@widgetLabel -->
+<!-- $$$widgetLabelChanged[overload1]$$$widgetLabelChangedconstQString& -->
+<h3 class="fn"><a name="widgetLabelChanged"></a><span class="type">void</span> QwwNavigationBar::<span class="name">widgetLabelChanged</span>(const <span class="type">QString</span> &amp;<i> label</i>)<tt> [signal]</tt></h3>
+<p>This signal is emitted when the label of the current widget changes to <i>label</i>.</p>
+<!-- @@@widgetLabelChanged -->
+<!-- $$$widgetLabelChanged$$$widgetLabelChangedintconstQString& -->
+<h3 class="fn"><a name="widgetLabelChanged-2"></a><span class="type">void</span> QwwNavigationBar::<span class="name">widgetLabelChanged</span>(<span class="type">int</span><i> index</i>, const <span class="type">QString</span> &amp;)<tt> [signal]</tt></h3>
+<!-- @@@widgetLabelChanged -->
+</div>
+<div class="footer"> <img src="images/ww-logo.png" style="height: 24px; margin-top: -10px;" align="right" /> Copyright (C) 2014 Witold Wysota</div></body>
+</html>

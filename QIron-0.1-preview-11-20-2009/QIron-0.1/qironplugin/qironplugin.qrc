@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="/qiron/designer">
+    <file>images/quadsplitter.png</file>
+	<file>images/breadcrumbbar.png</file>
+	<file>images/expander.png</file>
+ </qresource>
+</RCC>

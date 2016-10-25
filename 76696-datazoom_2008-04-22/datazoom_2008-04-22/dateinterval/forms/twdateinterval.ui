@@ -1,0 +1,167 @@
+<ui version="4.0" >
+ <class>TWDateInterval</class>
+ <widget class="QWidget" name="twDateInterval" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>126</width>
+    <height>73</height>
+   </rect>
+  </property>
+  <property name="sizePolicy" >
+   <sizepolicy vsizetype="MinimumExpanding" hsizetype="MinimumExpanding" >
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle" >
+   <string>FromTo</string>
+  </property>
+  <layout class="QVBoxLayout" >
+   <property name="spacing" >
+    <number>3</number>
+   </property>
+   <property name="leftMargin" >
+    <number>0</number>
+   </property>
+   <property name="topMargin" >
+    <number>0</number>
+   </property>
+   <property name="rightMargin" >
+    <number>0</number>
+   </property>
+   <property name="bottomMargin" >
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QComboBox" name="comboBox" >
+     <property name="insertPolicy" >
+      <enum>QComboBox::NoInsert</enum>
+     </property>
+     <item>
+      <property name="text" >
+       <string>User defined</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>Today</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>Yesterday</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>...Today</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>This month</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>Previous month</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>...This month</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>This quarter</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>Previous quarter</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>...This quarter</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>This year</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>Previous year</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>...This year</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" >
+     <item>
+      <widget class="QLabel" name="label" >
+       <property name="text" >
+        <string>&amp;From</string>
+       </property>
+       <property name="alignment" >
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="buddy" >
+        <cstring>fromDateEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDateEdit" name="fromDateEdit" >
+       <property name="displayFormat" >
+        <string>yyyy-MM-dd</string>
+       </property>
+       <property name="calendarPopup" >
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" >
+     <item>
+      <widget class="QLabel" name="label_2" >
+       <property name="text" >
+        <string>&amp;To:</string>
+       </property>
+       <property name="alignment" >
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="buddy" >
+        <cstring>toDateEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDateEdit" name="toDateEdit" >
+       <property name="displayFormat" >
+        <string>yyyy-MM-dd</string>
+       </property>
+       <property name="calendarPopup" >
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

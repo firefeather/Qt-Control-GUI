@@ -1,0 +1,1 @@
+#include "../../scr/QIrDock/private/qirdockeffectmanager_p.h"

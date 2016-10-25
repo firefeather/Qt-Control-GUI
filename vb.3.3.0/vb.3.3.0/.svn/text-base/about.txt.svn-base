@@ -1,0 +1,449 @@
+Value Browser 3 
+
+-------------------------------------------------------------------------------
+(C) 2004-2008 Industrial Infosystems                          www.ii-system.com
+-------------------------------------------------------------------------------
+
+
+
+Description and Features ======================================================
+
+Value Browser 3 is the powerful Qt component which allows to edit 
+values represented as a value list (like as Delphi Object Inspector, and 
+so on). 
+
+The main features are:
+
+- Multi-page support
+- Item hints
+- State flags
+- Hierarchical items layout
+- Group items
+- Special and Own values
+- Value lists with auto-completion and auto-appending
+- Storing and restoring of value sets
+- Quick browser fill
+- Binding with external (linked) values
+- Import/Export with QSettings
+- Highlighting of changes
+- Input value validation (numeric, regex and own validators)
+- Button editors
+- Combo editors
+- Extended values and editors (bool, numeric, color, font, etc.)
+
+
+*** Multi-page support ***
+
+Value items can be placed onto several pages, and only one page can be 
+displayed at a time. 
+
+Page number can be specified in item's constructor. By default, each new item 
+will be placed onto current page.
+
+
+*** Item hints ***
+
+A textual hint can be assigned to every item, thus helping the user to
+obtain some info about a value being edited. 
+
+The "HintChanged" signal is emitted when an item has been selected, which 
+should be connected to a slot showing hint text. 
+
+
+*** State flags ***
+
+Each item can contain a check controller (flag), which is accessed in the 
+standard way.
+
+To make an item checkable, you should use setCheckable() method.
+
+
+*** Hierarchical items layout ***
+
+Items could be arranged in the hierarchical way in the list.
+
+Item's hierarchy level can be specified in item's constructor. If the "parent"
+of the item is TValueBrowser the item will be a top-level item; if the "parent"
+is another item, then the item will become its "child".
+
+Some of values are itself can contain child items, for example, Color Value
+provides additional fields for separate input of R,G,B values.
+
+
+*** Group items ***
+
+There could be group items in the list which do not contain values and serve
+for visual separation of value items' groups.
+
+
+*** Special, List and Own values ***
+
+A pre-defined list(s) of special values can be used for every item (values like
+"Default", "Unused" and so on). 
+
+To set list value, the user can pick appropriate value from one of items 
+specified in the value list which is displayed as a drop-down (combo) box. 
+Also it is possible to type first letters of the desired value to find it
+in the value list (auto-completion feature).
+
+If allowed, own values (which are not mentioned in the special or value list,
+and are entered with the keyboard) can be used; also, it is possible to add 
+own values into existing value lists (auto-append feature).
+
+Several value and special value lists can be shared within several list values 
+and value browsers. Such lists could be customized in the application.
+
+
+*** Storing and restoring of value sets ***
+
+Feature allows to quickly store the current state of all (or certain) values 
+including check state with single method call (storeSets()), and later to quickly 
+restore this state by calling restoreSets().
+
+May be useful for configuration dialogs. Typical usage is to connect "storeSets"
+signal to "Apply" dialog's button and to connect "ValueChanged" signal to the 
+slot used for retrieving data from Value Browser.
+
+
+*** Highlighting of changes ***
+
+When enabled, highlights all the values which have been changed since the last 
+storing.
+
+The way of highlighting can be easily changed in VB's descedants.
+
+
+*** Value validation ***
+
+A validator can be applied to any value item to perform input data validation
+and not to allow the user to enter invalid value. 
+
+Integer, Double and RegExp validators are supported internally; also, it is 
+possible to create own validators with the custom validation rules.
+
+
+*** Button editors ***
+
+A Button Editor can be applied to any value item editor to input data with 
+custom (pop-up, or so on) editor called by clicking approprite button which 
+should appear near the drop list. Such editor is able to read and write current 
+value in the appropriate way.
+
+TButtonEditor (base class), TPopupButtonEditor (class which introduces 
+small square button with "..." and its on-click handler), TSpinButtonEditor
+(Button Editor with spin (up-down arrows) control) are available to 
+easily create own button editors by subclassing.
+
+
+*** Combo editors ***
+
+Combo Editor extends standard drop down list and adds the possibility to invoke
+any external editor as well as choose a value from the list. It adds a special 
+entry to the bottom of the list which invokes external value editor (usually
+dialog based).
+
+This technique is used in TColorValue item editor - the last position in the 
+drop-down color list is owned by "Pick Color..." item which invokes standard
+color pick dialog (as well as from button editor).
+
+
+*** Extended values and editors ***
+
+Base values supported by TValueBrowser are TBaseValue (for simple editing of
+string/numbers), and TListValue (for choosing a value from pre-defined list).
+Their capabilities are powerful, especially with usage of validators and special 
+editors, hovewer, not enough for some special cases. 
+
+There are some additional classes designed for more convenient usage while 
+editing values of another types:
+	- Boolean Value (introduces check box editor to quickly switch the state);
+	- Color Value (introduces selection of a color from drop-down list and
+		color dialog);
+	- Numeric (Integer, Double) Value (introduces spin box editor and makes 
+		validation easier);
+	- Text Value (designed for multiline text input);
+	- Font Value (introduces selection of a font from drop-down list and
+		font dialog);
+	- Point Value (for dealing with QPoint);
+	- Size Value (for dealing with QSize);
+	- Rect Value (for dealing with QRect);
+	- Path Value (for picking path/file names).
+	
+
+
+*** Binding with external (linked) values ***
+
+Very powerful feature which in connection with Quick Fill and Import/Export
+can reduce code and thus time to build GUI for data interchange up to 500%.
+
+Every value item can be linked with external value of ordinal (like integer, 
+boolean etc.) or general Qt types (QString, QColor). Once linked, these values
+can be retrieved/updated/saved/read via single call of corresponding Browser methods.
+
+The common (trivial) approach to data interchange can be generally divided into 5 stages:
+- installation of GUI;
+- updating of GUI when some data is changed (i.e. retrieving data);
+- updating data when GUI is changed (i.e. user has chosen something);
+- store data to external location (i.e. when application closes);
+- restore data from external location (i.e. on next start).
+
+Every stage requires a set of tasks which are common for each data item (install/
+retrieve/update/save/read). This often takes significant time and needs to write 
+a lot of similar code.
+
+The new approach is called to move all the efforts to installation stage only. Every
+value item gets all the info needed for retrieve/update/save/read. 
+Therefore, other stages can be performed automatically, without need to making
+something else than single call of the corresponding interchange method.
+
+
+*** Quick browser fill ***
+
+Another powerful feature designed specially for reducing code and design time.
+Browser introduces a couple of methods (such as addPage(), addGroup(), addInteger() 
+etc.) which allows to install browser GUI very simple and indirectly create value 
+items. These methods also allow to specify pointers to external values and entries
+for QSettings import/export. 
+
+As result, it is now possible to install browser with
+full item set once (i.e. during construction) and then just use single-called
+methods to retrieve/update/save/read internal/external values.
+
+
+*** Import/Export via QSettings ***
+
+Browser allows to import/export a set of current, stored and external values
+via QSettings. This feature reduces time and code for organizing of storing and
+retrieving of parameters. 
+
+In connection with quick fill and bind to external values, it requires only few
+efforts during setup (i.e. specifying of section and parameter name), and single call
+for write to/read from QSettings.
+
+
+
+
+
+
+
+Target Qt versions ============================================================
+
+Currently Value Browser is available for Qt >= 4.1.x.
+
+Tested on 
+ - MS Windows XP SP2 
+ - Suse Linux 10.3, 11.0
+
+
+
+
+
+How to build ==================================================================
+
+1. Unpack archive to the directory where you wish to keep Value Browser 
+	(i.e. "vb3").
+2. Go to the "build" directory.
+3a. To build from command line - run qmake, then make.
+3b. If you're using MS Visual Studio 2005 - open "libvb4.2005.vcproj" project
+	and build it within the Studio.
+3c. If you're using MS Visual Studio 2003 - open "libvb4.2003.vcproj" project
+	and build it within the Studio.	
+4. You should get the library file in "lib" directory.
+
+To build demos, go to "demo.1" and "demo.2" directories and perform the same steps 
+as above. "demo" executable should appear there. 
+
+
+
+
+
+Known issues ==================================================================
+
+
+
+
+
+
+
+History =======================================================================
+
+3.3.0 (snapshot from 2008/09/21) 
+---------------------------------------------------------------------
+
+- Added TPathValue class for picking file/folder items.
+- Added itemIcon() and setItemIcon() helper methods.
+
+- Added reversion buttons for each value, and appropriate methods to Value Browser
+  to change its icon.
+
+- Fixed issue with clearing default value while reading from settings 
+  with SP_LINKED policy.
+- Fixed issue with comparing FontValues.
+- Fixed issue with traversing disabled items.
+- Fixed issue with color icons for TBaseGroup.
+- Fixed issue with distance between icons and edit line for some styles.
+
+- HintChanged() signals are emitted also when current page is changed.
+- ValuePicked() signal is emitted only when item's value is changed to another one.
+- Speedup of browsing items.
+
+
+
+3.2.4 (snapshot from 2007/11/25) 
+---------------------------------------------------------------------
+
+- Added TRangeValue and TRangeValidator classes.
+
+- Added slot TValueBrowser::clear() which clears the whole browser.
+- Added slot TValueBrowser::switchPage(const QModelIndex & index) for
+  compatibility with MVC views.
+
+- Added LIBVB4_EXPORT macro for browser classes.
+
+- Fixed some crashes in Qt 4.3.x.
+- Fixed issue with clearing current page value while constructing new browser.
+
+
+
+3.2.3 (snapshot from 2007/07/11) 
+---------------------------------------------------------------------
+
+- Fixed issue with restoring tooltip font in TFontValue.
+
+- Group items now using all the width available for the text.
+- Group items could be drawn as subgroups (lighter than groups).
+
+
+
+3.2.2 (snapshot from 2007/06/23)
+---------------------------------------------------------------------
+
+- Added setMinimum(), setMaximum(), setRange() to TIntValidator and TDoubleValidator.
+- Extended TTextValue editing dialog.
+
+- Compatibility fixes for Qt 4.3.x.
+- Compatibility fixes for 64 bit compilers.
+
+
+
+3.2.1 (snapshot from 2007/05/20)
+---------------------------------------------------------------------
+
+- Added TPointValue and TPointValidator classes to deal with QPoint values.
+- Added TSizeValue and TSizeValidator classes to deal with QSize values.
+- Added TRectValue and TRectValidator classes to deal with QRect values.
+
+
+- TFontValue icon now represents a thumbnail of the current font.
+- Added spin button editor fot TFontValue's font size subitem.
+
+- Revised TIntegerValue and TDoubleValue classes: static validators moved
+  to iisValidators module.
+- TValueValidator::validate() now operates with QVariant rather then QString.
+
+- Compatibility fixes for Qt 4.1.x.
+- Fixed issue with linking QFont values.
+
+
+
+3.2.0 (snapshot from 2007/04/28)
+---------------------------------------------------------------------
+
+- Added TFontValue and compound classed to handle QFont values.
+- Added children support API to TBaseValue, to make possible creation of
+  hierarchical value items.
+- TItemList API is extended to provide custom drawing and hints for the list items.
+
+- Added TBaseItem::visible() method.
+- Added static validators for most common usage.
+- Added TBaseValue::allowSpecials() and TBaseValue::isSpecialsAllowed() methods.
+- Added child values to TColorValue.
+- Added TValueBrowser::addFont() method.
+- Added << operators to TItemList to quickly fill the list with integers, doubles and strings.
+
+- Fixed issue with restoring visible state of items on page switch.
+- Fixed issue with default item height.
+- Fixed issue with height of button editor.
+
+
+
+3.1.3 (snapshot from 2007/04/01)
+---------------------------------------------------------------------
+
+- Value is set automatically when item being edited looses focus (no more need 
+  pressing Enter to confirm typed data).
+- Added methods TValueBrowser::widthScale() and TValueBrowser::setWidthScale().
+
+- Item editor does not loose focus when page is changed out and then back.
+- Fixed issue with restoring old item value by Escape.
+- Fixed issue with icon repaint for color value.
+- Fixed issue with drop-down list size.
+- Fixed issues with traversing and tooltips with Qt 4.1.x.
+- Fixed issue with page switching.
+
+
+
+3.1.2 (snapshot from 2007/03/03)
+---------------------------------------------------------------------
+
+- Added extra constructors to TItemList to provide more flexibility.
+- TValueBrowser::HintChanged() signal parameters updated to make it possibly
+  to direct connect to, say, QLabel::setText() slot.
+- Added ELinkedType::LT_OWNTYPE value to define own linked values.
+- TValueBrowser::addList() method parameter list extended ("own" and "append"
+  params added).
+- Added TBaseItem::itemIcon() method to provide icons for non-list values.
+- Fixed issue with color comparation.
+- Fixed issue with color value when icon become hidden in edit mode using own color.
+
+
+
+3.1.1 (snapshot from 2007/01/07)
+---------------------------------------------------------------------
+
+- Some improvements while selecting an item.
+- Color value is allowed to input arbitrary colors by default.
+- Fixed issue with closing item editor.
+
+
+
+3.1.0 (snapshot from 2006/12/31)
+---------------------------------------------------------------------
+
+- Doxygen documentation installed.
+
+- Some issues fixed.
+- Changed: all the validators are sublassed from QObject and can be managed
+	in the same way as ordinal Qt objects.
+- Changed: numeric value divided into TIntegerValue and TDoubleValue.
+
+- Added TRegExpValidator based on QRegExp validation.
+- Added TTextValue and TTextButtonEditor classes which supporting multi-line
+	text input.
+- Added auto-popups for value items. Especially useable for long and multi-line
+	text.
+- Added methods for quick fill of the browser.
+- Added bindings to the external values.
+- Added import/export of internal and external values via QSettings.
+
+
+
+3.0.0 (snapshot from 2006/12/24)
+---------------------------------------------------------------------
+
+- Value Browser ported from Qt 3 to Qt 4
+
+Changes from the latest 2.x version:
+
+- Full structural redesign of the sources.
+
+- Added boolean checkbox editor.
+- Added quick setup of current page and default parameters of the items.
+- Added Combo Editor feature.
+- Added TSpinButtonEditor class (as Button editor).
+
+ 
+
+===============================================================================
+
+Value Browser 3 (C) 2004-2007 Industrial Infosystems          www.ii-system.com

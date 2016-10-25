@@ -1,0 +1,75 @@
+QAIV (QAdvanced Item Views) Change Log
+======================================
+Version 0.4 - 2014-0x-xx
+
++ new features
+  - QAdvancedTableView: API for custom sort and fiter proxy model implemented
+  
++ changes
+  - QMimeData utilities: argument role changed from Qt::ItemDataRole to int
+
++ bug fixes
+  - Missing files added
+  
+Version 0.3 - 2014-01-06
+
++ bug fixes
+  - 019220: source model reset not recognized
+  - 019179: header size different from vcolumn size when restoring state
+  - 019183: Doc errors setDefaultFilterType 
+  - 019194: QAIV tableView no effect with resizeColumnsToContents
+  
++ new features
+  - show more columns dialog improved
+  - QAutoFilter: Ok and Cancel buttons added to filter editor dialog
+  - QGroupingProxyModel: custom section header for group column added
+  - QGroupingProxyModel: custom title and icon for ungrouped items folder added
+  - QGroupingProxyModel: property groupsSpanned added
+  - QSelectionListFilter: Ok and Cancel buttons added to filter editor dialog
+  - class QTableModelExportPushButton added
+  - class QTableModelWriter added
+  - QMimeData utils extended for class QAdvancedTableView
+
++ changes
+  - QMimeData utilities extended (see qmimedatautil.h)
+
++ documentation updated
+  - QFilterView
+  
+Version 0.2 - 2013-06-15
+
++ bug fixes
+  - QAbstractFilterModel: layout change of the source model is not recognized by the filter model
+  - QConditionalDecorationDialog: icons disapear after changing a conditional decoration
+  - QConditionalDecorationDialog: a new condition is hidden if the number of conditions is larger than the visible space 
+  - QFilterEditorWidget: filter editor popup widget does not recognize desktop geometry
+  - QUniqueValuesProxyModel: model is not updated after a layout change of the source model
+
+ + changes
+   - example application: hint added to tab 'QConditionalDecorationProxyModel'
+
++ new features
+  - QAbstractItemModelDecoration: methods restoreState() and saveState() added
+  - QConditionalDecoration: the definition is no longer bound to the column it is bind to
+  - QConditionalDecorationProxyModel: support for multiple icons per item decoration added
+  - QConditionalDecorationProxyModel: property iconSpacing added to class QConditionalDecorationProxyModel
+  - QConditionalDecorationProxyModel: methods restoreState() and saveState() added
+  - QMimeData utilities add (see qmimedatautil.h)
+  - example application: copy to clipboard added (format aware copy)
+  - Translation de-de added (WIP)
+  
++ documentation updated
+  - images added to repository
+  - QConditionalDecoration
+  - QFilterGroup
+  - QFixedRowsTableView
+  - QFixedRowsFilterProxyModel
+  - QFixedRowsDecorationProxyModel
+  - QGroupingProxyModel
+  - QSharedItemSelectionModel
+  - QSingleColumnProxyModel
+  - QUniqueValuesProxyModel
+
+Version 0.1 - 2013-03-20
+
++ First release

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instructionals module="wwWidgets">
+    <examples>
+        <example name="Color pickers example" docUrl="qthelp://org.eu.wysota.wwwidgets.100/wwwidgets/wwwidgets-colorpickers-example.html" projectPath="colorpickers/colorpickers.pro">
+            <description><![CDATA[No description available]]></description>
+            <tags>color,widgets,pickers</tags>
+            <fileToOpen>colorpickers/main.cpp</fileToOpen>
+        </example>
+        <example name="List widget example" docUrl="qthelp://org.eu.wysota.wwwidgets.100/wwwidgets/wwwidgets-listwidget-example.html" projectPath="listwidget/listwidget.pro">
+            <description><![CDATA[No description available]]></description>
+            <tags>widgets,widget,list</tags>
+            <fileToOpen>listwidget/main.cpp</fileToOpen>
+        </example>
+        <example name="Pinpad example" docUrl="qthelp://org.eu.wysota.wwwidgets.100/wwwidgets/wwwidgets-pinpad-example.html" projectPath="pinpad/pinpad.pro">
+            <description><![CDATA[No description available]]></description>
+            <tags>pinpad,widgets</tags>
+            <fileToOpen>pinpad/main.cpp</fileToOpen>
+        </example>
+        <example name="Text editor example" docUrl="qthelp://org.eu.wysota.wwwidgets.100/wwwidgets/wwwidgets-texteditor-example.html" projectPath="texteditor/texteditor.pro">
+            <description><![CDATA[No description available]]></description>
+            <tags>editor,text,widgets</tags>
+            <fileToOpen>texteditor/main.cpp</fileToOpen>
+        </example>
+    </examples>
+</instructionals>

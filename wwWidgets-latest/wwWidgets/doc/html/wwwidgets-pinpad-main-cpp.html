@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>main.cpp Example File (pinpad/main.cpp) | wwWidgets 1.0</title>
+  <link rel="stylesheet" type="text/css" href="style/offline.css" />
+</head>
+<body>
+<div class="header" id="qtdocheader">
+    <div class="main">
+    <div class="main-rounded">
+        <div class="navigationbar">
+        <ul>
+      <li class="first"><a href="index.html">wwWidgets</a></li>
+      <!--  Breadcrumbs go here -->
+<li>main.cpp Example File (pinpad/main.cpp)</li>
+<li id="buildversion">
+</li>
+    </ul>
+    </div>
+</div>
+<div class="content">
+<div class="line">
+<div class="content mainContent">
+<h1 class="title">main.cpp Example File</h1>
+<span class="small-subtitle">pinpad/main.cpp</span>
+<!-- $$$pinpad/main.cpp-description -->
+<div class="descr"> <a name="details"></a>
+<pre class="cpp"><span class="preprocessor">#include &lt;QApplication&gt;</span>
+<span class="preprocessor">#include &lt;QwwNumPad&gt;</span>
+<span class="preprocessor">#include &lt;QLineEdit&gt;</span>
+<span class="preprocessor">#include &lt;QLayout&gt;</span>
+
+<span class="keyword">class</span> Widget : <span class="keyword">public</span> <span class="type">QWidget</span> {
+    Q_OBJECT
+<span class="keyword">public</span>:
+    Widget() : <span class="type">QWidget</span>(){
+        QwwNumPad <span class="operator">*</span>pad <span class="operator">=</span> <span class="keyword">new</span> QwwNumPad;
+        lineEdit <span class="operator">=</span> <span class="keyword">new</span> <span class="type">QLineEdit</span>;
+        lineEdit<span class="operator">-</span><span class="operator">&gt;</span>setReadOnly(<span class="keyword">true</span>);
+        lineEdit<span class="operator">-</span><span class="operator">&gt;</span>setSizePolicy(<span class="type">QSizePolicy</span><span class="operator">::</span>Preferred<span class="operator">,</span> <span class="type">QSizePolicy</span><span class="operator">::</span>Fixed);
+        connect(pad<span class="operator">,</span> SIGNAL(numberClicked(<span class="type">int</span>))<span class="operator">,</span> <span class="keyword">this</span><span class="operator">,</span> SLOT(handleClick(<span class="type">int</span>)));
+        connect(pad<span class="operator">,</span> SIGNAL(hashClicked())<span class="operator">,</span> lineEdit<span class="operator">,</span> SLOT(clear()));
+        <span class="type">QVBoxLayout</span> <span class="operator">*</span>l <span class="operator">=</span> <span class="keyword">new</span> <span class="type">QVBoxLayout</span>(<span class="keyword">this</span>);
+        l<span class="operator">-</span><span class="operator">&gt;</span>addWidget(lineEdit);
+        l<span class="operator">-</span><span class="operator">&gt;</span>addWidget(pad);
+        l<span class="operator">-</span><span class="operator">&gt;</span>setSizeConstraint(<span class="type">QLayout</span><span class="operator">::</span>SetFixedSize);
+    }
+<span class="keyword">private</span>:
+    <span class="type">QLineEdit</span> <span class="operator">*</span>lineEdit;
+<span class="keyword">private</span> <span class="keyword">slots</span>:
+    <span class="type">void</span> handleClick(<span class="type">int</span> val){
+        lineEdit<span class="operator">-</span><span class="operator">&gt;</span>setText(lineEdit<span class="operator">-</span><span class="operator">&gt;</span>text()<span class="operator">+</span><span class="type">QString</span><span class="operator">::</span>number(val));
+    }
+};
+
+<span class="preprocessor">#include &quot;main.moc&quot;</span>
+
+<span class="type">int</span> main(<span class="type">int</span> argc<span class="operator">,</span> <span class="type">char</span> <span class="operator">*</span><span class="operator">*</span>argv){
+    <span class="type">QApplication</span> app(argc<span class="operator">,</span> argv);
+    Widget w;
+    w<span class="operator">.</span>show();
+    <span class="keyword">return</span> app<span class="operator">.</span>exec();
+}</pre>
+</div>
+<!-- @@@pinpad/main.cpp -->
+<div class="footer"> <img src="images/ww-logo.png" style="height: 24px; margin-top: -10px;" align="right" /> Copyright (C) 2014 Witold Wysota</div></body>
+</html>

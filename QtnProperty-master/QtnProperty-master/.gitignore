@@ -1,0 +1,9 @@
+/tmp/
+/bin/
+*.pro.user
+*.lexer.*
+*.parser.*
+*~
+*.directory
+*.autosave
+*Thumbs.db

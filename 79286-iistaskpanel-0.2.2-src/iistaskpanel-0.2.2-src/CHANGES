@@ -1,0 +1,47 @@
+iisTaskPanel
+--------------------------------
+
+0.2.2
+
+- added iisRect and options to iisHeader for making rounded corners
+- added three folding effects (Slide, Shrunk and NoFolding)
+- added groupFoldEffect and groupFoldThaw options to iisTaskScheme class
+
+- fixed issue with unfolding of the transparent groups
+- fixed issue with folding of the non-expandable groups
+
+
+0.2.1
+
+- added Vista style
+- added some new options to iisTaskScheme class
+- added Up/Down key navigation in groups
+
+- fixed default style
+- fixed issue with unfolding animation
+
+
+0.2.0
+
+- added complete QAction support:
+	- auto-creation of tasks by adding QAction-s to the groups
+	- support of tooltips and shortcuts as well as other QAction components
+	- auto-reflection of changes in associated QAction-s
+- added example "actions"
+
+- fixed base palette
+
+- fixed project for static build
+
+
+0.1.0
+
+- added example "styles"
+- added WinXP Blue scheme
+- a lot of fixes and improvements
+- fixed build system for MinGW and VC2005 (many thanx to Konstantin & Pastor)
+
+0.1.b
+
+- added header buttons
+- fixed issue with jerking while unfolding groups

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- qwwhuesatradialpicker.cpp -->
+  <title>QwwHueSatRadialPicker Class | wwWidgets 1.0</title>
+  <link rel="stylesheet" type="text/css" href="style/offline.css" />
+</head>
+<body>
+<div class="header" id="qtdocheader">
+    <div class="main">
+    <div class="main-rounded">
+        <div class="navigationbar">
+        <ul>
+      <li class="first"><a href="index.html">wwWidgets</a></li>
+      <!--  Breadcrumbs go here -->
+<li>QwwHueSatRadialPicker</li>
+<li id="buildversion">
+</li>
+    </ul>
+    </div>
+</div>
+<div class="content">
+<div class="line">
+<div class="content mainContent">
+<div class="toc">
+<h3><a name="toc">Contents</a></h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#public-functions">Public Functions</a></li>
+<li class="level1"><a href="#public-slots">Public Slots</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#protected-functions">Protected Functions</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<h1 class="title">QwwHueSatRadialPicker Class</h1>
+<!-- $$$QwwHueSatRadialPicker-brief -->
+<p>The QwwHueSatRadialPicker class provides a widget allowing color picking in a form of hue-saturation circle. <a href="#details">More...</a></p>
+<!-- @@@QwwHueSatRadialPicker -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Header:</td><td class="memItemRight bottomAlign"> </b><tt><span class="preprocessor">#include &lt;QwwHueSatRadialPicker&gt;</span>
+</tt></td></tr></table><ul>
+<li><a href="qwwhuesatradialpicker-members.html">List of all members, including inherited members</a></li>
+</ul>
+<a name="properties"></a>
+<h2>Properties</h2>
+<ul>
+<li class="fn"><b><a href="qwwhuesatradialpicker.html#color-prop">color</a></b> : QColor</li>
+<li class="fn"><b><a href="qwwhuesatradialpicker.html#value-prop">value</a></b> : int</li>
+</ul>
+<a name="public-functions"></a>
+<h2>Public Functions</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> </td><td class="memItemRight bottomAlign"><b><a href="qwwhuesatradialpicker.html#QwwHueSatRadialPicker">QwwHueSatRadialPicker</a></b>(QWidget *<i> parent</i> = 0)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> const QColor </td><td class="memItemRight bottomAlign"><b><a href="qwwhuesatradialpicker.html#color-prop">color</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> int </td><td class="memItemRight bottomAlign"><b><a href="qwwhuesatradialpicker.html#value-prop">value</a></b>() const</td></tr>
+</table>
+<a name="public-slots"></a>
+<h2>Public Slots</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwhuesatradialpicker.html#color-prop">setColor</a></b>(const QColor &amp;<i> c</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwhuesatradialpicker.html#value-prop">setValue</a></b>(int<i> v</i>)</td></tr>
+</table>
+<a name="signals"></a>
+<h2>Signals</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwhuesatradialpicker.html#colorPicked">colorPicked</a></b>(QColor<i> color</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwhuesatradialpicker.html#valueChanged">valueChanged</a></b>(int<i> value</i>)</td></tr>
+</table>
+<a name="protected-functions"></a>
+<h2>Protected Functions</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> virtual void </td><td class="memItemRight bottomAlign"><b><a href="qwwhuesatradialpicker.html#drawCrosshair">drawCrosshair</a></b>(QPainter *<i> p</i>, const QPoint &amp;<i> pt</i>)</td></tr>
+</table>
+<a name="details"></a>
+<!-- $$$QwwHueSatRadialPicker-description -->
+<div class="descr">
+<h2>Detailed Description</h2>
+<p>The QwwHueSatRadialPicker class provides a widget allowing color picking in a form of hue-saturation circle.</p>
+<p class="centerAlign"><img src="images/qwwhuesatradialpicker.png" alt="QwwHueSatRadialPicker" /></p></div>
+<!-- @@@QwwHueSatRadialPicker -->
+<div class="prop">
+<h2>Property Documentation</h2>
+<!-- $$$color-prop$$$color$$$setColorconstQColor& -->
+<h3 class="fn"><a name="color-prop"></a><span class="name">color</span> : <span class="type">QColor</span></h3>
+<p>This property holds property holds the currently picked color.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> const QColor </td><td class="memItemRight bottomAlign"><span class="name"><b>color</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setColor</b></span>(const QColor &amp;<i> c</i>)</td></tr>
+</table>
+<!-- @@@color -->
+<!-- $$$value-prop$$$value$$$setValueint -->
+<h3 class="fn"><a name="value-prop"></a><span class="name">value</span> : <span class="type">int</span></h3>
+<p>This property holds property holds the Value component of colors available in the picker.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> int </td><td class="memItemRight bottomAlign"><span class="name"><b>value</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setValue</b></span>(int<i> v</i>)</td></tr>
+</table>
+<!-- @@@value -->
+</div>
+<div class="func">
+<h2>Member Function Documentation</h2>
+<!-- $$$QwwHueSatRadialPicker[overload1]$$$QwwHueSatRadialPickerQWidget* -->
+<h3 class="fn"><a name="QwwHueSatRadialPicker"></a>QwwHueSatRadialPicker::<span class="name">QwwHueSatRadialPicker</span>(<span class="type">QWidget</span> *<i> parent</i> = 0)</h3>
+<p>Constructs a radial picker widget with a given <i>parent</i>.</p>
+<!-- @@@QwwHueSatRadialPicker -->
+<!-- $$$colorPicked[overload1]$$$colorPickedQColor -->
+<h3 class="fn"><a name="colorPicked"></a><span class="type">void</span> QwwHueSatRadialPicker::<span class="name">colorPicked</span>(<span class="type">QColor</span><i> color</i>)<tt> [signal]</tt></h3>
+<p>This signal is emitted whenever <i>color</i> is picked.</p>
+<!-- @@@colorPicked -->
+<!-- $$$drawCrosshair[overload1]$$$drawCrosshairQPainter*constQPoint& -->
+<h3 class="fn"><a name="drawCrosshair"></a><span class="type">void</span> QwwHueSatRadialPicker::<span class="name">drawCrosshair</span>(<span class="type">QPainter</span> *<i> p</i>, const <span class="type">QPoint</span> &amp;<i> pt</i>)<tt> [virtual protected]</tt></h3>
+<p>Draws the crosshair on painter <i>p</i> at point <i>pt</i>.</p>
+<!-- @@@drawCrosshair -->
+<!-- $$$valueChanged[overload1]$$$valueChangedint -->
+<h3 class="fn"><a name="valueChanged"></a><span class="type">void</span> QwwHueSatRadialPicker::<span class="name">valueChanged</span>(<span class="type">int</span><i> value</i>)<tt> [signal]</tt></h3>
+<p>This signal is emitted whenever the V component of the color changes to <i>value</i>.</p>
+<!-- @@@valueChanged -->
+</div>
+<div class="footer"> <img src="images/ww-logo.png" style="height: 24px; margin-top: -10px;" align="right" /> Copyright (C) 2014 Witold Wysota</div></body>
+</html>

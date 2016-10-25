@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- wwWidgets-manual.qdoc -->
+  <title>Use of icons | wwWidgets 1.0</title>
+  <link rel="stylesheet" type="text/css" href="style/offline.css" />
+</head>
+<body>
+<div class="header" id="qtdocheader">
+    <div class="main">
+    <div class="main-rounded">
+        <div class="navigationbar">
+        <ul>
+      <li class="first"><a href="index.html">wwWidgets</a></li>
+      <!--  Breadcrumbs go here -->
+<li>Use of icons</li>
+<li id="buildversion">
+</li>
+    </ul>
+    </div>
+</div>
+<div class="content">
+<div class="line">
+<div class="content mainContent">
+<div class="toc">
+<h3><a name="toc">Contents</a></h3>
+<ul>
+<li class="level1"><a href="#icon-themes">Icon themes</a></li>
+</ul>
+</div>
+<h1 class="title">Use of icons</h1>
+<span class="subtitle"></span>
+<!-- $$$icons.html-description -->
+<div class="descr"> <a name="details"></a>
+<a name="icon-themes"></a>
+<h2>Icon themes</h2>
+<p>Since version 4.6 of Qt it is possible to use standard (according to freedesktop.org) themes for icons. When supported, <a href="wwwidgets-module.html">wwWidgets</a> tries to pick up appropriate icons from the icon theme before using custom icons. Therefore it is possible to substitute most icons in the set by using an own icon theme.</p>
+<p>On systems where icon themes are preinstalled (i.e&#x2e; Linux) - usually in /usr/share/icons, everything works out of the box. On other systems (i.e&#x2e; Windows) to use icon themes it is required that an icon theme is installed in the system and the path to the theme is set using QIcon::setThemeSearchPaths() static call. To use another theme, QIcon::setThemeName() can be used.</p>
+<p>Qt provides a fallback mechanism that allows to embed icon themes directly in the application binary by placing the theme under the <tt>:/icons</tt> resource directory. More information on icon themes can be found in Qt documentation and <a href="http://standards.freedesktop.org/icon-theme-spec/icon-theme-spec-latest.html">standards.freedesktop.org</a>.</p>
+<pre class="cpp"><span class="type">int</span> main(<span class="type">int</span> argc<span class="operator">,</span> <span class="type">char</span> <span class="operator">*</span><span class="operator">*</span>argv){
+  <span class="type">QApplication</span> app(argc<span class="operator">,</span> argv);
+  <span class="type">QStringList</span> iconThemes;
+  iconThemes <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="type">QApplication</span><span class="operator">::</span>applicationDirPath()<span class="operator">+</span><span class="string">&quot;/icons&quot;</span>;
+  <span class="type">QIcon</span><span class="operator">::</span>setThemeSearchPaths(iconThemes);
+  QwwFileChooser chooser;
+  chooser<span class="operator">.</span>show();
+  <span class="keyword">return</span> app<span class="operator">.</span>exec();
+}</pre>
+</div>
+<!-- @@@icons.html -->
+<div class="footer"> <img src="images/ww-logo.png" style="height: 24px; margin-top: -10px;" align="right" /> Copyright (C) 2014 Witold Wysota</div></body>
+</html>

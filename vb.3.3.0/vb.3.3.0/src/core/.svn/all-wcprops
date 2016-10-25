@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svnroot/vbrowser/!svn/ver/1/src/core
+END
+iisEditors.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/vbrowser/!svn/ver/3/src/core/iisEditors.cpp
+END
+iisItemList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/vbrowser/!svn/ver/1/src/core/iisItemList.cpp
+END
+iisValidators.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/vbrowser/!svn/ver/1/src/core/iisValidators.h
+END
+iisEditors.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vbrowser/!svn/ver/1/src/core/iisEditors.h
+END
+iisItemList.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/vbrowser/!svn/ver/1/src/core/iisItemList.h
+END
+iisDropList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/vbrowser/!svn/ver/3/src/core/iisDropList.cpp
+END
+iisValueBrowser.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/vbrowser/!svn/ver/1/src/core/iisValueBrowser.cpp
+END
+iisItems.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/vbrowser/!svn/ver/3/src/core/iisItems.cpp
+END
+iisDropList.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/vbrowser/!svn/ver/1/src/core/iisDropList.h
+END
+iisValueBrowser.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/vbrowser/!svn/ver/1/src/core/iisValueBrowser.h
+END
+iisItems.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/vbrowser/!svn/ver/3/src/core/iisItems.h
+END
+iisValidators.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/vbrowser/!svn/ver/1/src/core/iisValidators.cpp
+END

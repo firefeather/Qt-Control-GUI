@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/images" >
+        <file>editcopy.xpm</file>
+        <file>editcut.xpm</file>
+        <file>editpaste.xpm</file>
+        <file>editredo.xpm</file>
+        <file>editundo.xpm</file>
+        <file>filenew.xpm</file>
+        <file>fileopen.xpm</file>
+        <file>fileprint.xpm</file>
+        <file>filesave.xpm</file>
+        <file>textbold.xpm</file>
+        <file>textcenter.xpm</file>
+        <file>textitalic.xpm</file>
+        <file>textjustify.xpm</file>
+        <file>textleft.xpm</file>
+        <file>textright.xpm</file>
+        <file>textunder.xpm</file>
+        <file>type.png</file>
+    </qresource>
+</RCC>

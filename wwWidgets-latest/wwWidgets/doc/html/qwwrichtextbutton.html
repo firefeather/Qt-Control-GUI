@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- qwwrichtextbutton.cpp -->
+  <title>QwwRichTextButton Class | wwWidgets 1.0</title>
+  <link rel="stylesheet" type="text/css" href="style/offline.css" />
+</head>
+<body>
+<div class="header" id="qtdocheader">
+    <div class="main">
+    <div class="main-rounded">
+        <div class="navigationbar">
+        <ul>
+      <li class="first"><a href="index.html">wwWidgets</a></li>
+      <!--  Breadcrumbs go here -->
+<li>QwwRichTextButton</li>
+<li id="buildversion">
+</li>
+    </ul>
+    </div>
+</div>
+<div class="content">
+<div class="line">
+<div class="content mainContent">
+<div class="toc">
+<h3><a name="toc">Contents</a></h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#public-functions">Public Functions</a></li>
+<li class="level1"><a href="#public-slots">Public Slots</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<h1 class="title">QwwRichTextButton Class</h1>
+<!-- $$$QwwRichTextButton-brief -->
+<p>The QwwRichTextButton class provides a button that can display rich text content. <a href="#details">More...</a></p>
+<!-- @@@QwwRichTextButton -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Header:</td><td class="memItemRight bottomAlign"> </b><tt><span class="preprocessor">#include &lt;QwwRichTextButton&gt;</span>
+</tt></td></tr></table><ul>
+<li><a href="qwwrichtextbutton-members.html">List of all members, including inherited members</a></li>
+</ul>
+<a name="properties"></a>
+<h2>Properties</h2>
+<ul>
+<li class="fn"><b><a href="qwwrichtextbutton.html#html-prop">html</a></b> : QString</li>
+</ul>
+<a name="public-functions"></a>
+<h2>Public Functions</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> </td><td class="memItemRight bottomAlign"><b><a href="qwwrichtextbutton.html#QwwRichTextButton">QwwRichTextButton</a></b>(QWidget *<i> parent</i> = 0)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> </td><td class="memItemRight bottomAlign"><b><a href="qwwrichtextbutton.html#QwwRichTextButton-2">QwwRichTextButton</a></b>(QTextDocument *<i> doc</i>, QWidget *<i> parent</i> = 0)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> QTextDocument * </td><td class="memItemRight bottomAlign"><b><a href="qwwrichtextbutton.html#document">document</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> QString </td><td class="memItemRight bottomAlign"><b><a href="qwwrichtextbutton.html#html-prop">html</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwrichtextbutton.html#setDocument">setDocument</a></b>(QTextDocument *<i> doc</i>)</td></tr>
+</table>
+<a name="public-slots"></a>
+<h2>Public Slots</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwrichtextbutton.html#html-prop">setHtml</a></b>(const QString &amp;<i> txt</i>)</td></tr>
+</table>
+<a name="details"></a>
+<!-- $$$QwwRichTextButton-description -->
+<div class="descr">
+<h2>Detailed Description</h2>
+<p>The QwwRichTextButton class provides a button that can display rich text content.</p>
+<p>This widget is similar in its behavior to QPushButton, but it can display not only plain text, but also rich text. The text to be displayed can be set either using the <i>html</i> property or by assigning a QTextDocument to the widget using <a href="qwwrichtextbutton.html#setDocument">setDocument</a>().</p>
+</div>
+<!-- @@@QwwRichTextButton -->
+<div class="prop">
+<h2>Property Documentation</h2>
+<!-- $$$html-prop$$$html$$$setHtmlconstQString& -->
+<h3 class="fn"><a name="html-prop"></a><span class="name">html</span> : <span class="type">QString</span></h3>
+<p>This property holds the text displayed on the button.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> QString </td><td class="memItemRight bottomAlign"><span class="name"><b>html</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setHtml</b></span>(const QString &amp;<i> txt</i>)</td></tr>
+</table>
+<!-- @@@html -->
+</div>
+<div class="func">
+<h2>Member Function Documentation</h2>
+<!-- $$$QwwRichTextButton[overload1]$$$QwwRichTextButtonQWidget* -->
+<h3 class="fn"><a name="QwwRichTextButton"></a>QwwRichTextButton::<span class="name">QwwRichTextButton</span>(<span class="type">QWidget</span> *<i> parent</i> = 0)</h3>
+<p>Constructs a rich text button with a given <i>parent</i>.</p>
+<!-- @@@QwwRichTextButton -->
+<!-- $$$QwwRichTextButton$$$QwwRichTextButtonQTextDocument*QWidget* -->
+<h3 class="fn"><a name="QwwRichTextButton-2"></a>QwwRichTextButton::<span class="name">QwwRichTextButton</span>(<span class="type">QTextDocument</span> *<i> doc</i>, <span class="type">QWidget</span> *<i> parent</i> = 0)</h3>
+<p>Constructs a rich text button with a given <i>parent</i> and <i>doc</i> set as the document</p>
+<!-- @@@QwwRichTextButton -->
+<!-- $$$document[overload1]$$$document -->
+<h3 class="fn"><a name="document"></a><span class="type">QTextDocument</span> * QwwRichTextButton::<span class="name">document</span>() const</h3>
+<p>Returns the current document for the button.</p>
+<p><b>See also </b><a href="qwwrichtextbutton.html#setDocument">setDocument</a>().</p>
+<!-- @@@document -->
+<!-- $$$setDocument[overload1]$$$setDocumentQTextDocument* -->
+<h3 class="fn"><a name="setDocument"></a><span class="type">void</span> QwwRichTextButton::<span class="name">setDocument</span>(<span class="type">QTextDocument</span> *<i> doc</i>)</h3>
+<p>Makes <i>doc</i> the new document for the button.</p>
+<p>The content of the document is displayed on the button. Widget does not take ownership of the document.</p>
+<p><b>See also </b><a href="qwwrichtextbutton.html#document">document</a>().</p>
+<!-- @@@setDocument -->
+</div>
+<div class="footer"> <img src="images/ww-logo.png" style="height: 24px; margin-top: -10px;" align="right" /> Copyright (C) 2014 Witold Wysota</div></body>
+</html>

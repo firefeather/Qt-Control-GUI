@@ -1,0 +1,14 @@
+# #####################################################################
+# DataZoom Project file
+# #####################################################################
+HEADERS += tcabstractfilter.h \
+    tcabstractzoomparams.h \
+    tcabstractdatamodel.h \
+    tccsvfilter.h \
+    tccsvzoomparams.h \
+    tcpsqldatamodel.h \
+    tcpsqlfilters.h \
+    twdatazoom.h \
+    tcpsqlzoomparams.h \
+    tcsqlconvertutils.h \
+    tpsqlzoomparameter.h 

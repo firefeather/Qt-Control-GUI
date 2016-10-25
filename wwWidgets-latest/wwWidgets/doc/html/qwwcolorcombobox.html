@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- qwwcolorcombobox.cpp -->
+  <title>QwwColorComboBox Class | wwWidgets 1.0</title>
+  <link rel="stylesheet" type="text/css" href="style/offline.css" />
+</head>
+<body>
+<div class="header" id="qtdocheader">
+    <div class="main">
+    <div class="main-rounded">
+        <div class="navigationbar">
+        <ul>
+      <li class="first"><a href="index.html">wwWidgets</a></li>
+      <!--  Breadcrumbs go here -->
+<li>QwwColorComboBox</li>
+<li id="buildversion">
+</li>
+    </ul>
+    </div>
+</div>
+<div class="content">
+<div class="line">
+<div class="content mainContent">
+<div class="toc">
+<h3><a name="toc">Contents</a></h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#public-functions">Public Functions</a></li>
+<li class="level1"><a href="#public-slots">Public Slots</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<h1 class="title">QwwColorComboBox Class</h1>
+<!-- $$$QwwColorComboBox-brief -->
+<p>The QwwColorComboBox class provides a combobox that allows to pick colors. <a href="#details">More...</a></p>
+<!-- @@@QwwColorComboBox -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Header:</td><td class="memItemRight bottomAlign"> </b><tt><span class="preprocessor">#include &lt;QwwColorComboBox&gt;</span>
+</tt></td></tr></table><ul>
+<li><a href="qwwcolorcombobox-members.html">List of all members, including inherited members</a></li>
+</ul>
+<a name="properties"></a>
+<h2>Properties</h2>
+<ul>
+<li class="fn"><b><a href="qwwcolorcombobox.html#colorCount-prop">colorCount</a></b> : const int</li>
+<li class="fn"><b><a href="qwwcolorcombobox.html#colorDialogEnabled-prop">colorDialogEnabled</a></b> : bool</li>
+<li class="fn"><b><a href="qwwcolorcombobox.html#colors-prop">colors</a></b> : QStringList</li>
+<li class="fn"><b><a href="qwwcolorcombobox.html#currentColor-prop">currentColor</a></b> : const QColor</li>
+</ul>
+<a name="public-functions"></a>
+<h2>Public Functions</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> </td><td class="memItemRight bottomAlign"><b><a href="qwwcolorcombobox.html#QwwColorComboBox">QwwColorComboBox</a></b>(QWidget *<i> parent</i> = 0)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwcolorcombobox.html#addColor">addColor</a></b>(const QColor &amp;<i> color</i>, const QString &amp;<i> name</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> QColor </td><td class="memItemRight bottomAlign"><b><a href="qwwcolorcombobox.html#color">color</a></b>(int<i> index</i>) const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> int </td><td class="memItemRight bottomAlign"><b><a href="qwwcolorcombobox.html#colorCount-prop">colorCount</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> QStringList </td><td class="memItemRight bottomAlign"><b><a href="qwwcolorcombobox.html#colors-prop">colors</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> QColor </td><td class="memItemRight bottomAlign"><b><a href="qwwcolorcombobox.html#currentColor-prop">currentColor</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwcolorcombobox.html#insertColor">insertColor</a></b>(int<i> index</i>, const QColor &amp;<i> color</i>, const QString &amp;<i> name</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> bool </td><td class="memItemRight bottomAlign"><b><a href="qwwcolorcombobox.html#colorDialogEnabled-prop">isColorDialogEnabled</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwcolorcombobox.html#colorDialogEnabled-prop">setColorDialogEnabled</a></b>(bool<i> enabled</i> = true)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwcolorcombobox.html#colors-prop">setColors</a></b>(const QStringList &amp;<i> map</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwcolorcombobox.html#setStandardColors">setStandardColors</a></b>()</td></tr>
+</table>
+<a name="public-slots"></a>
+<h2>Public Slots</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwcolorcombobox.html#setCurrentColor">setCurrentColor</a></b>(const QColor &amp;<i> color</i>)</td></tr>
+</table>
+<a name="signals"></a>
+<h2>Signals</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwcolorcombobox.html#activated">activated</a></b>(const QColor &amp;<i> color</i>)</td></tr>
+</table>
+<a name="details"></a>
+<!-- $$$QwwColorComboBox-description -->
+<div class="descr">
+<h2>Detailed Description</h2>
+<p>The QwwColorComboBox class provides a combobox that allows to pick colors.</p>
+</div>
+<!-- @@@QwwColorComboBox -->
+<div class="prop">
+<h2>Property Documentation</h2>
+<!-- $$$colorCount-prop$$$colorCount -->
+<h3 class="fn"><a name="colorCount-prop"></a><span class="name">colorCount</span> : const <span class="type">int</span></h3>
+<p>This property holds number of colors available.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> int </td><td class="memItemRight bottomAlign"><span class="name"><b>colorCount</b></span>() const</td></tr>
+</table>
+<p><b>See also </b><a href="qwwcolorcombobox.html#colors-prop">colors</a> and <a href="qwwcolorcombobox.html#currentColor-prop">currentColor</a>.</p>
+<!-- @@@colorCount -->
+<!-- $$$colorDialogEnabled-prop$$$isColorDialogEnabled$$$setColorDialogEnabledbool -->
+<h3 class="fn"><a name="colorDialogEnabled-prop"></a><span class="name">colorDialogEnabled</span> : <span class="type">bool</span></h3>
+<p>This property holds property holds information whether picking custom colors using a color dialog is enabled.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> bool </td><td class="memItemRight bottomAlign"><span class="name"><b>isColorDialogEnabled</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setColorDialogEnabled</b></span>(bool<i> enabled</i> = true)</td></tr>
+</table>
+<!-- @@@colorDialogEnabled -->
+<!-- $$$colors-prop$$$colors$$$setColorsconstQStringList& -->
+<h3 class="fn"><a name="colors-prop"></a><span class="name">colors</span> : <span class="type">QStringList</span></h3>
+<p>This property holds list of colors known to the button.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> QStringList </td><td class="memItemRight bottomAlign"><span class="name"><b>colors</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setColors</b></span>(const QStringList &amp;<i> map</i>)</td></tr>
+</table>
+<p><b>See also </b><a href="qwwcolorcombobox.html#colorCount-prop">colorCount</a> and <a href="qwwcolorcombobox.html#currentColor-prop">currentColor</a>.</p>
+<!-- @@@colors -->
+<!-- $$$currentColor-prop$$$currentColor -->
+<h3 class="fn"><a name="currentColor-prop"></a><span class="name">currentColor</span> : const <span class="type">QColor</span></h3>
+<p>This property holds currently chosen color.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> QColor </td><td class="memItemRight bottomAlign"><span class="name"><b>currentColor</b></span>() const</td></tr>
+</table>
+<p><b>See also </b><a href="qwwcolorcombobox.html#colors-prop">colors</a> and <a href="qwwcolorcombobox.html#colorCount-prop">colorCount</a>.</p>
+<!-- @@@currentColor -->
+</div>
+<div class="func">
+<h2>Member Function Documentation</h2>
+<!-- $$$QwwColorComboBox[overload1]$$$QwwColorComboBoxQWidget* -->
+<h3 class="fn"><a name="QwwColorComboBox"></a>QwwColorComboBox::<span class="name">QwwColorComboBox</span>(<span class="type">QWidget</span> *<i> parent</i> = 0)</h3>
+<p>Constructs a color combo box with a given <i>parent</i>.</p>
+<!-- @@@QwwColorComboBox -->
+<!-- $$$activated[overload1]$$$activatedconstQColor& -->
+<h3 class="fn"><a name="activated"></a><span class="type">void</span> QwwColorComboBox::<span class="name">activated</span>(const <span class="type">QColor</span> &amp;<i> color</i>)<tt> [signal]</tt></h3>
+<p>Signal emitted when <i>color</i> is activated</p>
+<!-- @@@activated -->
+<!-- $$$addColor[overload1]$$$addColorconstQColor&constQString& -->
+<h3 class="fn"><a name="addColor"></a><span class="type">void</span> QwwColorComboBox::<span class="name">addColor</span>(const <span class="type">QColor</span> &amp;<i> color</i>, const <span class="type">QString</span> &amp;<i> name</i>)</h3>
+<p>Adds the specified <i>color</i> with a <i>name</i> to the list of available colors.</p>
+<p><b>See also </b><a href="qwwcolorcombobox.html#insertColor">insertColor</a>().</p>
+<!-- @@@addColor -->
+<!-- $$$color[overload1]$$$colorint -->
+<h3 class="fn"><a name="color"></a><span class="type">QColor</span> QwwColorComboBox::<span class="name">color</span>(<span class="type">int</span><i> index</i>) const</h3>
+<p>Returns the color at position <i>index</i></p>
+<p><b>See also </b><a href="qwwcolorcombobox.html#currentColor-prop">currentColor</a> and <a href="qwwcolorcombobox.html#colors-prop">colors</a>.</p>
+<!-- @@@color -->
+<!-- $$$insertColor[overload1]$$$insertColorintconstQColor&constQString& -->
+<h3 class="fn"><a name="insertColor"></a><span class="type">void</span> QwwColorComboBox::<span class="name">insertColor</span>(<span class="type">int</span><i> index</i>, const <span class="type">QColor</span> &amp;<i> color</i>, const <span class="type">QString</span> &amp;<i> name</i>)</h3>
+<p>Inserts the specified <i>color</i> with a <i>name</i> in the list of available colors under specified <i>index</i></p>
+<p><b>See also </b><a href="qwwcolorcombobox.html#addColor">addColor</a>().</p>
+<!-- @@@insertColor -->
+<!-- $$$setCurrentColor[overload1]$$$setCurrentColorconstQColor& -->
+<h3 class="fn"><a name="setCurrentColor"></a><span class="type">void</span> QwwColorComboBox::<span class="name">setCurrentColor</span>(const <span class="type">QColor</span> &amp;<i> color</i>)<tt> [slot]</tt></h3>
+<p>Sets <i>color</i> as the currently picked color.</p>
+<p>Color is added to the list of available colors if it's not there yet.</p>
+<p><b>See also </b><a href="qwwcolorcombobox.html#currentColor-prop">currentColor</a>().</p>
+<!-- @@@setCurrentColor -->
+<!-- $$$setStandardColors[overload1]$$$setStandardColors -->
+<h3 class="fn"><a name="setStandardColors"></a><span class="type">void</span> QwwColorComboBox::<span class="name">setStandardColors</span>()</h3>
+<p>Fills the list of available colors with standard colors.</p>
+<p><b>See also </b><a href="qwwcolorcombobox.html#colors-prop">colors</a>.</p>
+<!-- @@@setStandardColors -->
+</div>
+<div class="footer"> <img src="images/ww-logo.png" style="height: 24px; margin-top: -10px;" align="right" /> Copyright (C) 2014 Witold Wysota</div></body>
+</html>

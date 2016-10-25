@@ -1,0 +1,8 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{TBaseGroup\n|# m_sectionName\l|+ TBaseGroup()\l+ ~TBaseGroup()\l+ ItemID()\l+ editable()\l+ hasValue()\l+ setSectionName()\l+ sectionName()\l+ writeDataSet()\l+ readDataSet()\l# paint()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty",fontname="FreeSans.ttf"];
+  Node2 [label="{TBaseItem\n|+ id\l# m_page\l# m_hint\l# m_check\l# m_storedCheck\l# m_visible\l# m_checkPropertyName\l# m_checkLinked\l# m_checkLinkedType\l# s_defaultPage\l|+ TBaseItem()\l+ TBaseItem()\l+ ~TBaseItem()\l+ setCheckable()\l+ setChecked()\l+ setEnabled()\l+ setVisible()\l+ setExpanded()\l+ hint()\l+ setHint()\l+ browser()\l+ page()\l+ ItemID()\l+ editable()\l+ visible()\l+ hasValue()\l+ storeSet()\l+ restoreSet()\l+ setCheckPropertyName()\l+ checkProperyName()\l+ setCheckLinked()\l+ addCheckProperty()\l+ updateFromLinked()\l+ updateLinked()\l+ writeDataSet()\l+ readDataSet()\l+ setItemLevel()\l# init()\l# onEnterItem()\l# onLeaveItem()\l# onClickItem()\l# onChangeItem()\l# updateCheckState()\l# setup()\l# paint()\l# drawDisplay()\l# itemIcon()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTBaseItem.html",tooltip="A base class for Value Browser items. Should not be used directly."];
+}

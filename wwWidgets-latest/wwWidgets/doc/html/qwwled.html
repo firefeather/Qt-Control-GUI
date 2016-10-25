@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- qwwled.cpp -->
+  <title>QwwLed Class | wwWidgets 1.0</title>
+  <link rel="stylesheet" type="text/css" href="style/offline.css" />
+</head>
+<body>
+<div class="header" id="qtdocheader">
+    <div class="main">
+    <div class="main-rounded">
+        <div class="navigationbar">
+        <ul>
+      <li class="first"><a href="index.html">wwWidgets</a></li>
+      <!--  Breadcrumbs go here -->
+<li>QwwLed</li>
+<li id="buildversion">
+</li>
+    </ul>
+    </div>
+</div>
+<div class="content">
+<div class="line">
+<div class="content mainContent">
+<div class="toc">
+<h3><a name="toc">Contents</a></h3>
+<ul>
+<li class="level1"><a href="#public-types">Public Types</a></li>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#public-functions">Public Functions</a></li>
+<li class="level1"><a href="#public-slots">Public Slots</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<h1 class="title">QwwLed Class</h1>
+<!-- $$$QwwLed-brief -->
+<p>The QwwLed class provides a widget that displays a LED. <a href="#details">More...</a></p>
+<!-- @@@QwwLed -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Header:</td><td class="memItemRight bottomAlign"> </b><tt><span class="preprocessor">#include &lt;QwwLed&gt;</span>
+</tt></td></tr></table><ul>
+<li><a href="qwwled-members.html">List of all members, including inherited members</a></li>
+</ul>
+<a name="public-types"></a>
+<h2>Public Types</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> enum </td><td class="memItemRight bottomAlign"><b><a href="qwwled.html#Shape-enum">Shape</a></b> { Circular, RectangularSunken, RectangularRaised, RectangularPlain }</td></tr>
+</table>
+<a name="properties"></a>
+<h2>Properties</h2>
+<table class="propsummary">
+<tr><td class="topAlign"><ul>
+<li class="fn"><b><a href="qwwled.html#animated-prop">animated</a></b> : bool</li>
+<li class="fn"><b><a href="qwwled.html#checked-prop">checked</a></b> : bool</li>
+<li class="fn"><b><a href="qwwled.html#color-prop">color</a></b> : QColor</li>
+</ul></td><td class="topAlign"><ul>
+<li class="fn"><b><a href="qwwled.html#frameWidth-prop">frameWidth</a></b> : int</li>
+<li class="fn"><b><a href="qwwled.html#period-prop">period</a></b> : int</li>
+<li class="fn"><b><a href="qwwled.html#shape-prop">shape</a></b> : Shape</li>
+</ul>
+</td></tr>
+</table>
+<a name="public-functions"></a>
+<h2>Public Functions</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> </td><td class="memItemRight bottomAlign"><b><a href="qwwled.html#QwwLed">QwwLed</a></b>(QWidget *<i> parent</i> = 0)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> </td><td class="memItemRight bottomAlign"><b><a href="qwwled.html#QwwLed-2">QwwLed</a></b>(const QColor &amp;<i> col</i>, Shape<i> shap</i> = Circular, QWidget *<i> parent</i> = 0)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> QColor </td><td class="memItemRight bottomAlign"><b><a href="qwwled.html#color-prop">color</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> int </td><td class="memItemRight bottomAlign"><b><a href="qwwled.html#frameWidth-prop">frameWidth</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> bool </td><td class="memItemRight bottomAlign"><b><a href="qwwled.html#animated-prop">isAnimated</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> bool </td><td class="memItemRight bottomAlign"><b><a href="qwwled.html#checked-prop">isChecked</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> int </td><td class="memItemRight bottomAlign"><b><a href="qwwled.html#period-prop">period</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> Shape </td><td class="memItemRight bottomAlign"><b><a href="qwwled.html#shape-prop">shape</a></b>() const</td></tr>
+</table>
+<a name="public-slots"></a>
+<h2>Public Slots</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwled.html#blink">blink</a></b>()</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwled.html#animated-prop">setAnimated</a></b>(bool)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwled.html#checked-prop">setChecked</a></b>(bool<i> v</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwled.html#color-prop">setColor</a></b>(const QColor &amp;<i> c</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwled.html#frameWidth-prop">setFrameWidth</a></b>(int<i> w</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwled.html#period-prop">setPeriod</a></b>(int)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwled.html#shape-prop">setShape</a></b>(Shape<i> s</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwled.html#toggle">toggle</a></b>()</td></tr>
+</table>
+<a name="signals"></a>
+<h2>Signals</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwled.html#clicked">clicked</a></b>()</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwled.html#colorChanged">colorChanged</a></b>(const QColor &amp;<i> color</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwled.html#toggled">toggled</a></b>(bool<i> checked</i>)</td></tr>
+</table>
+<a name="details"></a>
+<!-- $$$QwwLed-description -->
+<div class="descr">
+<h2>Detailed Description</h2>
+<p>The QwwLed class provides a widget that displays a LED.</p>
+<p class="centerAlign"><img src="images/qwwled.png" alt="" /></p></div>
+<!-- @@@QwwLed -->
+<div class="types">
+<h2>Member Type Documentation</h2>
+<!-- $$$Shape$$$Circular$$$RectangularSunken$$$RectangularRaised$$$RectangularPlain -->
+<h3 class="fn"><a name="Shape-enum"></a>enum QwwLed::<span class="name">Shape</span></h3>
+<table class="valuelist"><tr valign="top" class="odd"><th class="tblConst">Constant</th><th class="tblval">Value</th><th class="tbldscr">Description</th></tr>
+<tr><td class="topAlign"><tt>QwwLed::Circular</tt></td><td class="topAlign"><tt>0</tt></td><td class="topAlign">round LED</td></tr>
+<tr><td class="topAlign"><tt>QwwLed::RectangularSunken</tt></td><td class="topAlign"><tt>1</tt></td><td class="topAlign">rectangular LED with sunken appearance</td></tr>
+<tr><td class="topAlign"><tt>QwwLed::RectangularRaised</tt></td><td class="topAlign"><tt>2</tt></td><td class="topAlign">rectangular LED with raised appearence</td></tr>
+<tr><td class="topAlign"><tt>QwwLed::RectangularPlain</tt></td><td class="topAlign"><tt>3</tt></td><td class="topAlign">rectangular flat LED</td></tr>
+</table>
+<!-- @@@Shape -->
+</div>
+<div class="prop">
+<h2>Property Documentation</h2>
+<!-- $$$animated-prop$$$isAnimated$$$setAnimatedbool -->
+<h3 class="fn"><a name="animated-prop"></a><span class="name">animated</span> : <span class="type">bool</span></h3>
+<p>This property holds property keeping information whether the diode is animating.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> bool </td><td class="memItemRight bottomAlign"><span class="name"><b>isAnimated</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setAnimated</b></span>(bool)</td></tr>
+</table>
+<!-- @@@animated -->
+<!-- $$$checked-prop$$$isChecked$$$setCheckedbool -->
+<h3 class="fn"><a name="checked-prop"></a><span class="name">checked</span> : <span class="type">bool</span></h3>
+<p>This property holds property keeping information whether the led is turned on.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> bool </td><td class="memItemRight bottomAlign"><span class="name"><b>isChecked</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setChecked</b></span>(bool<i> v</i>)</td></tr>
+</table>
+<!-- @@@checked -->
+<!-- $$$color-prop$$$color$$$setColorconstQColor& -->
+<h3 class="fn"><a name="color-prop"></a><span class="name">color</span> : <span class="type">QColor</span></h3>
+<p>This property holds this property holds the colour of the diode.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> QColor </td><td class="memItemRight bottomAlign"><span class="name"><b>color</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setColor</b></span>(const QColor &amp;<i> c</i>)</td></tr>
+</table>
+<!-- @@@color -->
+<!-- $$$frameWidth-prop$$$frameWidth$$$setFrameWidthint -->
+<h3 class="fn"><a name="frameWidth-prop"></a><span class="name">frameWidth</span> : <span class="type">int</span></h3>
+<p>This property holds the width of led's frame.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> int </td><td class="memItemRight bottomAlign"><span class="name"><b>frameWidth</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setFrameWidth</b></span>(int<i> w</i>)</td></tr>
+</table>
+<!-- @@@frameWidth -->
+<!-- $$$period-prop$$$period$$$setPeriodint -->
+<h3 class="fn"><a name="period-prop"></a><span class="name">period</span> : <span class="type">int</span></h3>
+<p>This property holds blink period of the diode.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> int </td><td class="memItemRight bottomAlign"><span class="name"><b>period</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setPeriod</b></span>(int)</td></tr>
+</table>
+<!-- @@@period -->
+<!-- $$$shape-prop$$$shape$$$setShapeShape -->
+<h3 class="fn"><a name="shape-prop"></a><span class="name">shape</span> : <span class="type"><a href="qwwled.html#Shape-enum">Shape</a></span></h3>
+<p>This property holds this property holds the shape of the diode.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> Shape </td><td class="memItemRight bottomAlign"><span class="name"><b>shape</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setShape</b></span>(Shape<i> s</i>)</td></tr>
+</table>
+<!-- @@@shape -->
+</div>
+<div class="func">
+<h2>Member Function Documentation</h2>
+<!-- $$$QwwLed[overload1]$$$QwwLedQWidget* -->
+<h3 class="fn"><a name="QwwLed"></a>QwwLed::<span class="name">QwwLed</span>(<span class="type">QWidget</span> *<i> parent</i> = 0)</h3>
+<p>Constructs a led widget with a given <i>parent</i>.</p>
+<!-- @@@QwwLed -->
+<!-- $$$QwwLed$$$QwwLedconstQColor&ShapeQWidget* -->
+<h3 class="fn"><a name="QwwLed-2"></a>QwwLed::<span class="name">QwwLed</span>(const <span class="type">QColor</span> &amp;<i> col</i>, <span class="type"><a href="qwwled.html#Shape-enum">Shape</a></span><i> shap</i> = Circular, <span class="type">QWidget</span> *<i> parent</i> = 0)</h3>
+<p>Constructs a led widget of colour <i>col</i> and shape <i>shap</i> with a given <i>parent</i>.</p>
+<!-- @@@QwwLed -->
+<!-- $$$blink[overload1]$$$blink -->
+<h3 class="fn"><a name="blink"></a><span class="type">void</span> QwwLed::<span class="name">blink</span>()<tt> [slot]</tt></h3>
+<p>Blinks the diode once.</p>
+<!-- @@@blink -->
+<!-- $$$clicked[overload1]$$$clicked -->
+<h3 class="fn"><a name="clicked"></a><span class="type">void</span> QwwLed::<span class="name">clicked</span>()<tt> [signal]</tt></h3>
+<p>Signal emitted when the diode is clicked</p>
+<!-- @@@clicked -->
+<!-- $$$colorChanged[overload1]$$$colorChangedconstQColor& -->
+<h3 class="fn"><a name="colorChanged"></a><span class="type">void</span> QwwLed::<span class="name">colorChanged</span>(const <span class="type">QColor</span> &amp;<i> color</i>)<tt> [signal]</tt></h3>
+<p>Signal emitted when the color of the diode is changed to <i>color</i>.</p>
+<!-- @@@colorChanged -->
+<!-- $$$toggle[overload1]$$$toggle -->
+<h3 class="fn"><a name="toggle"></a><span class="type">void</span> QwwLed::<span class="name">toggle</span>()<tt> [slot]</tt></h3>
+<p>Toggles the diode on or off.</p>
+<!-- @@@toggle -->
+<!-- $$$toggled[overload1]$$$toggledbool -->
+<h3 class="fn"><a name="toggled"></a><span class="type">void</span> QwwLed::<span class="name">toggled</span>(<span class="type">bool</span><i> checked</i>)<tt> [signal]</tt></h3>
+<p>Signal emitted when the diode is toggled.</p>
+<p><i>checked</i> carries the information about the current state of the diode.</p>
+<!-- @@@toggled -->
+</div>
+<div class="footer"> <img src="images/ww-logo.png" style="height: 24px; margin-top: -10px;" align="right" /> Copyright (C) 2014 Witold Wysota</div></body>
+</html>

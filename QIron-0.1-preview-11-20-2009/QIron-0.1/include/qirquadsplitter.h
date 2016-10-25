@@ -1,0 +1,1 @@
+#include "../src/QIrQuadSplitter/qirquadsplitter.h"

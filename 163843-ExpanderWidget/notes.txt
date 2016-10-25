@@ -1,0 +1,6 @@
+win:
+
+copy ExpanderWidget.dll to this location
+C:\Qt\Qt5.2.1\5.2.1\mingw48_32\plugins\designer
+
+run Qt Designer and open mainwindow.ui

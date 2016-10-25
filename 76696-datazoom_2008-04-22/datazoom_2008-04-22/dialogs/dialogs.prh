@@ -1,0 +1,1 @@
+HEADERS += tddateintervaldialog.h tddatetimedialog.h tdintervaldialog.h tdtextdialog.h 

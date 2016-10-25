@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- qwwtaskpanel.cpp -->
+  <title>QwwTaskPanel Class | wwWidgets 1.0</title>
+  <link rel="stylesheet" type="text/css" href="style/offline.css" />
+</head>
+<body>
+<div class="header" id="qtdocheader">
+    <div class="main">
+    <div class="main-rounded">
+        <div class="navigationbar">
+        <ul>
+      <li class="first"><a href="index.html">wwWidgets</a></li>
+      <!--  Breadcrumbs go here -->
+<li>QwwTaskPanel</li>
+<li id="buildversion">
+</li>
+    </ul>
+    </div>
+</div>
+<div class="content">
+<div class="line">
+<div class="content mainContent">
+<div class="toc">
+<h3><a name="toc">Contents</a></h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#public-functions">Public Functions</a></li>
+<li class="level1"><a href="#public-slots">Public Slots</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<h1 class="title">QwwTaskPanel Class</h1>
+<!-- $$$QwwTaskPanel-brief -->
+<p>The QwwTaskPanel widget provides a task panel similar to the one from WindowsXP.(unstable) <a href="#details">More...</a></p>
+<!-- @@@QwwTaskPanel -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Header:</td><td class="memItemRight bottomAlign"> </b><tt><span class="preprocessor">#include &lt;QwwTaskPanel&gt;</span>
+</tt></td></tr></table><ul>
+<li><a href="qwwtaskpanel-members.html">List of all members, including inherited members</a></li>
+</ul>
+<a name="properties"></a>
+<h2>Properties</h2>
+<ul>
+<li class="fn"><b><a href="qwwtaskpanel.html#animated-prop">animated</a></b> : bool</li>
+<li class="fn"><b><a href="qwwtaskpanel.html#currentIndex-prop">currentIndex</a></b> : int</li>
+<li class="fn"><b><a href="qwwtaskpanel.html#toggleIcon-prop">toggleIcon</a></b> : QIcon</li>
+</ul>
+<a name="public-functions"></a>
+<h2>Public Functions</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> </td><td class="memItemRight bottomAlign"><b><a href="qwwtaskpanel.html#QwwTaskPanel">QwwTaskPanel</a></b>(QWidget *<i> parent</i> = 0)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> </td><td class="memItemRight bottomAlign"><b><a href="qwwtaskpanel.html#dtor.QwwTaskPanel">~QwwTaskPanel</a></b>()</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwtaskpanel.html#addTask">addTask</a></b>(QWidget *<i> task</i>, const QString &amp;<i> label</i> = QString())</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwtaskpanel.html#addTask-2">addTask</a></b>(QWidget *<i> task</i>, const QIcon &amp;<i> icon</i>, const QString &amp;<i> label</i> = QString())</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> int </td><td class="memItemRight bottomAlign"><b><a href="qwwtaskpanel.html#currentIndex-prop">currentIndex</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> QWidget * </td><td class="memItemRight bottomAlign"><b><a href="qwwtaskpanel.html#currentTask">currentTask</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> int </td><td class="memItemRight bottomAlign"><b><a href="qwwtaskpanel.html#indexOf">indexOf</a></b>(QWidget *<i> task</i>) const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwtaskpanel.html#insertTask">insertTask</a></b>(int<i> index</i>, QWidget *<i> task</i>, const QString &amp;<i> label</i> = QString())</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwtaskpanel.html#insertTask-2">insertTask</a></b>(int<i> index</i>, QWidget *<i> task</i>, const QIcon &amp;<i> icon</i>, const QString &amp;<i> label</i> = QString())</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> bool </td><td class="memItemRight bottomAlign"><b><a href="qwwtaskpanel.html#animated-prop">isAnimated</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwtaskpanel.html#removeTask">removeTask</a></b>(int<i> index</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwtaskpanel.html#setTaskIcon">setTaskIcon</a></b>(int<i> index</i>, const QIcon &amp;<i> icon</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwtaskpanel.html#setTaskName">setTaskName</a></b>(int<i> index</i>, const QString &amp;<i> name</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwtaskpanel.html#setTaskTitle">setTaskTitle</a></b>(int<i> index</i>, const QString &amp;<i> title</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwtaskpanel.html#toggleIcon-prop">setToggleIcon</a></b>(const QIcon &amp;<i> icon</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> QWidget * </td><td class="memItemRight bottomAlign"><b><a href="qwwtaskpanel.html#task">task</a></b>(int<i> index</i>) const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> int </td><td class="memItemRight bottomAlign"><b><a href="qwwtaskpanel.html#taskCount">taskCount</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> const QIcon &amp; </td><td class="memItemRight bottomAlign"><b><a href="qwwtaskpanel.html#toggleIcon-prop">toggleIcon</a></b>() const</td></tr>
+</table>
+<a name="public-slots"></a>
+<h2>Public Slots</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwtaskpanel.html#animated-prop">setAnimated</a></b>(bool<i> a</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwtaskpanel.html#currentIndex-prop">setCurrentIndex</a></b>(int<i> index</i>)</td></tr>
+</table>
+<a name="signals"></a>
+<h2>Signals</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwtaskpanel.html#currentIndex-prop">currentIndexChanged</a></b>(int)</td></tr>
+</table>
+<a name="details"></a>
+<!-- $$$QwwTaskPanel-description -->
+<div class="descr">
+<h2>Detailed Description</h2>
+<p>The QwwTaskPanel widget provides a task panel similar to the one from WindowsXP.(unstable)</p>
+</div>
+<!-- @@@QwwTaskPanel -->
+<div class="prop">
+<h2>Property Documentation</h2>
+<!-- $$$animated-prop$$$isAnimated$$$setAnimatedbool -->
+<h3 class="fn"><a name="animated-prop"></a><span class="name">animated</span> : <span class="type">bool</span></h3>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> bool </td><td class="memItemRight bottomAlign"><span class="name"><b>isAnimated</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setAnimated</b></span>(bool<i> a</i>)</td></tr>
+</table>
+<!-- @@@animated -->
+<!-- $$$currentIndex-prop$$$currentIndex$$$setCurrentIndexint$$$currentIndexChangedint -->
+<h3 class="fn"><a name="currentIndex-prop"></a><span class="name">currentIndex</span> : <span class="type">int</span></h3>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> int </td><td class="memItemRight bottomAlign"><span class="name"><b>currentIndex</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setCurrentIndex</b></span>(int<i> index</i>)</td></tr>
+</table>
+<p><b>Notifier signal:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>currentIndexChanged</b></span>(int)</td></tr>
+</table>
+<!-- @@@currentIndex -->
+<!-- $$$toggleIcon-prop$$$toggleIcon$$$setToggleIconconstQIcon& -->
+<h3 class="fn"><a name="toggleIcon-prop"></a><span class="name">toggleIcon</span> : <span class="type">QIcon</span></h3>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> const QIcon &amp; </td><td class="memItemRight bottomAlign"><span class="name"><b>toggleIcon</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setToggleIcon</b></span>(const QIcon &amp;<i> icon</i>)</td></tr>
+</table>
+<!-- @@@toggleIcon -->
+</div>
+<div class="func">
+<h2>Member Function Documentation</h2>
+<!-- $$$QwwTaskPanel[overload1]$$$QwwTaskPanelQWidget* -->
+<h3 class="fn"><a name="QwwTaskPanel"></a>QwwTaskPanel::<span class="name">QwwTaskPanel</span>(<span class="type">QWidget</span> *<i> parent</i> = 0)</h3>
+<!-- @@@QwwTaskPanel -->
+<!-- $$$~QwwTaskPanel[overload1]$$$~QwwTaskPanel -->
+<h3 class="fn"><a name="dtor.QwwTaskPanel"></a>QwwTaskPanel::<span class="name">~QwwTaskPanel</span>()</h3>
+<!-- @@@~QwwTaskPanel -->
+<!-- $$$addTask[overload1]$$$addTaskQWidget*constQString& -->
+<h3 class="fn"><a name="addTask"></a><span class="type">void</span> QwwTaskPanel::<span class="name">addTask</span>(<span class="type">QWidget</span> *<i> task</i>, const <span class="type">QString</span> &amp;<i> label</i> = QString())</h3>
+<!-- @@@addTask -->
+<!-- $$$addTask$$$addTaskQWidget*constQIcon&constQString& -->
+<h3 class="fn"><a name="addTask-2"></a><span class="type">void</span> QwwTaskPanel::<span class="name">addTask</span>(<span class="type">QWidget</span> *<i> task</i>, const <span class="type">QIcon</span> &amp;<i> icon</i>, const <span class="type">QString</span> &amp;<i> label</i> = QString())</h3>
+<!-- @@@addTask -->
+<!-- $$$currentTask[overload1]$$$currentTask -->
+<h3 class="fn"><a name="currentTask"></a><span class="type">QWidget</span> * QwwTaskPanel::<span class="name">currentTask</span>() const</h3>
+<!-- @@@currentTask -->
+<!-- $$$indexOf[overload1]$$$indexOfQWidget* -->
+<h3 class="fn"><a name="indexOf"></a><span class="type">int</span> QwwTaskPanel::<span class="name">indexOf</span>(<span class="type">QWidget</span> *<i> task</i>) const</h3>
+<!-- @@@indexOf -->
+<!-- $$$insertTask[overload1]$$$insertTaskintQWidget*constQString& -->
+<h3 class="fn"><a name="insertTask"></a><span class="type">void</span> QwwTaskPanel::<span class="name">insertTask</span>(<span class="type">int</span><i> index</i>, <span class="type">QWidget</span> *<i> task</i>, const <span class="type">QString</span> &amp;<i> label</i> = QString())</h3>
+<!-- @@@insertTask -->
+<!-- $$$insertTask$$$insertTaskintQWidget*constQIcon&constQString& -->
+<h3 class="fn"><a name="insertTask-2"></a><span class="type">void</span> QwwTaskPanel::<span class="name">insertTask</span>(<span class="type">int</span><i> index</i>, <span class="type">QWidget</span> *<i> task</i>, const <span class="type">QIcon</span> &amp;<i> icon</i>, const <span class="type">QString</span> &amp;<i> label</i> = QString())</h3>
+<!-- @@@insertTask -->
+<!-- $$$removeTask[overload1]$$$removeTaskint -->
+<h3 class="fn"><a name="removeTask"></a><span class="type">void</span> QwwTaskPanel::<span class="name">removeTask</span>(<span class="type">int</span><i> index</i>)</h3>
+<!-- @@@removeTask -->
+<!-- $$$setTaskIcon[overload1]$$$setTaskIconintconstQIcon& -->
+<h3 class="fn"><a name="setTaskIcon"></a><span class="type">void</span> QwwTaskPanel::<span class="name">setTaskIcon</span>(<span class="type">int</span><i> index</i>, const <span class="type">QIcon</span> &amp;<i> icon</i>)</h3>
+<!-- @@@setTaskIcon -->
+<!-- $$$setTaskName[overload1]$$$setTaskNameintconstQString& -->
+<h3 class="fn"><a name="setTaskName"></a><span class="type">void</span> QwwTaskPanel::<span class="name">setTaskName</span>(<span class="type">int</span><i> index</i>, const <span class="type">QString</span> &amp;<i> name</i>)</h3>
+<!-- @@@setTaskName -->
+<!-- $$$setTaskTitle[overload1]$$$setTaskTitleintconstQString& -->
+<h3 class="fn"><a name="setTaskTitle"></a><span class="type">void</span> QwwTaskPanel::<span class="name">setTaskTitle</span>(<span class="type">int</span><i> index</i>, const <span class="type">QString</span> &amp;<i> title</i>)</h3>
+<!-- @@@setTaskTitle -->
+<!-- $$$task[overload1]$$$taskint -->
+<h3 class="fn"><a name="task"></a><span class="type">QWidget</span> * QwwTaskPanel::<span class="name">task</span>(<span class="type">int</span><i> index</i>) const</h3>
+<!-- @@@task -->
+<!-- $$$taskCount[overload1]$$$taskCount -->
+<h3 class="fn"><a name="taskCount"></a><span class="type">int</span> QwwTaskPanel::<span class="name">taskCount</span>() const</h3>
+<!-- @@@taskCount -->
+</div>
+<div class="footer"> <img src="images/ww-logo.png" style="height: 24px; margin-top: -10px;" align="right" /> Copyright (C) 2014 Witold Wysota</div></body>
+</html>

@@ -1,0 +1,283 @@
+<ui version="4.0" >
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog" >
+  <property name="windowModality" >
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>703</width>
+    <height>658</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2" >
+   <item row="0" column="0" >
+    <widget class="TWDataZoom" name="dataZoom" >
+     <property name="toolTip" >
+      <string>The TWDataZoom Widget</string>
+     </property>
+     <property name="whatsThis" >
+      <string>Zoom Dialog</string>
+     </property>
+    </widget>
+   </item>
+   <item rowspan="2" row="0" column="1" >
+    <layout class="QVBoxLayout" name="verticalLayout" >
+     <item>
+      <widget class="QPushButton" name="okPushButton" >
+       <property name="focusPolicy" >
+        <enum>Qt::StrongFocus</enum>
+       </property>
+       <property name="text" >
+        <string>Ok</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="cancelPushButton" >
+       <property name="focusPolicy" >
+        <enum>Qt::StrongFocus</enum>
+       </property>
+       <property name="text" >
+        <string>Cancel</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QGridLayout" name="gridLayout" >
+       <property name="sizeConstraint" >
+        <enum>QLayout::SetDefaultConstraint</enum>
+       </property>
+       <item row="0" column="0" >
+        <widget class="QToolButton" name="firstToolButton" >
+         <property name="text" >
+          <string>|&lt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1" >
+        <widget class="QToolButton" name="lastToolButton" >
+         <property name="text" >
+          <string>>|</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" >
+        <widget class="QToolButton" name="prevToolButton" >
+         <property name="text" >
+          <string>&lt; </string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1" >
+        <widget class="QToolButton" name="nextToolButton" >
+         <property name="text" >
+          <string> ></string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="filterHideCheckBox" >
+       <property name="text" >
+        <string>Hide filters</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="headerHideCheckBox" >
+       <property name="text" >
+        <string>Hide header</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer>
+       <property name="orientation" >
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>72</width>
+         <height>358</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0" >
+    <widget class="QTextBrowser" name="textBrowser" >
+     <property name="sizePolicy" >
+      <sizepolicy vsizetype="Minimum" hsizetype="Expanding" >
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>TWDataZoom</class>
+   <extends>QWidget</extends>
+   <header>twdatazoom.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../../resources/libimgresource.qrc" />
+ </resources>
+ <connections>
+  <connection>
+   <sender>okPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>692</x>
+     <y>33</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>354</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cancelPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>692</x>
+     <y>67</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>512</x>
+     <y>128</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>firstToolButton</sender>
+   <signal>clicked()</signal>
+   <receiver>dataZoom</receiver>
+   <slot>moveFirst()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>624</x>
+     <y>88</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>572</x>
+     <y>98</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>prevToolButton</sender>
+   <signal>clicked()</signal>
+   <receiver>dataZoom</receiver>
+   <slot>moveUp()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>631</x>
+     <y>120</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>585</x>
+     <y>120</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lastToolButton</sender>
+   <signal>clicked()</signal>
+   <receiver>dataZoom</receiver>
+   <slot>moveLast()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>679</x>
+     <y>99</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>580</x>
+     <y>175</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>nextToolButton</sender>
+   <signal>clicked()</signal>
+   <receiver>dataZoom</receiver>
+   <slot>moveDown()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>679</x>
+     <y>132</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>585</x>
+     <y>305</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>filterHideCheckBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>dataZoom</receiver>
+   <slot>setHideFilterWidgets(bool)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>624</x>
+     <y>150</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>578</x>
+     <y>158</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>headerHideCheckBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>dataZoom</receiver>
+   <slot>setHeaderHidden(bool)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>648</x>
+     <y>181</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>518</x>
+     <y>242</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dataZoom</sender>
+   <signal>oneRowResult(QString)</signal>
+   <receiver>textBrowser</receiver>
+   <slot>setText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>144</x>
+     <y>304</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>167</x>
+     <y>509</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

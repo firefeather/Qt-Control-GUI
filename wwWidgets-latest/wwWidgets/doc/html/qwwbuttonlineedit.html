@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- qwwbuttonlineedit.cpp -->
+  <title>QwwButtonLineEdit Class | wwWidgets 1.0</title>
+  <link rel="stylesheet" type="text/css" href="style/offline.css" />
+</head>
+<body>
+<div class="header" id="qtdocheader">
+    <div class="main">
+    <div class="main-rounded">
+        <div class="navigationbar">
+        <ul>
+      <li class="first"><a href="index.html">wwWidgets</a></li>
+      <!--  Breadcrumbs go here -->
+<li>QwwButtonLineEdit</li>
+<li id="buildversion">
+</li>
+    </ul>
+    </div>
+</div>
+<div class="content">
+<div class="line">
+<div class="content mainContent">
+<div class="toc">
+<h3><a name="toc">Contents</a></h3>
+<ul>
+<li class="level1"><a href="#public-types">Public Types</a></li>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#public-functions">Public Functions</a></li>
+<li class="level1"><a href="#public-slots">Public Slots</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#protected-functions">Protected Functions</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<h1 class="title">QwwButtonLineEdit Class</h1>
+<!-- $$$QwwButtonLineEdit-brief -->
+<p>A QLineEdit with an integrated customizable button. <a href="#details">More...</a></p>
+<!-- @@@QwwButtonLineEdit -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Header:</td><td class="memItemRight bottomAlign"> </b><tt><span class="preprocessor">#include &lt;QwwButtonLineEdit&gt;</span>
+</tt></td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherited By:</td><td class="memItemRight bottomAlign"> <p><a href="qwwclearlineedit.html">QwwClearLineEdit</a>, <a href="qwwfilechooser.html">QwwFileChooser</a>, and <a href="qwwresetlineedit.html">QwwResetLineEdit</a>.</p>
+</td></tr></table><ul>
+<li><a href="qwwbuttonlineedit-members.html">List of all members, including inherited members</a></li>
+</ul>
+<a name="public-types"></a>
+<h2>Public Types</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> enum </td><td class="memItemRight bottomAlign"><b><a href="qwwbuttonlineedit.html#Position-enum">Position</a></b> { None, RightOutside, RightInside, LeftOutside, LeftInside }</td></tr>
+</table>
+<a name="properties"></a>
+<h2>Properties</h2>
+<table class="propsummary">
+<tr><td class="topAlign"><ul>
+<li class="fn"><b><a href="qwwbuttonlineedit.html#autoRaise-prop">autoRaise</a></b> : bool</li>
+<li class="fn"><b><a href="qwwbuttonlineedit.html#buttonFocusPolicy-prop">buttonFocusPolicy</a></b> : Qt::FocusPolicy</li>
+<li class="fn"><b><a href="qwwbuttonlineedit.html#buttonPosition-prop">buttonPosition</a></b> : Position</li>
+<li class="fn"><b><a href="qwwbuttonlineedit.html#buttonVisible-prop">buttonVisible</a></b> : bool</li>
+</ul></td><td class="topAlign"><ul>
+<li class="fn"><b><a href="qwwbuttonlineedit.html#icon-prop">icon</a></b> : QIcon</li>
+<li class="fn"><b><a href="qwwbuttonlineedit.html#placeholderText-prop">placeholderText</a></b> : QString</li>
+<li class="fn"><b><a href="qwwbuttonlineedit.html#regExp-prop">regExp</a></b> : QString</li>
+</ul>
+</td></tr>
+</table>
+<a name="public-functions"></a>
+<h2>Public Functions</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> </td><td class="memItemRight bottomAlign"><b><a href="qwwbuttonlineedit.html#QwwButtonLineEdit">QwwButtonLineEdit</a></b>(QWidget *<i> parent</i> = 0)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> </td><td class="memItemRight bottomAlign"><b><a href="qwwbuttonlineedit.html#QwwButtonLineEdit-2">QwwButtonLineEdit</a></b>(const QString &amp;<i> contents</i>, QWidget *<i> parent</i> = 0)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> bool </td><td class="memItemRight bottomAlign"><b><a href="qwwbuttonlineedit.html#autoRaise-prop">autoRaise</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> Qt::FocusPolicy </td><td class="memItemRight bottomAlign"><b><a href="qwwbuttonlineedit.html#buttonFocusPolicy-prop">buttonFocusPolicy</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> bool </td><td class="memItemRight bottomAlign"><b><a href="qwwbuttonlineedit.html#buttonVisible-prop">buttonIsVisible</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> Position </td><td class="memItemRight bottomAlign"><b><a href="qwwbuttonlineedit.html#buttonPosition-prop">buttonPosition</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> QIcon </td><td class="memItemRight bottomAlign"><b><a href="qwwbuttonlineedit.html#icon-prop">icon</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> QString </td><td class="memItemRight bottomAlign"><b><a href="qwwbuttonlineedit.html#placeholderText-prop">placeholderText</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> QString </td><td class="memItemRight bottomAlign"><b><a href="qwwbuttonlineedit.html#regExp-prop">regExp</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwbuttonlineedit.html#buttonFocusPolicy-prop">setButtonFocusPolicy</a></b>(Qt::FocusPolicy)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwbuttonlineedit.html#buttonPosition-prop">setButtonPosition</a></b>(Position<i> pos</i>)</td></tr>
+</table>
+<a name="public-slots"></a>
+<h2>Public Slots</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwbuttonlineedit.html#autoRaise-prop">setAutoRaise</a></b>(bool)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwbuttonlineedit.html#buttonVisible-prop">setButtonVisible</a></b>(bool)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwbuttonlineedit.html#icon-prop">setIcon</a></b>(const QIcon &amp;)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwbuttonlineedit.html#placeholderText-prop">setPlaceholderText</a></b>(const QString &amp;)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwbuttonlineedit.html#regExp-prop">setRegExp</a></b>(const QString &amp;<i> v</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwbuttonlineedit.html#regExp-prop">setRegExp</a></b>(const QRegExp &amp;<i> rx</i>)</td></tr>
+</table>
+<a name="signals"></a>
+<h2>Signals</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwbuttonlineedit.html#buttonClicked">buttonClicked</a></b>()</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwbuttonlineedit.html#validatorChanged">validatorChanged</a></b>(const QString &amp;<i> regexp</i>)</td></tr>
+</table>
+<a name="protected-functions"></a>
+<h2>Protected Functions</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> QToolButton * </td><td class="memItemRight bottomAlign"><b><a href="qwwbuttonlineedit.html#button">button</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwbuttonlineedit.html#paintEvent">paintEvent</a></b>(QPaintEvent *<i> pe</i>)</td></tr>
+</table>
+<a name="details"></a>
+<!-- $$$QwwButtonLineEdit-description -->
+<div class="descr">
+<h2>Detailed Description</h2>
+<p>A QLineEdit with an integrated customizable button.</p>
+<p>The control is a line edit that contains a tool button can hold an icon and can be set either on the right or the left side of the line edit and can occupy space inside or outside the line edit.</p>
+<p class="centerAlign"><img src="images/qwwbuttonlineedit1.png" alt="QwwButtonLineEdit" /></p><p class="centerAlign"><img src="images/qwwbuttonlineedit2.png" alt="QwwButtonLineEdit" /></p><p>It can be used to associate an easy to access action with the line edit, i.e&#x2e; that will modify contents of the box in a definable way.</p>
+<p>Using QWidget::addAction() one can associate more than one action with the button.</p>
+</div>
+<!-- @@@QwwButtonLineEdit -->
+<div class="types">
+<h2>Member Type Documentation</h2>
+<!-- $$$Position$$$None$$$RightOutside$$$RightInside$$$LeftOutside$$$LeftInside -->
+<h3 class="fn"><a name="Position-enum"></a>enum QwwButtonLineEdit::<span class="name">Position</span></h3>
+<table class="valuelist"><tr valign="top" class="odd"><th class="tblConst">Constant</th><th class="tblval">Value</th><th class="tbldscr">Description</th></tr>
+<tr><td class="topAlign"><tt>QwwButtonLineEdit::None</tt></td><td class="topAlign"><tt>0</tt></td><td class="topAlign">Button is not visible</td></tr>
+<tr><td class="topAlign"><tt>QwwButtonLineEdit::RightOutside</tt></td><td class="topAlign"><tt>1</tt></td><td class="topAlign">Button is positioned on the right side of the line edit.</td></tr>
+<tr><td class="topAlign"><tt>QwwButtonLineEdit::RightInside</tt></td><td class="topAlign"><tt>2</tt></td><td class="topAlign">Button is positioned inside the line edit on the right.</td></tr>
+<tr><td class="topAlign"><tt>QwwButtonLineEdit::LeftOutside</tt></td><td class="topAlign"><tt>3</tt></td><td class="topAlign">Button is positioned on the left side of the line edit.</td></tr>
+<tr><td class="topAlign"><tt>QwwButtonLineEdit::LeftInside</tt></td><td class="topAlign"><tt>4</tt></td><td class="topAlign">Button is positioned inside the line edit on the left.</td></tr>
+</table>
+<!-- @@@Position -->
+</div>
+<div class="prop">
+<h2>Property Documentation</h2>
+<!-- $$$autoRaise-prop$$$autoRaise$$$setAutoRaisebool -->
+<h3 class="fn"><a name="autoRaise-prop"></a><span class="name">autoRaise</span> : <span class="type">bool</span></h3>
+<p>This property holds this property holds whether auto-raising is enabled or not.</p>
+<p>The default is disabled (i.e&#x2e; false).</p>
+<p>This property is currently ignored on Mac OS X when using QMacStyle.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> bool </td><td class="memItemRight bottomAlign"><span class="name"><b>autoRaise</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setAutoRaise</b></span>(bool)</td></tr>
+</table>
+<!-- @@@autoRaise -->
+<!-- $$$buttonFocusPolicy-prop$$$buttonFocusPolicy$$$setButtonFocusPolicyQt::FocusPolicy -->
+<h3 class="fn"><a name="buttonFocusPolicy-prop"></a><span class="name">buttonFocusPolicy</span> : <span class="type">Qt::FocusPolicy</span></h3>
+<p>This property holds this property allows to specify the focus policy for the button that accompanies the line edit.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> Qt::FocusPolicy </td><td class="memItemRight bottomAlign"><span class="name"><b>buttonFocusPolicy</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setButtonFocusPolicy</b></span>(Qt::FocusPolicy)</td></tr>
+</table>
+<!-- @@@buttonFocusPolicy -->
+<!-- $$$buttonPosition-prop$$$buttonPosition$$$setButtonPositionPosition -->
+<h3 class="fn"><a name="buttonPosition-prop"></a><span class="name">buttonPosition</span> : <span class="type"><a href="qwwbuttonlineedit.html#Position-enum">Position</a></span></h3>
+<p>This property holds the position of the button relative to the line edit.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> Position </td><td class="memItemRight bottomAlign"><span class="name"><b>buttonPosition</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setButtonPosition</b></span>(Position<i> pos</i>)</td></tr>
+</table>
+<!-- @@@buttonPosition -->
+<!-- $$$buttonVisible-prop$$$buttonIsVisible$$$setButtonVisiblebool -->
+<h3 class="fn"><a name="buttonVisible-prop"></a><span class="name">buttonVisible</span> : <span class="type">bool</span></h3>
+<p>This property holds information whether the button is visible.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> bool </td><td class="memItemRight bottomAlign"><span class="name"><b>buttonIsVisible</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setButtonVisible</b></span>(bool)</td></tr>
+</table>
+<p><b>See also </b><a href="qwwbuttonlineedit.html#button">button</a>() and <a href="qwwbuttonlineedit.html#buttonPosition-prop">buttonPosition</a>.</p>
+<!-- @@@buttonVisible -->
+<!-- $$$icon-prop$$$icon$$$setIconconstQIcon& -->
+<h3 class="fn"><a name="icon-prop"></a><span class="name">icon</span> : <span class="type">QIcon</span></h3>
+<p>This property holds the icon shown on the button</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> QIcon </td><td class="memItemRight bottomAlign"><span class="name"><b>icon</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setIcon</b></span>(const QIcon &amp;)</td></tr>
+</table>
+<!-- @@@icon -->
+<!-- $$$placeholderText-prop$$$placeholderText$$$setPlaceholderTextconstQString& -->
+<h3 class="fn"><a name="placeholderText-prop"></a><span class="name">placeholderText</span> : <span class="type">QString</span></h3>
+<p>This property holds this property holds the line edit's placeholder text.</p>
+<p>Setting this property makes the line edit display a grayed-out placeholder text as long as the text() is empty.</p>
+<p>By default, this property contains an empty string.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> QString </td><td class="memItemRight bottomAlign"><span class="name"><b>placeholderText</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setPlaceholderText</b></span>(const QString &amp;)</td></tr>
+</table>
+<!-- @@@placeholderText -->
+<!-- $$$regExp-prop$$$regExp$$$setRegExpconstQString&$$$setRegExpconstQRegExp& -->
+<h3 class="fn"><a name="regExp-prop"></a><span class="name">regExp</span> : <span class="type">QString</span></h3>
+<p>This property holds the regular expression used to validate contents of the widget</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> QString </td><td class="memItemRight bottomAlign"><span class="name"><b>regExp</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setRegExp</b></span>(const QString &amp;<i> v</i>)</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setRegExp</b></span>(const QRegExp &amp;<i> rx</i>)</td></tr>
+</table>
+<!-- @@@regExp -->
+</div>
+<div class="func">
+<h2>Member Function Documentation</h2>
+<!-- $$$QwwButtonLineEdit[overload1]$$$QwwButtonLineEditQWidget* -->
+<h3 class="fn"><a name="QwwButtonLineEdit"></a>QwwButtonLineEdit::<span class="name">QwwButtonLineEdit</span>(<span class="type">QWidget</span> *<i> parent</i> = 0)</h3>
+<p>Constructs a button line edit with a given <i>parent</i>.</p>
+<!-- @@@QwwButtonLineEdit -->
+<!-- $$$QwwButtonLineEdit$$$QwwButtonLineEditconstQString&QWidget* -->
+<h3 class="fn"><a name="QwwButtonLineEdit-2"></a>QwwButtonLineEdit::<span class="name">QwwButtonLineEdit</span>(const <span class="type">QString</span> &amp;<i> contents</i>, <span class="type">QWidget</span> *<i> parent</i> = 0)</h3>
+<p>Constructs a button line edit with a given <i>parent</i> and sets its text to <i>contents</i>.</p>
+<!-- @@@QwwButtonLineEdit -->
+<!-- $$$button[overload1]$$$button -->
+<h3 class="fn"><a name="button"></a><span class="type">QToolButton</span> * QwwButtonLineEdit::<span class="name">button</span>() const<tt> [protected]</tt></h3>
+<p>Returns a pointer to the button.</p>
+<!-- @@@button -->
+<!-- $$$buttonClicked[overload1]$$$buttonClicked -->
+<h3 class="fn"><a name="buttonClicked"></a><span class="type">void</span> QwwButtonLineEdit::<span class="name">buttonClicked</span>()<tt> [signal]</tt></h3>
+<p>This signal is emitted when the button is clicked.</p>
+<!-- @@@buttonClicked -->
+<!-- $$$paintEvent[overload1]$$$paintEventQPaintEvent* -->
+<h3 class="fn"><a name="paintEvent"></a><span class="type">void</span> QwwButtonLineEdit::<span class="name">paintEvent</span>(<span class="type">QPaintEvent</span> *<i> pe</i>)<tt> [protected]</tt></h3>
+<p>*</p>
+<!-- @@@paintEvent -->
+<!-- $$$validatorChanged[overload1]$$$validatorChangedconstQString& -->
+<h3 class="fn"><a name="validatorChanged"></a><span class="type">void</span> QwwButtonLineEdit::<span class="name">validatorChanged</span>(const <span class="type">QString</span> &amp;<i> regexp</i>)<tt> [signal]</tt></h3>
+<p>Signal emitted when the validator of the line edit changes to <i>regexp</i></p>
+<!-- @@@validatorChanged -->
+</div>
+<div class="footer"> <img src="images/ww-logo.png" style="height: 24px; margin-top: -10px;" align="right" /> Copyright (C) 2014 Witold Wysota</div></body>
+</html>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- qwwtwocolorindicator.cpp -->
+  <title>QwwTwoColorIndicator Class | wwWidgets 1.0</title>
+  <link rel="stylesheet" type="text/css" href="style/offline.css" />
+</head>
+<body>
+<div class="header" id="qtdocheader">
+    <div class="main">
+    <div class="main-rounded">
+        <div class="navigationbar">
+        <ul>
+      <li class="first"><a href="index.html">wwWidgets</a></li>
+      <!--  Breadcrumbs go here -->
+<li>QwwTwoColorIndicator</li>
+<li id="buildversion">
+</li>
+    </ul>
+    </div>
+</div>
+<div class="content">
+<div class="line">
+<div class="content mainContent">
+<div class="toc">
+<h3><a name="toc">Contents</a></h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#public-functions">Public Functions</a></li>
+<li class="level1"><a href="#public-slots">Public Slots</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#protected-functions">Protected Functions</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<h1 class="title">QwwTwoColorIndicator Class</h1>
+<!-- $$$QwwTwoColorIndicator-brief -->
+<p>The QwwTwoColorIndicator class provides a widget allowing to choose a foreground and background colour. <a href="#details">More...</a></p>
+<!-- @@@QwwTwoColorIndicator -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Header:</td><td class="memItemRight bottomAlign"> </b><tt><span class="preprocessor">#include &lt;QwwTwoColorIndicator&gt;</span>
+</tt></td></tr></table><ul>
+<li><a href="qwwtwocolorindicator-members.html">List of all members, including inherited members</a></li>
+</ul>
+<a name="properties"></a>
+<h2>Properties</h2>
+<ul>
+<li class="fn"><b><a href="qwwtwocolorindicator.html#active-prop">active</a></b> : bool</li>
+<li class="fn"><b><a href="qwwtwocolorindicator.html#bgColor-prop">bgColor</a></b> : QColor</li>
+<li class="fn"><b><a href="qwwtwocolorindicator.html#dragEnabled-prop">dragEnabled</a></b> : bool</li>
+<li class="fn"><b><a href="qwwtwocolorindicator.html#fgColor-prop">fgColor</a></b> : QColor</li>
+</ul>
+<a name="public-functions"></a>
+<h2>Public Functions</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> </td><td class="memItemRight bottomAlign"><b><a href="qwwtwocolorindicator.html#QwwTwoColorIndicator">QwwTwoColorIndicator</a></b>(QWidget *<i> parent</i> = 0)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> const QColor &amp; </td><td class="memItemRight bottomAlign"><b><a href="qwwtwocolorindicator.html#bgColor-prop">bgColor</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> bool </td><td class="memItemRight bottomAlign"><b><a href="qwwtwocolorindicator.html#dragEnabled-prop">dragEnabled</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> const QColor &amp; </td><td class="memItemRight bottomAlign"><b><a href="qwwtwocolorindicator.html#fgColor-prop">fgColor</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> bool </td><td class="memItemRight bottomAlign"><b><a href="qwwtwocolorindicator.html#active-prop">isActive</a></b>() const</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwtwocolorindicator.html#dragEnabled-prop">setDragEnabled</a></b>(bool)</td></tr>
+</table>
+<a name="public-slots"></a>
+<h2>Public Slots</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwtwocolorindicator.html#active-prop">setActive</a></b>(bool)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwtwocolorindicator.html#bgColor-prop">setBgColor</a></b>(const QColor &amp;<i> b</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwtwocolorindicator.html#fgColor-prop">setFgColor</a></b>(const QColor &amp;<i> f</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwtwocolorindicator.html#switchColors">switchColors</a></b>()</td></tr>
+</table>
+<a name="signals"></a>
+<h2>Signals</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwtwocolorindicator.html#bgChanged">bgChanged</a></b>(const QColor &amp;<i> color</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwtwocolorindicator.html#bgClicked">bgClicked</a></b>()</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwtwocolorindicator.html#bgPressed">bgPressed</a></b>()</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwtwocolorindicator.html#fgChanged">fgChanged</a></b>(const QColor &amp;<i> color</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwtwocolorindicator.html#fgClicked">fgClicked</a></b>()</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qwwtwocolorindicator.html#fgPressed">fgPressed</a></b>()</td></tr>
+</table>
+<a name="protected-functions"></a>
+<h2>Protected Functions</h2>
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> virtual void </td><td class="memItemRight bottomAlign"><b><a href="qwwtwocolorindicator.html#paintSection">paintSection</a></b>(QPainter *<i> painter</i>, const QRect &amp;<i> rect</i>, const QColor &amp;<i> color</i>)</td></tr>
+</table>
+<a name="details"></a>
+<!-- $$$QwwTwoColorIndicator-description -->
+<div class="descr">
+<h2>Detailed Description</h2>
+<p>The QwwTwoColorIndicator class provides a widget allowing to choose a foreground and background colour.</p>
+<p class="centerAlign"><img src="images/qwwtwocolorindicator.png" alt="QwwTwoColorIndicator" /></p></div>
+<!-- @@@QwwTwoColorIndicator -->
+<div class="prop">
+<h2>Property Documentation</h2>
+<!-- $$$active-prop$$$isActive$$$setActivebool -->
+<h3 class="fn"><a name="active-prop"></a><span class="name">active</span> : <span class="type">bool</span></h3>
+<p>This property holds whether mouse click enables colour select.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> bool </td><td class="memItemRight bottomAlign"><span class="name"><b>isActive</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setActive</b></span>(bool)</td></tr>
+</table>
+<!-- @@@active -->
+<!-- $$$bgColor-prop$$$bgColor$$$setBgColorconstQColor& -->
+<h3 class="fn"><a name="bgColor-prop"></a><span class="name">bgColor</span> : <span class="type">QColor</span></h3>
+<p>This property holds background colour.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> const QColor &amp; </td><td class="memItemRight bottomAlign"><span class="name"><b>bgColor</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setBgColor</b></span>(const QColor &amp;<i> b</i>)</td></tr>
+</table>
+<!-- @@@bgColor -->
+<!-- $$$dragEnabled-prop$$$dragEnabled$$$setDragEnabledbool -->
+<h3 class="fn"><a name="dragEnabled-prop"></a><span class="name">dragEnabled</span> : <span class="type">bool</span></h3>
+<p>This property holds whether dragging from the widget is enabled.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> bool </td><td class="memItemRight bottomAlign"><span class="name"><b>dragEnabled</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setDragEnabled</b></span>(bool)</td></tr>
+</table>
+<!-- @@@dragEnabled -->
+<!-- $$$fgColor-prop$$$fgColor$$$setFgColorconstQColor& -->
+<h3 class="fn"><a name="fgColor-prop"></a><span class="name">fgColor</span> : <span class="type">QColor</span></h3>
+<p>This property holds foreground colour.</p>
+<p><b>Access functions:</b></p>
+<table class="alignedsummary">
+<tr><td class="memItemLeft topAlign rightAlign"> const QColor &amp; </td><td class="memItemRight bottomAlign"><span class="name"><b>fgColor</b></span>() const</td></tr>
+<tr><td class="memItemLeft topAlign rightAlign"> void </td><td class="memItemRight bottomAlign"><span class="name"><b>setFgColor</b></span>(const QColor &amp;<i> f</i>)</td></tr>
+</table>
+<!-- @@@fgColor -->
+</div>
+<div class="func">
+<h2>Member Function Documentation</h2>
+<!-- $$$QwwTwoColorIndicator[overload1]$$$QwwTwoColorIndicatorQWidget* -->
+<h3 class="fn"><a name="QwwTwoColorIndicator"></a>QwwTwoColorIndicator::<span class="name">QwwTwoColorIndicator</span>(<span class="type">QWidget</span> *<i> parent</i> = 0)</h3>
+<p>Constructs a two color indicator with a given <i>parent</i>.</p>
+<!-- @@@QwwTwoColorIndicator -->
+<!-- $$$bgChanged[overload1]$$$bgChangedconstQColor& -->
+<h3 class="fn"><a name="bgChanged"></a><span class="type">void</span> QwwTwoColorIndicator::<span class="name">bgChanged</span>(const <span class="type">QColor</span> &amp;<i> color</i>)<tt> [signal]</tt></h3>
+<p>This signal is emitted when background colour changes to <i>color</i>.</p>
+<p><b>See also </b><a href="qwwtwocolorindicator.html#fgChanged">fgChanged</a>().</p>
+<!-- @@@bgChanged -->
+<!-- $$$bgClicked[overload1]$$$bgClicked -->
+<h3 class="fn"><a name="bgClicked"></a><span class="type">void</span> QwwTwoColorIndicator::<span class="name">bgClicked</span>()<tt> [signal]</tt></h3>
+<p>This signal is emitted when the background button was clicked.</p>
+<p><b>See also </b><a href="qwwtwocolorindicator.html#fgClicked">fgClicked</a>() and <a href="qwwtwocolorindicator.html#bgPressed">bgPressed</a>().</p>
+<!-- @@@bgClicked -->
+<!-- $$$bgPressed[overload1]$$$bgPressed -->
+<h3 class="fn"><a name="bgPressed"></a><span class="type">void</span> QwwTwoColorIndicator::<span class="name">bgPressed</span>()<tt> [signal]</tt></h3>
+<p>This signal is emitted when the background button was pressed.</p>
+<p><b>See also </b><a href="qwwtwocolorindicator.html#fgPressed">fgPressed</a>() and <a href="qwwtwocolorindicator.html#bgClicked">bgClicked</a>().</p>
+<!-- @@@bgPressed -->
+<!-- $$$fgChanged[overload1]$$$fgChangedconstQColor& -->
+<h3 class="fn"><a name="fgChanged"></a><span class="type">void</span> QwwTwoColorIndicator::<span class="name">fgChanged</span>(const <span class="type">QColor</span> &amp;<i> color</i>)<tt> [signal]</tt></h3>
+<p>This signal is emitted when foreground colour changes to <i>color</i>.</p>
+<p><b>See also </b><a href="qwwtwocolorindicator.html#bgChanged">bgChanged</a>().</p>
+<!-- @@@fgChanged -->
+<!-- $$$fgClicked[overload1]$$$fgClicked -->
+<h3 class="fn"><a name="fgClicked"></a><span class="type">void</span> QwwTwoColorIndicator::<span class="name">fgClicked</span>()<tt> [signal]</tt></h3>
+<p>This signal is emitted when the foreground button was clicked.</p>
+<p><b>See also </b><a href="qwwtwocolorindicator.html#bgClicked">bgClicked</a>() and <a href="qwwtwocolorindicator.html#fgPressed">fgPressed</a>().</p>
+<!-- @@@fgClicked -->
+<!-- $$$fgPressed[overload1]$$$fgPressed -->
+<h3 class="fn"><a name="fgPressed"></a><span class="type">void</span> QwwTwoColorIndicator::<span class="name">fgPressed</span>()<tt> [signal]</tt></h3>
+<p>This signal is emitted when the foreground button was pressed.</p>
+<p><b>See also </b><a href="qwwtwocolorindicator.html#bgPressed">bgPressed</a>() and <a href="qwwtwocolorindicator.html#fgClicked">fgClicked</a>().</p>
+<!-- @@@fgPressed -->
+<!-- $$$paintSection[overload1]$$$paintSectionQPainter*constQRect&constQColor& -->
+<h3 class="fn"><a name="paintSection"></a><span class="type">void</span> QwwTwoColorIndicator::<span class="name">paintSection</span>(<span class="type">QPainter</span> *<i> painter</i>, const <span class="type">QRect</span> &amp;<i> rect</i>, const <span class="type">QColor</span> &amp;<i> color</i>)<tt> [virtual protected]</tt></h3>
+<p>Paints a single section of the indicator.</p>
+<p>The method paints to the rectangle <i>rect</i> with <i>color</i> using <i>painter</i>.</p>
+<p>Reimplement to modify how the indicator looks.</p>
+<!-- @@@paintSection -->
+<!-- $$$switchColors[overload1]$$$switchColors -->
+<h3 class="fn"><a name="switchColors"></a><span class="type">void</span> QwwTwoColorIndicator::<span class="name">switchColors</span>()<tt> [slot]</tt></h3>
+<p>Swaps foreground and background colors.</p>
+<!-- @@@switchColors -->
+</div>
+<div class="footer"> <img src="images/ww-logo.png" style="height: 24px; margin-top: -10px;" align="right" /> Copyright (C) 2014 Witold Wysota</div></body>
+</html>
